@@ -467,8 +467,52 @@
       </div>
     </section>
   </div>
+
+  <div class="path-panel" id="pathPanel">
+    <div class="path-panel-tab" id="pathTab">免审路径</div>
+    <div class="path-panel-content">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span>三条免审</span>
+        <button type="button" class="path-copy-btn" data-copy-paths="exempt">复制全部</button>
+      </div>
+      <div id="exempt" hidden>
+【新奇T】服装、鞋靴和珠宝饰品 > 新奇物品 > 新奇服装和产品 > 新奇服装 > 男士新奇服装 > 男士新奇T恤、衬衫、polo衫 > 男士新奇 T 恤
+【休闲T】运动与户外用品 > 运动户外服饰 > 男士运动户外服饰 > 男士运动休闲衬衫和 Polo 衫 > T 恤
+【运动T】运动与户外用品 > 健身、训练用品 > 健身服 > 男士 > 男士休闲运动衫、T恤 > 男士休闲运动T恤
+      </div>
+      <div class="path-item"><b>新奇T</b>　服装、鞋靴和珠宝饰品 &gt; 新奇物品 &gt; 新奇服装和产品 &gt; 新奇服装 &gt; 男士新奇服装 &gt; 男士新奇T恤、衬衫、polo衫 &gt; 男士新奇 T 恤</div>
+      <div class="path-item"><b>休闲T</b>　运动与户外用品 &gt; 运动户外服饰 &gt; 男士运动户外服饰 &gt; 男士运动休闲衬衫和 Polo 衫 &gt; T 恤</div>
+      <div class="path-item"><b>运动T</b>　运动与户外用品 &gt; 健身、训练用品 &gt; 健身服 &gt; 男士 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动T恤</div>
+    </div>
+  </div>
+  <div class="toast" id="toast">已复制</div>
   <script>
     (function () {
+      var toast = document.getElementById("toast"), timer;
+      function show(msg) {
+        toast.textContent = msg; toast.classList.add("show");
+        clearTimeout(timer); timer = setTimeout(function () { toast.classList.remove("show"); }, 1600);
+      }
+      function writeClip(text, ok) {
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(ok); return; }
+        var tmp = document.createElement("textarea"); tmp.value = text; document.body.appendChild(tmp); tmp.select();
+        try { document.execCommand("copy"); ok(); } catch (e) {}
+        document.body.removeChild(tmp);
+      }
+      document.querySelectorAll("[data-copy-paths]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var el = document.getElementById(btn.getAttribute("data-copy-paths"));
+          if (!el) return;
+          writeClip(el.textContent.replace(/^\s+|\s+$/g, ""), function () { show("已复制"); });
+        });
+      });
+      document.querySelectorAll(".path-item").forEach(function (item) {
+        item.addEventListener("click", function () {
+          writeClip(item.textContent.replace(/\s+/g, " ").trim(), function () { show("已复制"); });
+        });
+      });
+      var tab = document.getElementById("pathTab"), panel = document.getElementById("pathPanel");
+      if (tab && panel) tab.addEventListener("click", function () { panel.classList.toggle("open"); });
       var links = Array.prototype.slice.call(document.querySelectorAll(".jump a[href^='#']"));
       window.addEventListener("scroll", function () {
         var y = window.scrollY + 80, cur = "";
