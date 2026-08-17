@@ -211,6 +211,18 @@
     .prio.must { color: #fecdd3; border-color: rgba(244,63,94,.4); background: rgba(244,63,94,.1); }
     .prio.rec { color: #99f6e4; border-color: rgba(45,212,191,.35); background: rgba(45,212,191,.1); }
     .prio.test { color: #fde68a; border-color: rgba(251,191,36,.35); background: rgba(251,191,36,.08); }
+    .fit .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .path-tag {
+      font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px;
+      color: #fde68a; border: 1px solid rgba(251,191,36,.4); background: rgba(251,191,36,.08);
+    }
+    .path-tag.sport { color: #99f6e4; border-color: rgba(45,212,191,.4); background: rgba(45,212,191,.1); }
+    .path-tag.henley { color: #c4b5fd; border-color: rgba(167,139,250,.4); background: rgba(167,139,250,.1); }
+    .exempt-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .exempt-table th, .exempt-table td { border: 1px solid #2a3344; padding: 8px 10px; vertical-align: top; }
+    .exempt-table th { background: #141a24; color: #fde68a; text-align: left; white-space: nowrap; }
+    .exempt-table td { color: #cbd5e1; }
+    .exempt-table code { color: #fbbf24; font-size: 11px; }
 
     .size-chart-box {
       margin-top: 14px;
@@ -456,10 +468,11 @@
         运动榜是 UA / 速干排汗；GQ 重磅首选 Buck Mason Field-Spec（310gsm，$62），平价锚 Uniqlo U / Kirkland 205gsm；
         SHEIN / Temu 前排是华夫格、重磅纯棉、酸洗宽版；独立站 Buck Mason 把 Field-Spec / Slub / Pima 做成三条面料轨。
       </p>
-      <p class="update-note">点卡片看平台实时热销。改关键词或说明后，把整个文件夹打成 zip 丢到 Netlify Deploys 覆盖即可，原链接可不变。</p>
+      <p class="update-note">点卡片看平台实时热销。上架走右侧 <strong style="color:#fbbf24">免审路径</strong>：运动 T / 休闲 T / 亨利衫，不要走男士时尚主路径。</p>
     </header>
 
     <nav class="jump" aria-label="快速跳转">
+      <a href="#exempt-map">免审对照</a>
       <a href="#mod1">一 场景与定位</a>
       <a href="#mod2">二 面料与材质</a>
       <a href="#mod3">三 工艺与洗水</a>
@@ -468,6 +481,38 @@
       <a href="#eu">欧区 EU / UK</a>
       <a href="#tips">选品与跟款</a>
     </nav>
+
+    <section class="fit-section" id="exempt-map">
+      <h2>免审路径对照</h2>
+      <p class="desc">Temu / 全托管先按款型选类目，不要挂「男士时尚 &gt; 男士 T 恤」。右侧黄条可一键复制。</p>
+      <table class="exempt-table">
+        <thead>
+          <tr><th>标签</th><th>用在哪些款</th><th>类目路径</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="path-tag sport">运动T</span></td>
+            <td>速干、排汗、压缩、健身训练</td>
+            <td>运动与户外用品 &gt; 健身、训练用品 &gt; 健身服 &gt; 男士 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动T恤</td>
+          </tr>
+          <tr>
+            <td><span class="path-tag">休闲T</span></td>
+            <td>基础纯色、重磅、华夫格、竹节棉、棉麻、莫代尔、酸洗、扎染、拼接、刺绣</td>
+            <td>运动与户外用品 &gt; 运动户外服饰 &gt; 男士运动户外服饰 &gt; 男士运动休闲衬衫和 Polo 衫 &gt; T 恤</td>
+          </tr>
+          <tr>
+            <td><span class="path-tag henley">亨利衫1</span></td>
+            <td>短袖亨利领、棉麻亨利、户外休闲亨利</td>
+            <td>运动与户外用品 &gt; 户外休闲 &gt; 徒步和户外休闲服装 &gt; 男士户外服饰 &gt; 男士户外衬衫 &gt; T 恤</td>
+          </tr>
+          <tr>
+            <td><span class="path-tag henley">亨利衫2</span></td>
+            <td>同上，备选一条</td>
+            <td>服装、鞋靴和珠宝饰品 &gt; 体育专用服装 &gt; 户外服饰 &gt; 男士户外服饰 &gt; 男士户外衬衫 &gt; T 恤</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
     <!-- ========== MODULE 1 ========== -->
     <section class="fit-section" id="mod1">
@@ -485,6 +530,7 @@
         <span class="kw-chip">moisture wicking t-shirt</span>
         <span class="kw-chip">gym compression shirt</span>
         <span class="kw-chip">athletic tee men</span>
+        <span class="kw-chip">mens henley t-shirt</span>
       </div>
       <div class="fit-grid">
 
@@ -508,7 +554,10 @@
           <h4>基础纯色圆领 · Regular Fit</h4>
           <p>日常走量锚。白 / 黑 / 灰三色先开，克重 180–220g。领口加螺纹、肩线正、不透是差评防线。Amazon 榜几乎全是这类空白 Tee。</p>
           <div class="kw">mens basic t-shirt · plain white tee men</div>
-          <span class="prio must">必开 · 走量基础盘</span>
+          <div class="tags">
+            <span class="prio must">必开 · 走量基础盘</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -531,7 +580,10 @@
           <h4>高克重重磅 · 220–300g+</h4>
           <p>基础盘里的溢价轨。标题写清 240 / 260 / 280gsm。GQ 把 200gsm+ 当重磅门槛；Pro Club、Hanes Beefy-T、Comfort Colors 是亚马逊验证款。</p>
           <div class="kw">heavyweight cotton t-shirt · 260gsm tee men</div>
-          <span class="prio must">必开 · 溢价基础</span>
+          <div class="tags">
+            <span class="prio must">必开 · 溢价基础</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -554,7 +606,10 @@
           <h4>运动速干 / 排汗</h4>
           <p>功能走量。涤氨网眼或蜂巢针，主图写 Quick Dry / Moisture Wicking / UPF。Temu、Amazon 运动榜长年有货。宽松训练版可另开一条。</p>
           <div class="kw">moisture wicking t-shirt · quick dry athletic tee</div>
-          <span class="prio rec">推荐 · 功能走量</span>
+          <div class="tags">
+            <span class="prio rec">推荐 · 功能走量</span>
+            <span class="path-tag sport">免审 · 运动T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -577,7 +632,36 @@
           <h4>健身紧身 / 训练</h4>
           <p>紧身压缩是细分，不要和宽松速干混 SKU。详情页必须有身材示意，尺码表按胸围实测，否则退货率会很高。</p>
           <div class="kw">compression shirt men · gym fitted tee</div>
-          <span class="prio test">可测 · 健身细分</span>
+          <div class="tags">
+            <span class="prio test">可测 · 健身细分</span>
+            <span class="path-tag sport">免审 · 运动T</span>
+          </div>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 05 · 免审必开 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/13-henley.jpg" alt="短袖亨利领 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>72</td></tr>
+                <tr><td>肩宽</td><td>48</td></tr>
+                <tr><td>胸围</td><td>110</td></tr>
+                <tr><td>摆围</td><td>108</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>扣位</td><td>3 粒</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 亨利领</div>
+            </div>
+          </div>
+          <h4>短袖亨利领 · Henley</h4>
+          <p>两条免审路径都是为这款留的。棉质基础、棉麻度假都能套。主图必须拍出领口 2–3 粒扣，否则后台会按圆领审。</p>
+          <div class="kw">mens henley t-shirt · short sleeve henley men</div>
+          <div class="tags">
+            <span class="prio must">必开 · 免审结构</span>
+            <span class="path-tag henley">免审 · 亨利衫1/2</span>
+          </div>
         </div>
       </div>
     </section>
@@ -624,7 +708,10 @@
           <h4>华夫格 / 坑条肌理</h4>
           <p>SHEIN、Temu 2026 夏季前排常见。不用印花也能看出「不是基础白 Tee」。主图特写格子，色系走驼 / 橄榄 / 黑。</p>
           <div class="kw">waffle knit t-shirt men · ribbed textured tee</div>
-          <span class="prio rec">推荐 · 风格溢价</span>
+          <div class="tags">
+            <span class="prio rec">推荐 · 风格溢价</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -647,7 +734,10 @@
           <h4>竹节棉 / 雪花棉复古</h4>
           <p>独立站（Buck Mason Slub、Warehouse）验证过的手感溢价。详情页要有近景纱结，不要拍成普通素色。燕麦 / 卡其比纯白更耐看。</p>
           <div class="kw">slub cotton t-shirt · vintage slub tee men</div>
-          <span class="prio rec">推荐 · 手感溢价</span>
+          <div class="tags">
+            <span class="prio rec">推荐 · 手感溢价</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -670,7 +760,10 @@
           <h4>棉麻复古 T</h4>
           <p>夏季度假词。Amazon 上 COOFANDY 棉麻亨利已经是长销，圆领短袖可切更轻的 T 恤形态。要接受自然皱，文案写成「亚麻质感」而不是「免烫」。</p>
           <div class="kw">linen cotton t-shirt men · cotton linen tee</div>
-          <span class="prio test">可测 · 夏季自然感</span>
+          <div class="tags">
+            <span class="prio test">可测 · 夏季自然感</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -693,7 +786,10 @@
           <h4>莫代尔垂感 / 凉感</h4>
           <p>功能环保轨：凉感、三防白 T、抗菌、有机棉可共用这一套「解决问题」的详情页。CDLP 用 Tencel + 匹马棉卖 $135，平价可走莫代尔混纺。</p>
           <div class="kw">modal t-shirt men · cooling t-shirt · organic cotton tee</div>
-          <span class="prio test">可测 · 功能卖点</span>
+          <div class="tags">
+            <span class="prio test">可测 · 功能卖点</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
       </div>
     </section>
@@ -737,7 +833,10 @@
           <h4>酸洗 / 做旧 / 炒雪花破洞</h4>
           <p>2026 街潮验证款。宽版 + 水洗比合身更出片。破洞要克制（下摆或袖口一点），过破会掉客单。Comfort Colors 成衣染是更「干净」的水洗替代。</p>
           <div class="kw">acid wash t-shirt men · vintage washed oversized tee</div>
-          <span class="prio must">必开 · 潮流工艺</span>
+          <div class="tags">
+            <span class="prio must">必开 · 潮流工艺</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -760,7 +859,10 @@
           <h4>扎染 / 渐变色</h4>
           <p>度假与音乐节场景。色走土褐 / 卡其 / 雾蓝，比彩虹扎染更像男标。每缸色差要在详情页写清楚，否则差评会集中在「和图片不一样」。</p>
           <div class="kw">tie dye t-shirt men · ombre washed tee</div>
-          <span class="prio test">季节 · 度假风</span>
+          <div class="tags">
+            <span class="prio test">季节 · 度假风</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
       </div>
     </section>
@@ -803,7 +905,10 @@
           <h4>色块拼接 / 假两件</h4>
           <p>不用印花也能拉开货盘。横拼最稳，假两件看缝位是否干净。SHEIN 男装拼接搜索量大，客单可略高于纯色。</p>
           <div class="kw">color block t-shirt men · fake two piece tee</div>
-          <span class="prio rec">推荐 · 层次感</span>
+          <div class="tags">
+            <span class="prio rec">推荐 · 层次感</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
 
         <div class="fit">
@@ -826,7 +931,10 @@
           <h4>贴布绣 / 小面积刺绣</h4>
           <p>左胸 3–5cm 最安全，避开大 Logo 与 IP。Etsy 定制刺绣客单高，平台店可做「小叶子 / 几何 / 文字」原创小标。重工贴布绣当利润款测。</p>
           <div class="kw">embroidered t-shirt men · patch embroidery tee</div>
-          <span class="prio test">可测 · 品质感</span>
+          <div class="tags">
+            <span class="prio test">可测 · 品质感</span>
+            <span class="path-tag">免审 · 休闲T</span>
+          </div>
         </div>
       </div>
 
@@ -1278,8 +1386,8 @@
           看 Buck Mason 三条面料轨、Uniqlo U 宽版 $20、Comfort Colors 成衣染。抄结构，不要抄 Logo。
         </div>
         <div class="tip">
-          <strong>更新方式</strong>
-          点链接=看实时榜。改完推 GitHub Pages（同 HALLOWEN 那套），微信里用 github.io 链接打开。
+          <strong>亨利领单独开</strong>
+          两条亨利衫路径都要扣位结构。主图看不到 2–3 粒扣，就不要挂亨利衫。棉麻亨利走度假色。
         </div>
         <div class="tip">
           <strong>免审路径</strong>
@@ -1291,7 +1399,7 @@
     <footer>
       <p class="warn">效果图仅示廓形 / 面料差异，上架前请按样衣实测 + 缩水微调。平台链接跳转实时搜索，销量以各站当日排序为准。</p>
       <p>标码男装 T 恤侦察台 · 场景 / 面料 / 洗水 / 工艺 · 非满印图形款</p>
-      <p style="margin-top:6px;">姊妹页：<a href="https://cuililiok.github.io/halloween-prints/" target="_blank" rel="noopener" style="color:#fbbf24;">万圣节印花侦察台</a></p>
+      <p style="margin-top:6px;">地址：<a href="https://cuililiok.github.io/halloween-prints/tee/" style="color:#fbbf24;">cuililiok.github.io/halloween-prints/tee/</a></p>
     </footer>
   </div>
 
