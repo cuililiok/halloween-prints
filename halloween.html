@@ -116,6 +116,18 @@
     .ana th { background: #141a24; color: #fde68a; text-align: left; width: 22%; }
     .ana td { color: #cbd5e1; }
     .ana caption { caption-side: top; text-align: left; font-weight: 700; margin-bottom: 6px; color: #e2e8f0; }
+    .exempt-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .exempt-table th, .exempt-table td { border: 1px solid #2a3344; padding: 8px 10px; vertical-align: top; }
+    .exempt-table th { background: #141a24; color: #fde68a; text-align: left; white-space: nowrap; }
+    .exempt-table td { color: #cbd5e1; }
+    .path-tag {
+      display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px;
+      border: 1px solid rgba(251,191,36,.4); color: #fde68a; background: rgba(251,191,36,.1);
+    }
+    .path-tag.sport { border-color: rgba(45,212,191,.4); color: #99f6e4; background: rgba(45,212,191,.1); }
+    .path-tag.nov { border-color: rgba(244,63,94,.4); color: #fecdd3; background: rgba(244,63,94,.1); }
+    .fit .prio-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .fit .prio { margin-top: 0; }
 
     .size-chart-box { margin-top: 14px; background: #000; border: 1px solid #0e7490; border-radius: 12px; padding: 12px; overflow-x: auto; }
     .size-chart-box h3 { font-size: 13px; margin-bottom: 6px; color: #a5f3fc; }
@@ -218,6 +230,7 @@
         只做<strong style="color:#eef2f7">万圣节印花开款</strong>，不再和常规白 Tee 搅在一起。
         先定元素，再定工艺（胸前胶印 / 水浆做旧 / 3D 满印），再按平台分层铺货。
         常规白 Tee、重磅、华夫格请走姊妹页。
+        上架走右侧 <strong style="color:#fbbf24">免审路径</strong>：印花优先「新奇 T」，备选休闲 T / 运动 T，不要挂男士时尚主路径。
       </p>
       <div class="meta">
         <span>品类：<strong>男装印花短袖 T 恤</strong></span>
@@ -248,6 +261,7 @@
     </header>
 
     <nav class="jump">
+      <a href="#exempt-map">免审对照</a>
       <a href="#elements">元素清单</a>
       <a href="#prints">开款矩阵</a>
       <a href="#analysis">设计分析</a>
@@ -258,6 +272,33 @@
       <a href="#tips">跟款要点</a>
       <a href="tee/">常规男标 T 恤</a>
     </nav>
+
+    <section class="fit-section" id="exempt-map">
+      <h2>免审路径对照</h2>
+      <p class="desc">Temu / 全托管先按款型选类目，不要挂「男士时尚 &gt; 男士 T 恤」。印花节日款优先新奇 T；洗水暗黑可走休闲 T。</p>
+      <table class="exempt-table">
+        <thead>
+          <tr><th>标签</th><th>用在哪些款</th><th>类目路径</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="path-tag nov">新奇T</span></td>
+            <td>南瓜、幽灵、蝙蝠、巫女、标语、3D 满印</td>
+            <td>服装、鞋靴和珠宝饰品 &gt; 新奇物品 &gt; 新奇服装和产品 &gt; 新奇服装 &gt; 男士新奇服装 &gt; 男士新奇T恤、衬衫、polo衫 &gt; 男士新奇 T 恤</td>
+          </tr>
+          <tr>
+            <td><span class="path-tag">休闲T</span></td>
+            <td>骷髅、死神、哥特字、做旧水浆暗黑</td>
+            <td>运动与户外用品 &gt; 运动户外服饰 &gt; 男士运动户外服饰 &gt; 男士运动休闲衬衫和 Polo 衫 &gt; T 恤</td>
+          </tr>
+          <tr>
+            <td><span class="path-tag sport">运动T</span></td>
+            <td>速干底、训练风万圣节印花</td>
+            <td>运动与户外用品 &gt; 健身、训练用品 &gt; 健身服 &gt; 男士 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动T恤</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
     <section class="fit-section" id="elements">
       <h2>常规元素清单（先定符号，再画图）</h2>
@@ -297,7 +338,10 @@
           <h4>南瓜灯 / Jack-O'-Lantern</h4>
           <p>识别度最高。卡通脸走家庭，写实灯走街头。不要做成电影道具脸。</p>
           <div class="kw">halloween pumpkin t-shirt men · jack o lantern tee</div>
-          <span class="prio must">必开 · 节日流量</span>
+          <div class="prio-row">
+            <span class="prio must">必开 · 节日流量</span>
+            <span class="prio rec">免审 · 新奇T</span>
+          </div>
         </div>
         <div class="fit">
           <div class="rank">款 02 · 主力必开</div>
@@ -318,7 +362,10 @@
           <h4>骷髅 / Skull</h4>
           <p>万圣节和全年暗黑都吃。通用头骨可以做，品牌骷髅 Logo、电影面具不要碰。</p>
           <div class="kw">skull graphic tee men · halloween skull t-shirt</div>
-          <span class="prio must">必开 · 全年长线</span>
+          <div class="prio-row">
+            <span class="prio must">必开 · 全年长线</span>
+            <span class="prio rec">免审 · 休闲T</span>
+          </div>
         </div>
         <div class="fit">
           <div class="rank">款 03 · 走量</div>
@@ -339,7 +386,10 @@
           <h4>原创幽灵 / Ghost</h4>
           <p>圆头白幽灵最好过审。不要画圣诞夜惊魂那张脸，那是 IP。</p>
           <div class="kw">halloween ghost t-shirt men · cute ghost tee</div>
-          <span class="prio test">走量 · 家庭款</span>
+          <div class="prio-row">
+            <span class="prio test">走量 · 家庭款</span>
+            <span class="prio rec">免审 · 新奇T</span>
+          </div>
         </div>
         <div class="fit">
           <div class="rank">款 04 · 补位</div>
@@ -360,7 +410,10 @@
           <h4>蝙蝠 / 新月</h4>
           <p>符号简单，适合胸前小图或后背大图。也可铺成满印底纹。</p>
           <div class="kw">bat t-shirt men · halloween bats tee</div>
-          <span class="prio rec">补位 · 好做图</span>
+          <div class="prio-row">
+            <span class="prio rec">补位 · 好做图</span>
+            <span class="prio rec">免审 · 新奇T</span>
+          </div>
         </div>
         <div class="fit">
           <div class="rank">款 05 · 高客单</div>
@@ -381,7 +434,10 @@
           <h4>哥特字体 / Gothic</h4>
           <p>荆棘体、融化体，把字当图案。不要写电影台词和品牌名。</p>
           <div class="kw">gothic graphic tee men · spooky lettering tshirt</div>
-          <span class="prio rec">推荐 · 高客单</span>
+          <div class="prio-row">
+            <span class="prio rec">推荐 · 高客单</span>
+            <span class="prio rec">免审 · 休闲T</span>
+          </div>
         </div>
         <div class="fit">
           <div class="rank">款 06 · 暗黑长线</div>
@@ -402,7 +458,10 @@
           <h4>死神 / Reaper</h4>
           <p>斗篷剪影 + 镰刀最稳。玫瑰一加就能拉到金属/暗黑全年盘。</p>
           <div class="kw">grim reaper tshirt men · death print tee</div>
-          <span class="prio rec">推荐 · 长线</span>
+          <div class="prio-row">
+            <span class="prio rec">推荐 · 长线</span>
+            <span class="prio rec">免审 · 休闲T</span>
+          </div>
         </div>
         <div class="fit">
           <div class="rank">款 07 · 高溢价</div>
@@ -423,7 +482,10 @@
           <h4>3D 全身满印 / AOP</h4>
           <p>骨骼、蜘蛛网、南瓜林都可以满铺。宽版落肩最好看。侧缝对花做不好就差评。</p>
           <div class="kw">3d print tshirt men all over · skeleton aop tee</div>
-          <span class="prio rec">推荐 · 高溢价</span>
+          <div class="prio-row">
+            <span class="prio rec">推荐 · 高溢价</span>
+            <span class="prio rec">免审 · 新奇T</span>
+          </div>
         </div>
         <div class="fit">
           <div class="rank">款 08 · 低成本先测</div>
@@ -444,7 +506,10 @@
           <h4>标语 / Typography</h4>
           <p>Spooky Season、Trick or Treat 打样最快、侵权风险最低。先测这条，再开复杂图。</p>
           <div class="kw">halloween slogan tshirt men · trick or treat tee</div>
-          <span class="prio test">测款 · 低成本</span>
+          <div class="prio-row">
+            <span class="prio test">测款 · 低成本</span>
+            <span class="prio rec">免审 · 新奇T</span>
+          </div>
         </div>
       </div>
 
@@ -669,6 +734,7 @@
         <div class="tip"><strong>工艺</strong>胸前单图胶印/水浆；做旧走水浆；满印热转印。深色底算白墨。</div>
         <div class="tip"><strong>主图</strong>白底成衣 + 印花特写 + 一件上身。满印一定要侧面，买家要看对花。</div>
         <div class="tip"><strong>测款顺序</strong>文字款 → 南瓜/骷髅胸前图 → 数据好再开满印。不要一上来压 3D 库存。</div>
+        <div class="tip"><strong>免审路径</strong>印花节日款走新奇 T；骷髅 / 哥特 / 做旧走休闲 T。不要挂男士时尚主路径。右侧黄条可复制。</div>
         <div class="tip"><strong>常规白 Tee</strong>克重、华夫格、酸洗不放在这一页。去姊妹页：<a href="tee/" style="color:#fbbf24;">常规男标 T 恤侦察台</a>。</div>
       </div>
     </section>
@@ -680,22 +746,22 @@
   </div>
 
   <div class="path-panel" id="pathPanel">
-    <div class="path-panel-tab" id="pathTab">上品路径</div>
+    <div class="path-panel-tab" id="pathTab">免审路径</div>
     <div class="path-panel-content">
-      <div class="path-panel-title">上品路径指南</div>
-      <p class="path-note">Temu / 全托管。万圣节印花优先走「新奇 T 恤」；基础纯色走「男士 T 恤」。</p>
+      <div class="path-panel-title">免审路径</div>
+      <p class="path-note">Temu / 全托管免审类目。印花优先新奇 T，不要走男士时尚主路径。</p>
       <div class="path-category-header">
-        <span>T恤</span>
-        <button type="button" class="path-copy-btn" data-copy-paths="tshirt">复制全部</button>
+        <span>三条免审</span>
+        <button type="button" class="path-copy-btn" data-copy-paths="exempt">复制全部</button>
       </div>
-      <div id="tshirt" hidden>
-服装、鞋靴和珠宝饰品>新奇物品>新奇服装和产品>新奇服装>男士新奇服装>男士新奇T恤、衬衫、polo衫>男士新奇 T 恤
-服装、鞋靴和珠宝饰品>男士时尚>男装>男士 T 恤和背心>T 恤
-服装、鞋靴和珠宝饰品>男士时尚>男装>男装上衣、T恤、衬衫>男装T恤
+      <div id="exempt" hidden>
+【新奇T】服装、鞋靴和珠宝饰品 > 新奇物品 > 新奇服装和产品 > 新奇服装 > 男士新奇服装 > 男士新奇T恤、衬衫、polo衫 > 男士新奇 T 恤
+【休闲T】运动与户外用品 > 运动户外服饰 > 男士运动户外服饰 > 男士运动休闲衬衫和 Polo 衫 > T 恤
+【运动T】运动与户外用品 > 健身、训练用品 > 健身服 > 男士 > 男士休闲运动衫、T恤 > 男士休闲运动T恤
       </div>
-      <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 新奇物品 &gt; 新奇服装和产品 &gt; 新奇服装 &gt; 男士新奇服装 &gt; 男士新奇T恤、衬衫、polo衫 &gt; 男士新奇 T 恤</div>
-      <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 男士时尚 &gt; 男装 &gt; 男士 T 恤和背心 &gt; T 恤</div>
-      <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 男士时尚 &gt; 男装 &gt; 男装上衣、T恤、衬衫 &gt; 男装T恤</div>
+      <div class="path-item"><b>新奇T</b>　服装、鞋靴和珠宝饰品 &gt; 新奇物品 &gt; 新奇服装和产品 &gt; 新奇服装 &gt; 男士新奇服装 &gt; 男士新奇T恤、衬衫、polo衫 &gt; 男士新奇 T 恤</div>
+      <div class="path-item"><b>休闲T</b>　运动与户外用品 &gt; 运动户外服饰 &gt; 男士运动户外服饰 &gt; 男士运动休闲衬衫和 Polo 衫 &gt; T 恤</div>
+      <div class="path-item"><b>运动T</b>　运动与户外用品 &gt; 健身、训练用品 &gt; 健身服 &gt; 男士 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动T恤</div>
     </div>
   </div>
 
