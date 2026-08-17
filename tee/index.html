@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="标码男装T恤热销侦察台 · 场景 / 面料 / 洗水 / 工艺 · 普通男标T恤开款 · 美区+欧区" />
+  <title>标码男装T恤 · 场景 / 面料 / 洗水 / 工艺 · 热销侦察台</title>
+  <style>
+    :root {
+      --bg: #0a0c10;
+      --bg2: #11151c;
+      --card: #161b24;
+      --card-hover: #1c2330;
+      --line: #2a3344;
+      --text: #eef2f7;
+      --muted: #97a0b3;
+      --accent: #f43f5e;
+      --teal: #2dd4bf;
+      --blue: #38bdf8;
+      --violet: #a78bfa;
+      --amber: #fbbf24;
+      --green: #4ade80;
+      --orange: #fb923c;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      background:
+        radial-gradient(1000px 520px at 0% -10%, #1a2744 0%, transparent 55%),
+        radial-gradient(800px 480px at 100% 0%, #2a1830 0%, transparent 50%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1140px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 64px; }
+
+    header.hero {
+      background: linear-gradient(135deg, #141a28 0%, #1a1226 55%, #101820 100%);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 26px 22px 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .badge {
+      font-size: 12px; padding: 4px 10px; border-radius: 999px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--muted);
+    }
+    .badge.hot { border-color: rgba(244,63,94,.45); color: #fecdd3; background: rgba(244,63,94,.12); }
+    .badge.ok { border-color: rgba(45,212,191,.4); color: #99f6e4; background: rgba(45,212,191,.1); }
+    h1 { font-size: clamp(1.3rem, 3.4vw, 1.8rem); font-weight: 750; margin-bottom: 8px; letter-spacing: .01em; }
+    h1 .a { color: var(--violet); }
+    h1 .b { color: var(--teal); }
+    .sub { color: var(--muted); font-size: 14px; max-width: 860px; }
+    .meta { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: var(--muted); }
+    .meta strong { color: var(--text); font-weight: 600; }
+
+    .tracks {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px;
+    }
+    @media (max-width: 980px) { .tracks { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .tracks { grid-template-columns: 1fr; } }
+    .track-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px;
+    }
+    .track-card h3 { font-size: 14px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .track-card p { font-size: 12.5px; color: var(--muted); }
+    .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+    .dot.a { background: var(--blue); }
+    .dot.b { background: var(--teal); }
+    .dot.c { background: var(--orange); }
+    .dot.d { background: var(--violet); }
+
+    .price-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .price {
+      font-size: 12px; padding: 6px 10px; border-radius: 8px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.03);
+    }
+    .price b { color: var(--amber); }
+
+    .jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 6px; }
+    .jump a {
+      font-size: 13px; padding: 8px 14px; border-radius: 999px;
+      background: var(--card); border: 1px solid var(--line); transition: .15s;
+    }
+    .jump a:hover { border-color: var(--accent); }
+
+    .fit-section {
+      margin: 18px 0 8px;
+      background: var(--bg2);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 16px 14px;
+      scroll-margin-top: 12px;
+    }
+    .fit-section h2 {
+      font-size: 1.1rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;
+    }
+    .fit-section > .desc { font-size: 13px; color: var(--muted); margin-bottom: 12px; max-width: 920px; }
+    .mod-head {
+      display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;
+      gap: 10px; margin: 4px 0 12px;
+    }
+    .mod-head .guide {
+      font-size: 12.5px; color: var(--muted); max-width: 640px;
+    }
+    .mod-head .guide strong { color: #e2e8f0; }
+    .kw-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; }
+    .kw-chip {
+      font-size: 11px; padding: 4px 8px; border-radius: 6px;
+      background: rgba(251,191,36,.08); border: 1px solid rgba(251,191,36,.28);
+      color: #fde68a; font-family: ui-monospace, Consolas, monospace;
+    }
+
+    .fit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 14px;
+    }
+    .fit {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      transition: .15s;
+      display: flex;
+      flex-direction: column;
+    }
+    .fit:hover { border-color: rgba(251,191,36,.45); background: var(--card-hover); }
+    .fit .rank {
+      font-size: 11px; font-weight: 700; color: var(--amber); margin-bottom: 8px; letter-spacing: .02em;
+    }
+    .prod-board {
+      display: grid;
+      grid-template-columns: 1fr 112px;
+      gap: 8px;
+      margin-bottom: 10px;
+      background: #0f1218;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px;
+      align-items: stretch;
+    }
+    .prod-shot {
+      background: #f4f4f5;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+      max-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prod-shot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .prod-spec {
+      border: 1px solid #2a3344;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #0a0c10;
+      display: flex;
+      flex-direction: column;
+    }
+    .prod-spec .spec-h {
+      background: #1a2230;
+      color: #e2e8f0;
+      font-size: 10px;
+      font-weight: 700;
+      text-align: center;
+      padding: 5px 2px;
+      border-bottom: 1px solid #2a3344;
+    }
+    .prod-spec table { width: 100%; border-collapse: collapse; font-size: 10px; flex: 1; }
+    .prod-spec td {
+      border-bottom: 1px solid #1e293b;
+      padding: 4px 6px;
+      color: #e2e8f0;
+    }
+    .prod-spec tr:last-child td { border-bottom: none; }
+    .prod-spec td:first-child { color: #94a3b8; width: 46%; }
+    .prod-spec td:last-child { text-align: right; color: #fbbf24; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .prod-spec .spec-f {
+      font-size: 8px; color: #64748b; text-align: center;
+      padding: 4px 2px; border-top: 1px solid #1e293b; line-height: 1.3;
+    }
+    @media (max-width: 420px) {
+      .prod-board { grid-template-columns: 1fr; }
+      .prod-shot { max-height: 260px; aspect-ratio: 1 / 1; }
+    }
+    .fit h4 { font-size: 14px; margin-bottom: 4px; color: #f1f5f9; }
+    .fit p { font-size: 12px; color: #94a3b8; flex: 1; }
+    .fit .kw {
+      margin-top: 8px; font-size: 11px; color: #fbbf24;
+      font-family: ui-monospace, Consolas, monospace; word-break: break-word;
+    }
+    .fit .prio {
+      display: inline-block; margin-top: 8px; font-size: 10px; padding: 2px 6px; border-radius: 4px;
+      border: 1px solid var(--line); align-self: flex-start;
+    }
+    .prio.must { color: #fecdd3; border-color: rgba(244,63,94,.4); background: rgba(244,63,94,.1); }
+    .prio.rec { color: #99f6e4; border-color: rgba(45,212,191,.35); background: rgba(45,212,191,.1); }
+    .prio.test { color: #fde68a; border-color: rgba(251,191,36,.35); background: rgba(251,191,36,.08); }
+
+    .size-chart-box {
+      margin-top: 14px;
+      background: #000;
+      border: 1px solid #0e7490;
+      border-radius: 12px;
+      padding: 12px;
+      overflow-x: auto;
+    }
+    .size-chart-box h3 { font-size: 13px; margin-bottom: 6px; color: #a5f3fc; }
+    .size-chart-box .chart-note { font-size: 11px; color: #94a3b8; margin-bottom: 8px; }
+    .size-chart {
+      width: 100%; border-collapse: collapse; font-size: 11.5px; min-width: 560px;
+    }
+    .size-chart th, .size-chart td {
+      border: 1px solid #164e63; padding: 6px 8px; text-align: center; color: #e2e8f0;
+    }
+    .size-chart th { background: #083344; color: #a5f3fc; font-weight: 700; }
+    .size-chart td:first-child, .size-chart th:first-child {
+      text-align: left; color: #67e8f9; font-weight: 600;
+    }
+    .size-chart tr:nth-child(even) td { background: #050505; }
+    .size-chart .hl { color: #fde68a; font-weight: 700; }
+
+    .region { margin-top: 28px; scroll-margin-top: 14px; }
+    .region-head {
+      display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
+      gap: 10px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+    }
+    .region-head h2 { font-size: 1.25rem; }
+    .region-head .kw {
+      font-size: 12px; color: var(--muted); background: rgba(255,255,255,.04);
+      border: 1px solid var(--line); padding: 6px 10px; border-radius: 8px;
+    }
+    .region-head code { color: var(--amber); font-family: ui-monospace, Consolas, monospace; font-size: 11px; }
+
+    .lane { margin: 16px 0 8px; }
+    .lane-title {
+      font-size: 14px; font-weight: 700; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 6px;
+    }
+    .tag.print { background: rgba(167,139,250,.15); color: #ddd6fe; border: 1px solid rgba(167,139,250,.35); }
+    .tag.custom { background: rgba(45,212,191,.12); color: #99f6e4; border: 1px solid rgba(45,212,191,.35); }
+    .tag.style { background: rgba(251,191,36,.12); color: #fde68a; border: 1px solid rgba(251,191,36,.3); }
+    .tag.base { background: rgba(56,189,248,.12); color: #bae6fd; border: 1px solid rgba(56,189,248,.3); }
+    .tag.fit { background: rgba(251,146,60,.12); color: #fed7aa; border: 1px solid rgba(251,146,60,.35); }
+
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px;
+    }
+    .card {
+      display: flex; flex-direction: column; gap: 8px;
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 14px 14px 12px; min-height: 148px;
+      transition: transform .15s, border-color .15s, background .15s;
+      box-shadow: 0 4px 16px rgba(0,0,0,.18);
+    }
+    .card:hover {
+      transform: translateY(-2px); border-color: rgba(244,63,94,.45); background: var(--card-hover);
+    }
+    .card .icon { font-size: 20px; line-height: 1; }
+    .card h4 { font-size: 14px; font-weight: 700; }
+    .card p { font-size: 12px; color: var(--muted); flex: 1; }
+    .card .foot {
+      display: flex; justify-content: space-between; align-items: center; gap: 8px;
+      margin-top: 4px; font-size: 11px; color: var(--muted);
+    }
+    .card .go { color: var(--accent); font-weight: 700; font-size: 12px; }
+    .sort-pill {
+      font-size: 10px; padding: 2px 6px; border-radius: 4px;
+      background: rgba(255,255,255,.06); border: 1px solid var(--line); white-space: nowrap;
+    }
+
+    .tips {
+      margin-top: 28px; background: var(--bg2); border: 1px solid var(--line);
+      border-radius: 16px; padding: 18px 18px 14px; scroll-margin-top: 14px;
+    }
+    .tips h2 { font-size: 1.05rem; margin-bottom: 10px; }
+    .tips-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px;
+    }
+    .tip {
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      padding: 12px; font-size: 13px; color: var(--muted);
+    }
+    .tip strong { color: var(--text); display: block; margin-bottom: 4px; font-size: 13px; }
+
+    .copy-bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+    .copy-bar button {
+      cursor: pointer; border: 1px solid var(--line); background: rgba(255,255,255,.04);
+      color: var(--text); border-radius: 8px; padding: 6px 10px; font-size: 12px; font-family: inherit;
+    }
+    .copy-bar button:hover { border-color: var(--teal); }
+
+    footer {
+      margin-top: 28px; text-align: center; color: var(--muted); font-size: 12px; line-height: 1.7;
+    }
+    footer .warn { color: #fca5a5; margin-bottom: 6px; }
+
+    .toast {
+      position: fixed; bottom: 24px; left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #111827; border: 1px solid var(--teal); color: #fff;
+      padding: 10px 16px; border-radius: 999px; font-size: 13px;
+      opacity: 0; pointer-events: none; transition: .2s; z-index: 50;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    .update-note {
+      margin-top: 10px; font-size: 12px; color: var(--muted);
+      border-left: 3px solid var(--blue); padding-left: 10px;
+    }
+    .src-note {
+      margin: 10px 0 0; font-size: 12px; color: var(--muted);
+      background: rgba(56,189,248,.06); border: 1px solid rgba(56,189,248,.22);
+      border-radius: 10px; padding: 10px 12px;
+    }
+    .src-note b { color: #bae6fd; }
+
+    /* 上品路径悬浮面板 · 借 HALLOWEN 逻辑 */
+    .path-panel {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) translateX(calc(100% - 44px));
+      width: 380px;
+      max-height: 80vh;
+      background: rgba(10, 12, 16, 0.97);
+      border: 1px solid var(--amber);
+      border-right: none;
+      border-radius: 12px 0 0 12px;
+      box-shadow: -8px 0 30px rgba(0,0,0,.55);
+      z-index: 900;
+      transition: transform .35s cubic-bezier(.25,.46,.45,.94);
+      display: flex;
+      flex-direction: column;
+    }
+    .path-panel:hover, .path-panel.open {
+      transform: translateY(-50%) translateX(0);
+    }
+    .path-panel-tab {
+      position: absolute; left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 44px; height: 120px;
+      background: linear-gradient(180deg, var(--amber), #d97706);
+      border-radius: 12px 0 0 12px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      writing-mode: vertical-rl; text-orientation: upright;
+      font-size: 14px; font-weight: 700; color: #111;
+      letter-spacing: 4px; padding: 10px 0;
+    }
+    .path-panel-content {
+      padding: 16px 16px 16px 60px;
+      overflow-y: auto; max-height: 80vh;
+    }
+    .path-panel-title {
+      font-size: 14px; font-weight: 700; color: var(--amber);
+      margin-bottom: 12px; letter-spacing: 2px; text-align: center;
+      border-bottom: 1px solid rgba(251,191,36,.25); padding-bottom: 8px;
+    }
+    .path-note { font-size: 11px; color: var(--muted); margin-bottom: 12px; line-height: 1.5; }
+    .path-category { margin-bottom: 16px; }
+    .path-category-header {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;
+    }
+    .path-category-name { font-size: 13px; font-weight: 700; }
+    .path-copy-btn {
+      font-size: 11px; color: var(--amber); border: 1px solid var(--amber);
+      padding: 2px 10px; border-radius: 12px; cursor: pointer;
+      background: transparent; font-family: inherit;
+    }
+    .path-copy-btn:hover { background: var(--amber); color: #111; }
+    .path-copy-btn.copied { background: #4ade80; border-color: #4ade80; color: #111; }
+    .path-item {
+      font-size: 11px; color: #94a3b8; line-height: 1.55;
+      padding: 6px 8px; margin-bottom: 4px;
+      background: rgba(255,255,255,.03); border-radius: 4px;
+      border-left: 2px solid rgba(251,191,36,.35);
+      word-break: break-all; cursor: pointer;
+    }
+    .path-item:hover { background: rgba(251,191,36,.08); color: #fef3c7; }
+    @media (max-width: 720px) {
+      .path-panel { width: min(380px, calc(100vw - 12px)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="badge-row">
+        <span class="badge hot">热销侦察台</span>
+        <span class="badge ok">标码男装</span>
+        <span class="badge">普通男标 T 恤 · 非满印图形款</span>
+        <span class="badge">四模块开款</span>
+        <span class="badge">美区 · 欧区</span>
+        <span class="badge hot">平台效果图 + 尺码表</span>
+      </div>
+      <h1>标码男装T恤 · <span class="a">场景 / 面料</span> / <span class="b">洗水 / 工艺</span></h1>
+      <p class="sub">
+        仿卫衣侦察台逻辑：<strong style="color:#eef2f7">四模块开款矩阵</strong> + <strong style="color:#fbbf24">白底成衣效果图 + L 码尺寸</strong> + Amazon / SHEIN / Temu / 独立站热销直达。
+        本品类是<strong style="color:#eef2f7">普通男标短袖 T 恤</strong>（纯色、重磅、功能、肌理、洗水、拼接/刺绣），不是 3D 满印图形 Tee。
+      </p>
+      <div class="meta">
+        <span>品类：<strong>标码男装短袖 T 恤</strong></span>
+        <span>模块：<strong>① 场景定位</strong> · <strong>② 面料材质</strong> · <strong>③ 工艺洗水</strong> · <strong>④ 设计装饰</strong></span>
+        <span>排序：<strong>热销 / 人气</strong></span>
+      </div>
+
+      <div class="tracks">
+        <div class="track-card">
+          <h3><span class="dot a"></span> 一 · 场景与定位</h3>
+          <p>日常基础走量 + 健身运动功能。基础看版型与克重，运动看弹性与排汗。</p>
+        </div>
+        <div class="track-card">
+          <h3><span class="dot b"></span> 二 · 面料与材质</h3>
+          <p>提质溢价核心：重磅/匹马棉打手感，华夫格/竹节棉/棉麻打风格，凉感/防污/莫代尔打卖点。</p>
+        </div>
+        <div class="track-card">
+          <h3><span class="dot c"></span> 三 · 工艺与洗水</h3>
+          <p>酸洗做旧、炒雪花破洞、扎染渐变。美式复古 / 高街废土 / 度假风，适合高溢价潮流单品。</p>
+        </div>
+        <div class="track-card">
+          <h3><span class="dot d"></span> 四 · 设计与装饰</h3>
+          <p>色块拼接 / 假两件加层次，贴布绣 / 小面积刺绣提品质。节日印花只做爆发点，不主攻图形 Tee。</p>
+        </div>
+      </div>
+
+      <div class="price-row">
+        <span class="price">基础纯色走量 <b>$8–16</b></span>
+        <span class="price">重磅 / 匹马棉 <b>$18–45</b></span>
+        <span class="price">运动功能 <b>$10–28</b></span>
+        <span class="price">肌理 / 棉麻 <b>$14–32</b></span>
+        <span class="price">洗水 / 扎染 <b>$12–28</b></span>
+        <span class="price">拼接 / 刺绣 <b>$16–38</b></span>
+      </div>
+      <p class="src-note">
+        <b>2026 热卖锚点（检索当日）：</b>
+        Amazon 男 T 榜前排是 Gildan / Hanes / Comfort Colors / Pro Club 重磅基础盘，#9 已出现 oversized vintage washed / acid wash；
+        运动榜是 UA / 速干排汗；GQ 重磅首选 Buck Mason Field-Spec（310gsm，$62），平价锚 Uniqlo U / Kirkland 205gsm；
+        SHEIN / Temu 前排是华夫格、重磅纯棉、酸洗宽版；独立站 Buck Mason 把 Field-Spec / Slub / Pima 做成三条面料轨。
+      </p>
+      <p class="update-note">点卡片看平台实时热销。改关键词或说明后，把整个文件夹打成 zip 丢到 Netlify Deploys 覆盖即可，原链接可不变。</p>
+    </header>
+
+    <nav class="jump" aria-label="快速跳转">
+      <a href="#mod1">一 场景与定位</a>
+      <a href="#mod2">二 面料与材质</a>
+      <a href="#mod3">三 工艺与洗水</a>
+      <a href="#mod4">四 设计与装饰</a>
+      <a href="#us">美区 US</a>
+      <a href="#eu">欧区 EU / UK</a>
+      <a href="#tips">选品与跟款</a>
+    </nav>
+
+    <!-- ========== MODULE 1 ========== -->
+    <section class="fit-section" id="mod1">
+      <h2>一、场景与定位 · Scenario</h2>
+      <div class="mod-head">
+        <p class="guide">
+          细分：<strong>日常基础</strong> · <strong>健身运动</strong>。
+          定位走量款与功能款。基础款先把版型（正肩合身 / 略宽松）和克重写死；运动款卖弹力、排汗、速干，不要和重磅纯棉抢同一套主图话术。
+        </p>
+      </div>
+      <div class="kw-chips">
+        <span class="kw-chip">mens basic t-shirt</span>
+        <span class="kw-chip">plain crew neck tee</span>
+        <span class="kw-chip">heavyweight cotton t-shirt</span>
+        <span class="kw-chip">moisture wicking t-shirt</span>
+        <span class="kw-chip">gym compression shirt</span>
+        <span class="kw-chip">athletic tee men</span>
+      </div>
+      <div class="fit-grid">
+
+        <div class="fit">
+          <div class="rank">款 01 · 主力必开 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/01-basic-white.jpg" alt="基础纯色圆领 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>72</td></tr>
+                <tr><td>肩宽</td><td>48</td></tr>
+                <tr><td>胸围</td><td>108</td></tr>
+                <tr><td>摆围</td><td>106</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>领宽</td><td>20</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 正肩合身</div>
+            </div>
+          </div>
+          <h4>基础纯色圆领 · Regular Fit</h4>
+          <p>日常走量锚。白 / 黑 / 灰三色先开，克重 180–220g。领口加螺纹、肩线正、不透是差评防线。Amazon 榜几乎全是这类空白 Tee。</p>
+          <div class="kw">mens basic t-shirt · plain white tee men</div>
+          <span class="prio must">必开 · 走量基础盘</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 02 · 主力必开 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/02-heavyweight-black.jpg" alt="高克重重磅 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>72</td></tr>
+                <tr><td>肩宽</td><td>49</td></tr>
+                <tr><td>胸围</td><td>110</td></tr>
+                <tr><td>摆围</td><td>108</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>克重</td><td>260g</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 略松有型</div>
+            </div>
+          </div>
+          <h4>高克重重磅 · 220–300g+</h4>
+          <p>基础盘里的溢价轨。标题写清 240 / 260 / 280gsm。GQ 把 200gsm+ 当重磅门槛；Pro Club、Hanes Beefy-T、Comfort Colors 是亚马逊验证款。</p>
+          <div class="kw">heavyweight cotton t-shirt · 260gsm tee men</div>
+          <span class="prio must">必开 · 溢价基础</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 03 · 强推 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/03-athletic-navy.jpg" alt="运动速干排汗 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>70</td></tr>
+                <tr><td>肩宽</td><td>46</td></tr>
+                <tr><td>胸围</td><td>104</td></tr>
+                <tr><td>摆围</td><td>100</td></tr>
+                <tr><td>袖长</td><td>21</td></tr>
+                <tr><td>弹力</td><td>四向</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 运动合身</div>
+            </div>
+          </div>
+          <h4>运动速干 / 排汗</h4>
+          <p>功能走量。涤氨网眼或蜂巢针，主图写 Quick Dry / Moisture Wicking / UPF。Temu、Amazon 运动榜长年有货。宽松训练版可另开一条。</p>
+          <div class="kw">moisture wicking t-shirt · quick dry athletic tee</div>
+          <span class="prio rec">推荐 · 功能走量</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 04 · 建议测 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/04-compression-charcoal.jpg" alt="健身紧身训练 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>68</td></tr>
+                <tr><td>肩宽</td><td>42</td></tr>
+                <tr><td>胸围</td><td>94</td></tr>
+                <tr><td>摆围</td><td>88</td></tr>
+                <tr><td>袖长</td><td>20</td></tr>
+                <tr><td>氨纶</td><td>8–12%</td></tr>
+              </table>
+              <div class="spec-f">S–XL · 紧身训练</div>
+            </div>
+          </div>
+          <h4>健身紧身 / 训练</h4>
+          <p>紧身压缩是细分，不要和宽松速干混 SKU。详情页必须有身材示意，尺码表按胸围实测，否则退货率会很高。</p>
+          <div class="kw">compression shirt men · gym fitted tee</div>
+          <span class="prio test">可测 · 健身细分</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MODULE 2 ========== -->
+    <section class="fit-section" id="mod2">
+      <h2>二、面料与材质 · Fabric &amp; Texture</h2>
+      <div class="mod-head">
+        <p class="guide">
+          面料是提质和溢价的核心。
+          <strong>基础款</strong>打克重（重磅）与手感（匹马棉 / 液氨）；
+          <strong>风格款</strong>靠肌理（华夫格 / 坑条）、自然感（竹节棉 / 棉麻）；
+          <strong>功能款</strong>靠凉感 / 防污 / 抗菌 / 莫代尔垂感解决痛点。
+        </p>
+      </div>
+      <div class="kw-chips">
+        <span class="kw-chip">pima cotton t-shirt</span>
+        <span class="kw-chip">slub cotton tee</span>
+        <span class="kw-chip">waffle knit t-shirt</span>
+        <span class="kw-chip">linen cotton t-shirt</span>
+        <span class="kw-chip">cooling t-shirt men</span>
+        <span class="kw-chip">modal t-shirt men</span>
+        <span class="kw-chip">organic cotton tee</span>
+      </div>
+      <div class="fit-grid">
+
+        <div class="fit">
+          <div class="rank">款 05 · 强推 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/05-waffle-camel.jpg" alt="华夫格肌理 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>71</td></tr>
+                <tr><td>肩宽</td><td>50</td></tr>
+                <tr><td>胸围</td><td>112</td></tr>
+                <tr><td>摆围</td><td>110</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>肌理</td><td>华夫格</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 略松肌理</div>
+            </div>
+          </div>
+          <h4>华夫格 / 坑条肌理</h4>
+          <p>SHEIN、Temu 2026 夏季前排常见。不用印花也能看出「不是基础白 Tee」。主图特写格子，色系走驼 / 橄榄 / 黑。</p>
+          <div class="kw">waffle knit t-shirt men · ribbed textured tee</div>
+          <span class="prio rec">推荐 · 风格溢价</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 06 · 强推 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/06-slub-oatmeal.jpg" alt="竹节棉复古 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>72</td></tr>
+                <tr><td>肩宽</td><td>48</td></tr>
+                <tr><td>胸围</td><td>110</td></tr>
+                <tr><td>摆围</td><td>108</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>手感</td><td>竹节棉</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 自然复古</div>
+            </div>
+          </div>
+          <h4>竹节棉 / 雪花棉复古</h4>
+          <p>独立站（Buck Mason Slub、Warehouse）验证过的手感溢价。详情页要有近景纱结，不要拍成普通素色。燕麦 / 卡其比纯白更耐看。</p>
+          <div class="kw">slub cotton t-shirt · vintage slub tee men</div>
+          <span class="prio rec">推荐 · 手感溢价</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 07 · 建议测 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/07-linen-sand.jpg" alt="棉麻复古 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>72</td></tr>
+                <tr><td>肩宽</td><td>49</td></tr>
+                <tr><td>胸围</td><td>112</td></tr>
+                <tr><td>摆围</td><td>110</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>混纺</td><td>棉麻</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 度假宽松</div>
+            </div>
+          </div>
+          <h4>棉麻复古 T</h4>
+          <p>夏季度假词。Amazon 上 COOFANDY 棉麻亨利已经是长销，圆领短袖可切更轻的 T 恤形态。要接受自然皱，文案写成「亚麻质感」而不是「免烫」。</p>
+          <div class="kw">linen cotton t-shirt men · cotton linen tee</div>
+          <span class="prio test">可测 · 夏季自然感</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 08 · 建议测 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/08-modal-gray.jpg" alt="莫代尔凉感垂感 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>71</td></tr>
+                <tr><td>肩宽</td><td>47</td></tr>
+                <tr><td>胸围</td><td>106</td></tr>
+                <tr><td>摆围</td><td>104</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>面料</td><td>莫代尔</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 垂感合身</div>
+            </div>
+          </div>
+          <h4>莫代尔垂感 / 凉感</h4>
+          <p>功能环保轨：凉感、三防白 T、抗菌、有机棉可共用这一套「解决问题」的详情页。CDLP 用 Tencel + 匹马棉卖 $135，平价可走莫代尔混纺。</p>
+          <div class="kw">modal t-shirt men · cooling t-shirt · organic cotton tee</div>
+          <span class="prio test">可测 · 功能卖点</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MODULE 3 ========== -->
+    <section class="fit-section" id="mod3">
+      <h2>三、工艺与洗水 · Process &amp; Wash</h2>
+      <div class="mod-head">
+        <p class="guide">
+          打造美式复古、高街废土或度假风的核心工艺，适合做高溢价潮流单品。
+          Amazon 男 T 榜已出现 oversized vintage washed / acid wash；B2B 端 300gsm+ 酸洗空白 Tee 是跟款热点。
+          这是<strong>洗水工艺</strong>，不是印花图案。
+        </p>
+      </div>
+      <div class="kw-chips">
+        <span class="kw-chip">acid wash t-shirt men</span>
+        <span class="kw-chip">vintage washed tee</span>
+        <span class="kw-chip">distressed t-shirt</span>
+        <span class="kw-chip">tie dye t-shirt men</span>
+        <span class="kw-chip">ombre t-shirt men</span>
+      </div>
+      <div class="fit-grid">
+
+        <div class="fit">
+          <div class="rank">款 09 · 主力必开 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/09-acidwash-gray.jpg" alt="酸洗做旧破洞 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>74</td></tr>
+                <tr><td>肩宽</td><td>56</td></tr>
+                <tr><td>胸围</td><td>124</td></tr>
+                <tr><td>摆围</td><td>122</td></tr>
+                <tr><td>袖长</td><td>23</td></tr>
+                <tr><td>工艺</td><td>酸洗</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 落肩宽版</div>
+            </div>
+          </div>
+          <h4>酸洗 / 做旧 / 炒雪花破洞</h4>
+          <p>2026 街潮验证款。宽版 + 水洗比合身更出片。破洞要克制（下摆或袖口一点），过破会掉客单。Comfort Colors 成衣染是更「干净」的水洗替代。</p>
+          <div class="kw">acid wash t-shirt men · vintage washed oversized tee</div>
+          <span class="prio must">必开 · 潮流工艺</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 10 · 季节款 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/10-tiedye-ombre.jpg" alt="扎染渐变 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>73</td></tr>
+                <tr><td>肩宽</td><td>50</td></tr>
+                <tr><td>胸围</td><td>114</td></tr>
+                <tr><td>摆围</td><td>112</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>工艺</td><td>扎染</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 度假宽松</div>
+            </div>
+          </div>
+          <h4>扎染 / 渐变色</h4>
+          <p>度假与音乐节场景。色走土褐 / 卡其 / 雾蓝，比彩虹扎染更像男标。每缸色差要在详情页写清楚，否则差评会集中在「和图片不一样」。</p>
+          <div class="kw">tie dye t-shirt men · ombre washed tee</div>
+          <span class="prio test">季节 · 度假风</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MODULE 4 ========== -->
+    <section class="fit-section" id="mod4">
+      <h2>四、设计与装饰 · Design &amp; Craft</h2>
+      <div class="mod-head">
+        <p class="guide">
+          本品类仍是<strong>普通男标 T 恤</strong>，不做大面积图形印花主航道。
+          拼接与假两件增加层次；小面积刺绣 / 贴布绣提升局部重工。万圣节等节日印花只作爆发点检索，不当常年 SKU。
+        </p>
+      </div>
+      <div class="kw-chips">
+        <span class="kw-chip">color block t-shirt men</span>
+        <span class="kw-chip">fake two piece tee</span>
+        <span class="kw-chip">embroidered t-shirt men</span>
+        <span class="kw-chip">patchwork tee men</span>
+        <span class="kw-chip">halloween t-shirt men</span>
+      </div>
+      <div class="fit-grid">
+
+        <div class="fit">
+          <div class="rank">款 11 · 强推 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/11-colorblock.jpg" alt="色块拼接假两件 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>72</td></tr>
+                <tr><td>肩宽</td><td>48</td></tr>
+                <tr><td>胸围</td><td>108</td></tr>
+                <tr><td>摆围</td><td>106</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>工艺</td><td>拼接</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 正肩层次</div>
+            </div>
+          </div>
+          <h4>色块拼接 / 假两件</h4>
+          <p>不用印花也能拉开货盘。横拼最稳，假两件看缝位是否干净。SHEIN 男装拼接搜索量大，客单可略高于纯色。</p>
+          <div class="kw">color block t-shirt men · fake two piece tee</div>
+          <span class="prio rec">推荐 · 层次感</span>
+        </div>
+
+        <div class="fit">
+          <div class="rank">款 12 · 建议测 · L 码参考</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="images/12-embroidery-cream.jpg" alt="贴布绣重工刺绣 T 恤 效果图" loading="lazy" width="480" height="640" /></div>
+            <div class="prod-spec">
+              <div class="spec-h">成衣尺寸 · L</div>
+              <table>
+                <tr><td>衣长</td><td>72</td></tr>
+                <tr><td>肩宽</td><td>48</td></tr>
+                <tr><td>胸围</td><td>110</td></tr>
+                <tr><td>摆围</td><td>108</td></tr>
+                <tr><td>袖长</td><td>22</td></tr>
+                <tr><td>装饰</td><td>小刺绣</td></tr>
+              </table>
+              <div class="spec-f">S–XXL · 重工点缀</div>
+            </div>
+          </div>
+          <h4>贴布绣 / 小面积刺绣</h4>
+          <p>左胸 3–5cm 最安全，避开大 Logo 与 IP。Etsy 定制刺绣客单高，平台店可做「小叶子 / 几何 / 文字」原创小标。重工贴布绣当利润款测。</p>
+          <div class="kw">embroidered t-shirt men · patch embroidery tee</div>
+          <span class="prio test">可测 · 品质感</span>
+        </div>
+      </div>
+
+      <div class="size-chart-box" id="sizes">
+        <h3>男装标码 T 恤成衣尺寸参考表（开款用 · 单位 cm）</h3>
+        <p class="chart-note">
+          下表为<strong style="color:#e2e8f0">常规合身圆领</strong>基码。落肩 / Oversize 按「宽松加量」上浮；紧身训练按下浮。
+          最终以样衣 + 洗后尺寸为准。美码对照：S≈36–38 / M≈38–40 / L≈40–42 / XL≈42–44 / XXL≈44–46。
+        </p>
+        <table class="size-chart">
+          <thead>
+            <tr>
+              <th>部位</th>
+              <th>S</th>
+              <th>M</th>
+              <th class="hl">L</th>
+              <th>XL</th>
+              <th>XXL</th>
+              <th>宽松加量（Oversize）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>胸围 Chest</td><td>98</td><td>104</td><td class="hl">108</td><td>114</td><td>120</td><td>+8～16</td></tr>
+            <tr><td>衣长 Length</td><td>68</td><td>70</td><td class="hl">72</td><td>74</td><td>76</td><td>+0～2（Boxy −4～6）</td></tr>
+            <tr><td>肩宽 Shoulder</td><td>44</td><td>46</td><td class="hl">48</td><td>50</td><td>52</td><td>落肩再 +6～10</td></tr>
+            <tr><td>袖长 Sleeve</td><td>20</td><td>21</td><td class="hl">22</td><td>23</td><td>24</td><td>+0～1</td></tr>
+            <tr><td>建议身高 Height</td><td>165–170</td><td>170–175</td><td class="hl">175–180</td><td>180–185</td><td>185–190</td><td>详情页务必附图示</td></tr>
+          </tbody>
+        </table>
+        <div class="copy-bar">
+          <button type="button" data-copy="mens basic t-shirt">复制：基础纯色</button>
+          <button type="button" data-copy="heavyweight cotton t-shirt men">复制：重磅</button>
+          <button type="button" data-copy="moisture wicking t-shirt men">复制：速干</button>
+          <button type="button" data-copy="waffle knit t-shirt men">复制：华夫格</button>
+          <button type="button" data-copy="acid wash t-shirt men">复制：酸洗</button>
+          <button type="button" data-copy="embroidered t-shirt men">复制：刺绣</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== US ========== -->
+    <section class="region" id="us">
+      <div class="region-head">
+        <h2>美区 · 标码男装 T 恤</h2>
+        <div class="kw">核心词：<code>mens t-shirt</code> / <code>heavyweight tee</code> / <code>acid wash t-shirt</code></div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag base">整体热销</span> T 恤总盘（销量锚 · 对照价带与面料）</div>
+        <div class="grid">
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">S</div>
+            <h4>SHEIN US · Men's Tee</h4>
+            <p>男士 T 恤 Best Selling，先看哪类面料/版型在前排。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">A</div>
+            <h4>Amazon US · 人气</h4>
+            <p>验证真实需求与差评点：缩水、透、领口变形、偏小。</p>
+            <div class="foot"><span class="sort-pill">Popularity Rank</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/Best-Sellers-Men-s-T-Shirts/zgbs/fashion/1045624" target="_blank" rel="noopener">
+            <div class="icon">#</div>
+            <h4>Amazon · Best Sellers</h4>
+            <p>官方畅销榜。当前是 Gildan / Hanes / Comfort Colors / Pro Club 基础盘。</p>
+            <div class="foot"><span class="sort-pill">Best Sellers</span><span class="go">查看榜单 →</span></div>
+          </a>
+          <a class="card" href="https://www.temu.com/search_result.html?search_key=mens%20t%20shirt" target="_blank" rel="noopener">
+            <div class="icon">T</div>
+            <h4>Temu · 综合</h4>
+            <p>低价带对照，避免盲目卷价。看华夫格、速干、基础色。</p>
+            <div class="foot"><span class="sort-pill">综合热销</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.aliexpress.com/wholesale?SearchText=mens+t-shirt+cotton&g=y&SortType=total_tranpro_desc" target="_blank" rel="noopener">
+            <div class="icon">AE</div>
+            <h4>AliExpress · 销量</h4>
+            <p>货源端销量，看工厂克重区间与起订。</p>
+            <div class="foot"><span class="sort-pill">Total Orders</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag fit">模块一</span> 场景分轨 · 日常 / 运动</div>
+        <div class="grid">
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20basic%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">1</div>
+            <h4>SHEIN · Basic Tee</h4>
+            <p>基础纯色，对照走量色与价。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+heavyweight+cotton+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">2</div>
+            <h4>Amazon · Heavyweight</h4>
+            <p>重磅人气。对标 Pro Club / Beefy-T / Comfort Colors。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/Best-Sellers-Men-s-Athletic-Shirts-Tees/zgbs/fashion/1046648" target="_blank" rel="noopener">
+            <div class="icon">3</div>
+            <h4>Amazon · Athletic 榜</h4>
+            <p>运动 Tee 畅销榜，看速干与压缩占比。</p>
+            <div class="foot"><span class="sort-pill">Best Sellers</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20moisture%20wicking%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">4</div>
+            <h4>SHEIN · 速干排汗</h4>
+            <p>功能走量，看面料卖点写法。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.temu.com/search_result.html?search_key=mens%20moisture%20wicking%20t%20shirt" target="_blank" rel="noopener">
+            <div class="icon">5</div>
+            <h4>Temu · 速干</h4>
+            <p>低价功能款，用来卡底价。</p>
+            <div class="foot"><span class="sort-pill">综合热销</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+compression+shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">6</div>
+            <h4>Amazon · Compression</h4>
+            <p>紧身训练细分验证。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看 →</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag custom">模块二</span> 面料分轨 · 重磅 / 肌理 / 功能</div>
+        <div class="grid">
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20heavyweight%20cotton%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">F1</div>
+            <h4>SHEIN · 重磅纯棉</h4>
+            <p>高克重搜索，看 220g+ 怎么写标题。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+pima+cotton+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">F2</div>
+            <h4>Amazon · 匹马棉</h4>
+            <p>手感溢价验证。独立站对标 Buck Mason Pima。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20waffle%20knit%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">F3</div>
+            <h4>SHEIN · 华夫格</h4>
+            <p>肌理款主力入口。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+slub+cotton+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">F4</div>
+            <h4>Amazon · 竹节棉</h4>
+            <p>复古纱结手感，看评价是否提「起球」。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+linen+cotton+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">F5</div>
+            <h4>Amazon · 棉麻</h4>
+            <p>夏季自然感。亨利领占比高，圆领可切空白。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.temu.com/search_result.html?search_key=mens%20waffle%20knit%20t%20shirt" target="_blank" rel="noopener">
+            <div class="icon">F6</div>
+            <h4>Temu · 华夫格</h4>
+            <p>低价肌理对照。</p>
+            <div class="foot"><span class="sort-pill">综合热销</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+cooling+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">F7</div>
+            <h4>Amazon · 凉感</h4>
+            <p>功能卖点：凉感 / 冰丝 / 三防白 T。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+organic+cotton+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">F8</div>
+            <h4>Amazon · 有机棉</h4>
+            <p>环保轨。证书和成分表要比图案重要。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag style">模块三</span> 洗水工艺 · 酸洗 / 扎染</div>
+        <div class="grid">
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20acid%20wash%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">W1</div>
+            <h4>SHEIN · Acid Wash</h4>
+            <p>酸洗宽版，街潮主入口。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+acid+wash+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">W2</div>
+            <h4>Amazon · Acid Wash</h4>
+            <p>ADOREJOY 等 oversized washed 已进畅销榜。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+vintage+washed+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">W3</div>
+            <h4>Amazon · Vintage Wash</h4>
+            <p>成衣染 / 做旧，比破洞更稳。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20tie%20dye%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">W4</div>
+            <h4>SHEIN · Tie Dye</h4>
+            <p>扎染。优先看低饱和男标色。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.temu.com/search_result.html?search_key=mens%20acid%20wash%20t%20shirt" target="_blank" rel="noopener">
+            <div class="icon">W5</div>
+            <h4>Temu · 酸洗</h4>
+            <p>低价洗水对照。</p>
+            <div class="foot"><span class="sort-pill">综合热销</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+distressed+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">W6</div>
+            <h4>Amazon · Distressed</h4>
+            <p>破洞 / 炒雪花，看破损尺度。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag print">模块四</span> 设计装饰 · 拼接 / 刺绣（节日印花仅检索）</div>
+        <div class="grid">
+          <a class="card" href="https://us.shein.com/pdsearch/mens%20color%20block%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">D1</div>
+            <h4>SHEIN · Color Block</h4>
+            <p>色块拼接热销。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+color+block+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">D2</div>
+            <h4>Amazon · 拼接</h4>
+            <p>假两件 / 撞色层次。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.etsy.com/search?q=embroidered%20t-shirt%20men&order=highest_loves" target="_blank" rel="noopener">
+            <div class="icon">D3</div>
+            <h4>Etsy · 刺绣热度</h4>
+            <p>独立站刺绣定价与小标设计。</p>
+            <div class="foot"><span class="sort-pill">Highest Loves</span><span class="go">查看热度款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=mens+embroidered+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">D4</div>
+            <h4>Amazon · Embroidery</h4>
+            <p>平台刺绣人气与差评点。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://us.shein.com/pdsearch/halloween%20t-shirt%20men/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">D5</div>
+            <h4>SHEIN · Halloween</h4>
+            <p>节日爆发点，只作季节检索。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.com/s?k=halloween+t-shirt+men&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">D6</div>
+            <h4>Amazon · Halloween</h4>
+            <p>8–10 月再开，不当常年货盘。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag style">灵感</span> 独立站 / 社媒（看面料与版型，不当唯一销量源）</div>
+        <div class="grid">
+          <a class="card" href="https://www.buckmason.com/collections/mens-tees" target="_blank" rel="noopener">
+            <div class="icon">BM</div>
+            <h4>Buck Mason Tees</h4>
+            <p>GQ 2026 重磅首选。Field-Spec / Slub / Pima 三条轨。</p>
+            <div class="foot"><span class="sort-pill">独立站</span><span class="go">查看风格款 →</span></div>
+          </a>
+          <a class="card" href="https://www.uniqlo.com/us/en/men/t-shirts" target="_blank" rel="noopener">
+            <div class="icon">U</div>
+            <h4>Uniqlo Men Tees</h4>
+            <p>U 系列宽版 + Supima + AIRism，平价面料对照。</p>
+            <div class="foot"><span class="sort-pill">独立站</span><span class="go">查看风格款 →</span></div>
+          </a>
+          <a class="card" href="https://www.everlane.com/collections/mens-tees" target="_blank" rel="noopener">
+            <div class="icon">EV</div>
+            <h4>Everlane Tees</h4>
+            <p>Premium Weight 基础盘，看克重话术。</p>
+            <div class="foot"><span class="sort-pill">独立站</span><span class="go">查看风格款 →</span></div>
+          </a>
+          <a class="card" href="https://www.asos.com/search/?q=mens%20t%20shirt" target="_blank" rel="noopener">
+            <div class="icon">AS</div>
+            <h4>ASOS Men Tee</h4>
+            <p>年轻潮流版型与色系。</p>
+            <div class="foot"><span class="sort-pill">风格</span><span class="go">查看风格款 →</span></div>
+          </a>
+          <a class="card" href="https://www.pinterest.com/search/pins/?q=mens%20heavyweight%20t-shirt%20outfit" target="_blank" rel="noopener">
+            <div class="icon">P</div>
+            <h4>Pinterest · 重磅穿搭</h4>
+            <p>廓形与叠穿灵感。</p>
+            <div class="foot"><span class="sort-pill">灵感</span><span class="go">查看趋势 →</span></div>
+          </a>
+          <a class="card" href="https://www.boohooman.com/search?q=t-shirt" target="_blank" rel="noopener">
+            <div class="icon">B</div>
+            <h4>BoohooMAN</h4>
+            <p>街头男装，酸洗 / 宽版参考。</p>
+            <div class="foot"><span class="sort-pill">风格</span><span class="go">查看风格款 →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EU ========== -->
+    <section class="region" id="eu">
+      <div class="region-head">
+        <h2>欧区 / UK · 标码男装 T 恤</h2>
+        <div class="kw">核心词：<code>mens t-shirt</code> / <code>heavyweight t-shirt</code> / <code>washed tee</code></div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag base">整体热销</span> 欧区 / 英站总盘</div>
+        <div class="grid">
+          <a class="card" href="https://www.shein.co.uk/pdsearch/mens%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">UK</div>
+            <h4>SHEIN UK · Tee</h4>
+            <p>英站男士 T 恤 Best Selling。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://eur.shein.com/pdsearch/mens%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">EU</div>
+            <h4>SHEIN EUR · Tee</h4>
+            <p>欧区站对照 UK 前排差异。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.co.uk/s?k=mens+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">A</div>
+            <h4>Amazon UK · 人气</h4>
+            <p>英站人气与评价。</p>
+            <div class="foot"><span class="sort-pill">Popularity Rank</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.de/s?k=herren+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">DE</div>
+            <h4>Amazon DE · Herren T-Shirt</h4>
+            <p>德站本地词人气。</p>
+            <div class="foot"><span class="sort-pill">Popularity Rank</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" href="https://www.asos.com/search/?q=mens%20t%20shirt" target="_blank" rel="noopener">
+            <div class="icon">AS</div>
+            <h4>ASOS · T-Shirt</h4>
+            <p>欧区年轻标杆，版型必扫。</p>
+            <div class="foot"><span class="sort-pill">风格+热度</span><span class="go">查看风格款 →</span></div>
+          </a>
+          <a class="card" href="https://www.aliexpress.com/wholesale?SearchText=mens+t-shirt&g=y&SortType=total_tranpro_desc" target="_blank" rel="noopener">
+            <div class="icon">AE</div>
+            <h4>AliExpress · 销量</h4>
+            <p>货源销量排序。</p>
+            <div class="foot"><span class="sort-pill">Total Orders</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title"><span class="tag fit">分轨</span> 欧区结构 / 面料 / 洗水</div>
+        <div class="grid">
+          <a class="card" href="https://www.shein.co.uk/pdsearch/mens%20heavyweight%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">1</div>
+            <h4>SHEIN UK · Heavyweight</h4>
+            <p>英站重磅。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.shein.co.uk/pdsearch/mens%20waffle%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">2</div>
+            <h4>SHEIN UK · Waffle</h4>
+            <p>华夫格肌理。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.shein.co.uk/pdsearch/mens%20acid%20wash%20t-shirt/?sort=7" target="_blank" rel="noopener">
+            <div class="icon">3</div>
+            <h4>SHEIN UK · Acid Wash</h4>
+            <p>酸洗英站热销。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.amazon.co.uk/s?k=mens+oversized+t-shirt&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+            <div class="icon">4</div>
+            <h4>Amazon UK · Oversized</h4>
+            <p>宽版人气。</p>
+            <div class="foot"><span class="sort-pill">Popularity</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.boohoo.com/search?q=mens%20t-shirt" target="_blank" rel="noopener">
+            <div class="icon">5</div>
+            <h4>Boohoo · Tee</h4>
+            <p>英国平价时尚，进入后选 Best sellers。</p>
+            <div class="foot"><span class="sort-pill">Best sellers</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.next.co.uk/search?w=mens%20t%20shirt" target="_blank" rel="noopener">
+            <div class="icon">6</div>
+            <h4>Next UK</h4>
+            <p>本土零售，进入后选 Most popular。</p>
+            <div class="foot"><span class="sort-pill">Most popular</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.marksandspencer.com/search?searchTerm=mens%20t-shirt" target="_blank" rel="noopener">
+            <div class="icon">7</div>
+            <h4>M&amp;S T-Shirt</h4>
+            <p>高质量对照，非低价赛道。</p>
+            <div class="foot"><span class="sort-pill">Best selling</span><span class="go">查看 →</span></div>
+          </a>
+          <a class="card" href="https://www.etsy.com/uk/search?q=embroidered%20t-shirt%20men&order=highest_loves" target="_blank" rel="noopener">
+            <div class="icon">8</div>
+            <h4>Etsy UK · Embroidery</h4>
+            <p>英区刺绣礼品向。</p>
+            <div class="foot"><span class="sort-pill">Highest Loves</span><span class="go">查看 →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TIPS ========== -->
+    <section class="tips" id="tips">
+      <h2>选品 · 四模块开款 · 给商家的提炼</h2>
+      <div class="tips-grid">
+        <div class="tip">
+          <strong>开款优先级</strong>
+          ① 基础纯色（白黑灰）→ ② 重磅 240–280g → ③ 酸洗宽版 → ④ 华夫格 / 竹节棉 → ⑤ 速干运动 → ⑥ 拼接 / 刺绣 / 扎染按产能加。
+        </div>
+        <div class="tip">
+          <strong>走量 vs 溢价</strong>
+          走量看版型稳定与复购色；溢价不要靠大印花，靠克重数字、纱线名（匹马 / 双纱）、肌理近景、洗水缸差说明。
+        </div>
+        <div class="tip">
+          <strong>面料怎么写</strong>
+          标题写清克重（260gsm / 7.6oz）。差评高频：缩水、透、领口松、起球。预缩 + 双针领是基础款生命线。
+        </div>
+        <div class="tip">
+          <strong>运动款单独成盘</strong>
+          速干 / 压缩不要和重磅纯棉共用主图。功能款卖弹力与排汗，基础款卖手感和版型，两套话术不要混。
+        </div>
+        <div class="tip">
+          <strong>洗水是工艺不是图案</strong>
+          酸洗、成衣染、扎染按「每件略有差异」写详情。破洞克制。300gsm+ 酸洗空白 Tee 是当前跟款热点。
+        </div>
+        <div class="tip">
+          <strong>设计点到为止</strong>
+          拼接看缝位，刺绣看 3–5cm 小标。万圣节等节日印花只做 6–8 周爆发，不做全年主 SKU。避开潮牌 / 球星 / 动漫原图。
+        </div>
+        <div class="tip">
+          <strong>产品结构</strong>
+          流量 $8–16 基础色 → 利润 $14–28 重磅 / 肌理 / 洗水 → 高客单 $22–45 匹马棉 / 刺绣 / 独立站对标。
+        </div>
+        <div class="tip">
+          <strong>美 vs 欧</strong>
+          美站可更宽、更洗、更重；欧站同版型换干净配色，克重话术保留。英区检索用 t-shirt / washed tee。
+        </div>
+        <div class="tip">
+          <strong>独立站对标</strong>
+          看 Buck Mason 三条面料轨、Uniqlo U 宽版 $20、Comfort Colors 成衣染。抄结构，不要抄 Logo。
+        </div>
+        <div class="tip">
+          <strong>更新方式</strong>
+          点链接=看实时榜。改完推 GitHub Pages（同 HALLOWEN 那套），微信里用 github.io 链接打开。
+        </div>
+        <div class="tip">
+          <strong>上品路径</strong>
+          右侧黄条可展开 Temu / 全托管类目路径，点「复制全部」直接贴后台。基础纯色走「男士 T 恤」；洗水/拼接走「新奇 T 恤」；速干走运动/健身。
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="warn">效果图仅示廓形 / 面料差异，上架前请按样衣实测 + 缩水微调。平台链接跳转实时搜索，销量以各站当日排序为准。</p>
+      <p>标码男装 T 恤侦察台 · 场景 / 面料 / 洗水 / 工艺 · 非满印图形款</p>
+      <p style="margin-top:6px;">姊妹页：<a href="https://cuililiok.github.io/halloween-prints/" target="_blank" rel="noopener" style="color:#fbbf24;">万圣节印花侦察台</a></p>
+    </footer>
+  </div>
+
+  <div class="path-panel" id="pathPanel">
+    <div class="path-panel-tab" id="pathTab">上品路径</div>
+    <div class="path-panel-content">
+      <div class="path-panel-title">上品路径指南</div>
+      <p class="path-note">Temu / 全托管后台类目。点单条或「复制全部」。基础款走男士 T 恤；洗水/拼接走新奇；速干走运动健身。</p>
+
+      <div class="path-category">
+        <div class="path-category-header">
+          <span class="path-category-name">T恤（主推）</span>
+          <button type="button" class="path-copy-btn" data-copy-paths="tshirt">复制全部</button>
+        </div>
+        <div id="tshirt" hidden>
+服装、鞋靴和珠宝饰品>男士时尚>男装>男士 T 恤和背心>T 恤
+服装、鞋靴和珠宝饰品>男士时尚>男装>男装上衣、T恤、衬衫>男装T恤
+服装、鞋靴和珠宝饰品>新奇物品>新奇服装和产品>新奇服装>男士新奇服装>男士新奇T恤、衬衫、polo衫>男士新奇 T 恤
+服装、鞋靴和珠宝饰品>男士时尚>男装>男士休闲运动服>男士休闲运动衫、T恤>男士休闲运动T恤
+运动与户外用品 > 运动户外服饰 > 男士运动户外服饰 > 男士运动休闲衬衫和 Polo 衫 > T 恤
+运动与户外用品>健身、训练用品>健身服>男士>男士休闲运动衫、T恤>男士休闲运动T恤
+服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步T恤>T 恤
+        </div>
+        <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 男士时尚 &gt; 男装 &gt; 男士 T 恤和背心 &gt; T 恤</div>
+        <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 男士时尚 &gt; 男装 &gt; 男装上衣、T恤、衬衫 &gt; 男装T恤</div>
+        <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 新奇物品 &gt; 新奇服装和产品 &gt; 新奇服装 &gt; 男士新奇服装 &gt; 男士新奇T恤、衬衫、polo衫 &gt; 男士新奇 T 恤</div>
+        <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 男士时尚 &gt; 男装 &gt; 男士休闲运动服 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动T恤</div>
+        <div class="path-item">运动与户外用品 &gt; 运动户外服饰 &gt; 男士运动户外服饰 &gt; 男士运动休闲衬衫和 Polo 衫 &gt; T 恤</div>
+        <div class="path-item">运动与户外用品 &gt; 健身、训练用品 &gt; 健身服 &gt; 男士 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动T恤</div>
+        <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 体育专用服装 &gt; 跑步服 &gt; 男士跑步服 &gt; 男士跑步T恤 &gt; T 恤</div>
+      </div>
+
+      <div class="path-category">
+        <div class="path-category-header">
+          <span class="path-category-name">背心（交叉）</span>
+          <button type="button" class="path-copy-btn" data-copy-paths="vest">复制全部</button>
+        </div>
+        <div id="vest" hidden>
+服装、鞋靴和珠宝饰品 > 男士时尚 > 男装 > 男士 T 恤和背心 > 背心上衣
+服装、鞋靴和珠宝饰品 > 男士时尚 > 男装 > 男装上衣、T恤、衬衫 > 男士背心
+运动与户外用品 > 健身、训练用品 > 健身服 > 男士 > 男士休闲运动衫、T恤 > 男士休闲运动背心
+        </div>
+        <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 男士时尚 &gt; 男装 &gt; 男士 T 恤和背心 &gt; 背心上衣</div>
+        <div class="path-item">服装、鞋靴和珠宝饰品 &gt; 男士时尚 &gt; 男装 &gt; 男装上衣、T恤、衬衫 &gt; 男士背心</div>
+        <div class="path-item">运动与户外用品 &gt; 健身、训练用品 &gt; 健身服 &gt; 男士 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动背心</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">已复制</div>
+  <script>
+    (function () {
+      var toast = document.getElementById("toast");
+      var timer;
+      function show(msg) {
+        toast.textContent = msg;
+        toast.classList.add("show");
+        clearTimeout(timer);
+        timer = setTimeout(function () { toast.classList.remove("show"); }, 1600);
+      }
+      function writeClip(text, ok) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(ok);
+          return;
+        }
+        var tmp = document.createElement("textarea");
+        tmp.value = text;
+        tmp.style.position = "fixed";
+        tmp.style.opacity = "0";
+        document.body.appendChild(tmp);
+        tmp.select();
+        try { document.execCommand("copy"); ok(); } catch (e) { show("复制失败，请手动选中"); }
+        document.body.removeChild(tmp);
+      }
+      document.querySelectorAll("[data-copy]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var text = btn.getAttribute("data-copy") || "";
+          writeClip(text, function () { show("已复制：" + text); });
+        });
+      });
+      document.querySelectorAll("[data-copy-paths]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var id = btn.getAttribute("data-copy-paths");
+          var el = document.getElementById(id);
+          if (!el) return;
+          var text = el.textContent.replace(/^\s+|\s+$/g, "");
+          writeClip(text, function () {
+            btn.textContent = "已复制";
+            btn.classList.add("copied");
+            show("已复制该类目路径");
+            setTimeout(function () {
+              btn.textContent = "复制全部";
+              btn.classList.remove("copied");
+            }, 1500);
+          });
+        });
+      });
+      document.querySelectorAll(".path-item").forEach(function (item) {
+        item.addEventListener("click", function () {
+          var text = item.textContent.replace(/\s+/g, " ").replace(/^\s+|\s+$/g, "");
+          writeClip(text, function () { show("已复制单条路径"); });
+        });
+      });
+      var tab = document.getElementById("pathTab");
+      var panel = document.getElementById("pathPanel");
+      if (tab && panel) {
+        tab.addEventListener("click", function () { panel.classList.toggle("open"); });
+      }
+    })();
+  </script>
+</body>
+</html>
