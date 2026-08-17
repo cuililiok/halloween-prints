@@ -3,57 +3,540 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>万圣节印花侦察台 · 已暂停</title>
+  <meta name="description" content="2026男装万圣节图案企划侦察台 · 按题材开款 · 避雷IP · Temu SHEIN Amazon" />
+  <title>2026 男装万圣节图案企划 · 侦察台</title>
   <style>
+    :root {
+      --bg: #0b0908; --bg2: #14110f; --card: #1a1614; --line: #3a322c;
+      --text: #f4efe6; --muted: #b3a79a; --accent: #ea580c; --amber: #fbbf24;
+      --rose: #fb7185; --ok: #86efac;
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
-      background: #0a0c10;
-      color: #eef2f7;
-      padding: 24px;
+      background: radial-gradient(900px 480px at 0% -10%, #3b1508 0%, transparent 55%), #0b0908;
+      color: var(--text); min-height: 100vh; line-height: 1.55;
     }
-    .box {
-      max-width: 440px;
-      background: #161b24;
-      border: 1px solid #2a3344;
-      border-radius: 16px;
-      padding: 28px 24px;
-      text-align: center;
+    a { color: inherit; text-decoration: none; }
+    a, button, .path-item, .path-panel-tab, .ref img { cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0 72px; }
+    .hero {
+      border: 1px solid var(--line); padding: 0; overflow: hidden; margin-bottom: 18px;
+      display: grid; grid-template-columns: 1.1fr .9fr;
     }
-    .badge {
-      display: inline-block;
-      font-size: 12px;
-      color: #fde68a;
-      border: 1px solid rgba(251,191,36,.35);
-      background: rgba(251,191,36,.08);
-      border-radius: 999px;
-      padding: 4px 10px;
-      margin-bottom: 14px;
+    .hero-copy { padding: 26px 24px 22px; }
+    .kicker { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--amber); margin-bottom: 10px; }
+    h1 { font-size: clamp(1.6rem, 3.6vw, 2.3rem); font-weight: 750; margin-bottom: 10px; }
+    h1 em { font-style: normal; color: var(--accent); }
+    .sub { color: var(--muted); font-size: 14px; max-width: 560px; }
+    .warn-box {
+      margin-top: 14px; font-size: 12.5px; color: #fecaca; line-height: 1.6;
+      background: rgba(244,63,94,.08); border: 1px solid rgba(244,63,94,.35); padding: 10px 12px;
     }
-    h1 { font-size: 1.25rem; margin-bottom: 8px; }
-    p { font-size: 14px; color: #97a0b3; line-height: 1.6; margin-bottom: 18px; }
-    a {
-      display: inline-block;
-      color: #111;
-      background: #fbbf24;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 14px;
-      padding: 10px 16px;
-      border-radius: 10px;
+    .hero-cover { min-height: 280px; background: #111; }
+    .hero-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .meta { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: var(--muted); }
+    .meta strong { color: var(--text); }
+    .jump {
+      display: flex; flex-wrap: wrap; gap: 0; position: sticky; top: 0; z-index: 40;
+      background: rgba(11,9,8,.92); border: 1px solid var(--line); margin: 0 0 22px;
+    }
+    .jump a {
+      font-size: 12px; padding: 12px 10px; color: var(--muted);
+      border-bottom: 2px solid transparent; letter-spacing: .04em;
+    }
+    .jump a:hover, .jump a.is-on { color: var(--amber); border-color: var(--amber); }
+    .sec { margin: 0 0 40px; scroll-margin-top: 56px; }
+    .sec h2 { font-size: 1.35rem; margin-bottom: 8px; }
+    .sec > .desc { color: var(--muted); font-size: 13.5px; margin-bottom: 14px; max-width: 860px; }
+    .theme {
+      border-top: 1px solid var(--line); padding: 22px 0 8px; scroll-margin-top: 56px;
+    }
+    .theme h3 { font-size: 1.2rem; margin-bottom: 6px; }
+    .theme h3 small { font-weight: 500; color: var(--amber); margin-left: 8px; font-size: 12px; letter-spacing: .08em; }
+    .kv { display: grid; grid-template-columns: 88px 1fr; gap: 4px 10px; font-size: 13px; margin: 10px 0 14px; }
+    .kv b { color: var(--amber); font-weight: 600; }
+    .kv span { color: #ddd6cc; }
+    .refs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .refs figure { background: #111; margin: 0; }
+    .refs img { width: 100%; height: 240px; object-fit: cover; display: block; }
+    .refs figcaption { font-size: 11px; color: var(--muted); padding: 6px 8px; }
+    .note { font-size: 12.5px; color: #fda4af; margin-top: 10px; }
+    .ok { color: var(--ok); }
+    .ip-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ip {
+      font-size: 13px; padding: 8px 12px; border: 1px solid rgba(244,63,94,.4);
+      color: #fecaca; background: rgba(244,63,94,.08);
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+    .card {
+      display: flex; flex-direction: column; gap: 6px; background: var(--card);
+      border: 1px solid var(--line); padding: 14px; min-height: 132px;
+    }
+    .card:hover { border-color: var(--accent); }
+    .card h4 { font-size: 14px; }
+    .card p { font-size: 12px; color: var(--muted); flex: 1; }
+    .card .go { color: var(--accent); font-size: 12px; font-weight: 700; }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+    .tip { background: var(--card); border: 1px solid var(--line); padding: 12px; font-size: 13px; color: var(--muted); }
+    .tip strong { color: var(--text); display: block; margin-bottom: 4px; }
+    footer { border-top: 1px solid var(--line); padding-top: 16px; font-size: 12px; color: var(--muted); }
+    footer .warn { color: #fda4af; margin-bottom: 6px; }
+    .path-panel {
+      position: fixed; right: 0; top: 50%;
+      transform: translateY(-50%) translateX(calc(100% - 44px));
+      width: 380px; max-height: 80vh; background: #120e0c; border: 1px solid var(--amber);
+      border-right: none; z-index: 900; transition: transform .35s;
+    }
+    .path-panel:hover, .path-panel.open { transform: translateY(-50%) translateX(0); }
+    .path-panel-tab {
+      position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      width: 44px; height: 130px; background: var(--amber); color: #111;
+      display: flex; align-items: center; justify-content: center;
+      writing-mode: vertical-rl; font-weight: 700; letter-spacing: 4px;
+    }
+    .path-panel-content { padding: 16px 16px 16px 60px; overflow-y: auto; max-height: 80vh; }
+    .path-panel-title { font-size: 14px; color: var(--amber); margin-bottom: 8px; }
+    .path-note { font-size: 11px; color: var(--muted); margin-bottom: 10px; }
+    .path-copy-btn { font-size: 11px; color: var(--amber); border: 1px solid var(--amber); background: none; padding: 3px 10px; cursor: pointer; font-family: inherit; }
+    .path-item { font-size: 11px; color: #d6d3d1; padding: 7px 0; border-bottom: 1px solid #3a322c; cursor: pointer; word-break: break-all; }
+    .toast {
+      position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(16px);
+      background: #1c1917; border: 1px solid var(--amber); color: #fff;
+      padding: 8px 14px; font-size: 13px; opacity: 0; transition: .2s; z-index: 50;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-cover { min-height: 200px; }
+      .refs { grid-template-columns: 1fr; }
+      .refs img { height: 200px; }
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <div class="badge">万圣节项目已暂停</div>
-    <h1>这份侦察台暂时下线</h1>
-    <p>万圣节印花页先停更。常规男标 T 恤侦察台还在用。</p>
-    <a href="tee/">打开 T 恤侦察台</a>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="kicker">2026 男装 · 图案企划员 月上林</p>
+        <h1>万圣节图案预测<br><em>上衣先开这些题材</em></h1>
+        <p class="sub">按桌面《2026男装万圣节图案企划》重排。先定题材和工艺，再延改，不要描平台原图。</p>
+        <div class="meta">
+          <span>窗口：<strong>7–8 月爬升 · 10 月见顶</strong></span>
+          <span>先开：<strong>南瓜 + 骷髅 + 小鬼</strong></span>
+          <span>品类：<strong>T恤 / 卫衣 / 外套</strong></span>
+        </div>
+        <div class="warn-box">
+          内部学习用，禁止外传。骷髅/鬼魂是穆斯林禁忌，中东和东南亚慎开。
+          图里全是网上热款，知识产权归原权利人，只看题材、配色、排版，上架必须自己画。
+        </div>
+      </div>
+      <div class="hero-cover"><img src="ref/cover-1.jpg" alt="万圣节男装氛围" /></div>
+    </header>
+
+    <nav class="jump" aria-label="题材跳转">
+      <a href="#tops">上衣题材</a>
+      <a href="#t-color-skull">炫彩骷髅</a>
+      <a href="#t-pumpkin">南瓜</a>
+      <a href="#t-ghost">小鬼</a>
+      <a href="#t-bat">蝙蝠</a>
+      <a href="#avoid">避雷</a>
+      <a href="#remix">延改</a>
+      <a href="#pants">长裤</a>
+      <a href="#shops">平台</a>
+      <a href="tee/">常规 T 恤</a>
+    </nav>
+
+    <section class="sec" id="tops">
+      <h2>万圣节 · 上衣图案</h2>
+      <p class="desc">PPT 把上衣拆成下面这些题材。T 恤主攻：南瓜、小鬼、蝙蝠、标语打样快；骷髅/死神/荆棘走长线暗黑；3D 满印最后上。</p>
+    </section>
+
+    <article class="theme" id="t-color-skull">
+      <h3>炫彩骷髅 <small>满印</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>骷髅头、死神、扑克牌、火焰、高饱和</span>
+        <b>品类</b><span>T恤、卫衣、外套</span>
+        <b>工艺</b><span>满印</span>
+        <b>开法</b><span>先看 Pinterest 用色和排版，自己重绘铬色/镭射骷髅，不要下原图。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/color-skull-1.jpg" alt="炫彩死神参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/color-skull-2.jpg" alt="炫彩骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/color-skull-3.jpg" alt="炫彩骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-bw-reaper">
+      <h3>黑白死神 <small>满印</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>插画感、黑白、死神</span>
+        <b>品类</b><span>T恤、卫衣、外套</span>
+        <b>工艺</b><span>满印</span>
+        <b>开法</b><span>线稿/版画感，剪影镰刀最稳。不要画电影里的具体脸。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/bw-reaper-1.jpg" alt="黑白死神参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/bw-reaper-2.jpg" alt="黑白死神参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/bw-reaper-3.jpg" alt="黑白死神参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-rock">
+      <h3>摇滚骷髅 <small>满印 / 烫画</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>Y2K、图文结合、做旧、朋克、火、乐器、翅膀</span>
+        <b>品类</b><span>T恤、卫衣、外套、毛衣、背心</span>
+        <b>Tips</b><span>10 月下旬到 11 月 2 日欧美万圣节派对/音乐节，乐器+骷髅吃这波。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/rock-skull-1.jpg" alt="摇滚骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/rock-skull-2.jpg" alt="摇滚骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/rock-skull-3.jpg" alt="摇滚骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-rose">
+      <h3>浪漫骷髅 <small>满印 / 烫画</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>做旧、骷髅头、玫瑰</span>
+        <b>品类</b><span>T恤、卫衣、外套、衬衣</span>
+        <b>Tips</b><span>11 月 2 日墨西哥亡灵节，主元素就是玫瑰+骷髅，季节可拉长。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/rose-skull-1.jpg" alt="浪漫骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/rose-skull-2.jpg" alt="浪漫骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/rose-skull-3.jpg" alt="浪漫骷髅参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-poker">
+      <h3>扑克死神 <small>满印 / 烫画</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>扑克、皇冠、筛子、骷髅</span>
+        <b>品类</b><span>T恤、卫衣、外套、毛衣、背心</span>
+        <b>开法</b><span>扑克花色自己重绘，不要用赌场品牌标。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/poker-1.jpg" alt="扑克死神参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/poker-2.jpg" alt="扑克死神参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/poker-3.jpg" alt="扑克死神参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-skel">
+      <h3>骨架 <small>满印 / 烫画 / 贴布绣</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>骨架、黑白、趣味</span>
+        <b>切分</b><span>彩色骨架 · 黑白骨架 · 拼接骨架（贴布绣/仿3D）· 宠物骨架 · 趣味骷髅</span>
+        <b>品类</b><span>T恤、卫衣、外套、背心</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/skeleton-1.jpg" alt="骨架参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/skeleton-2.jpg" alt="骨架参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/skeleton-3.jpg" alt="骨架参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-spider">
+      <h3>蜘蛛 <small>满印</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>蜘蛛网、蜘蛛、红黑色</span>
+        <b>品类</b><span>T恤、卫衣、外套、背心</span>
+      </div>
+      <p class="note">注意侵权迪士尼蜘蛛侠 Logo。网和蜘蛛本体可以做，红蓝战衣标不要碰。</p>
+      <div class="refs">
+        <figure><img src="ref/spider-1.jpg" alt="蜘蛛参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/spider-2.jpg" alt="蜘蛛参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/spider-3.jpg" alt="蜘蛛参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-thorn">
+      <h3>荆棘纹身 <small>烫画 / 满印</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>荆棘、酷炫、哥特、黑白、Y2K</span>
+        <b>风格</b><span>Cyber Tribal · 荆棘/多刺美学 · 千禧复古 · 哥特/重金属</span>
+        <b>品类</b><span>T恤、卫衣、外套、背心</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/thorn-1.jpg" alt="荆棘纹身参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/thorn-2.jpg" alt="荆棘纹身参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/thorn-3.jpg" alt="荆棘纹身参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-cross">
+      <h3>十字架 <small>满印 / 烫画</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>十字架、翅膀、仿烫钻</span>
+        <b>品类</b><span>T恤、卫衣、外套、背心</span>
+      </div>
+      <p class="note">注意侵权克罗心十字架形状。荆棘/岩石/对称十字架可以自己画，Chrome Hearts 那套花纹不要描。</p>
+      <div class="refs">
+        <figure><img src="ref/cross-1.jpg" alt="十字架参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/cross-2.jpg" alt="十字架参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/cross-3.jpg" alt="十字架参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-pumpkin">
+      <h3>南瓜 <small>绣花 / 烫画 / 满印</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>南瓜、幽默、插画、高饱和、二次工艺</span>
+        <b>切分</b><span>趣味插画 · 定位印 · 循环满印 · 南瓜大表情</span>
+        <b>品类</b><span>T恤、卫衣、外套、背心、衬衫</span>
+        <b>开法</b><span>节日流量入口。成衣染色底 + 大表情最稳。满印南瓜林后上。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/pumpkin-1.jpg" alt="南瓜T恤参考" /><figcaption>大表情 · 需自绘脸</figcaption></figure>
+        <figure><img src="ref/pumpkin-2.jpg" alt="南瓜参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/pumpkin-3.jpg" alt="南瓜满印参考" /><figcaption>满印 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-ghost">
+      <h3>小鬼 <small>烫画 / 绣花 / 满印</small></h3>
+      <div class="kv">
+        <b>公式</b><span>手绘感 + 小鬼在做 xx（喝饮料、捧南瓜、戴毛线帽）</span>
+        <b>切分</b><span>单色简笔画 · 左胸小 logo · 扎染 · 循环图案 · 绣花 · 趣味插画</span>
+        <b>品类</b><span>T恤、卫衣、外套、毛衣、衬衫</span>
+      </div>
+      <p class="note">惊声尖叫经典鬼脸每年爆，但 2025 年品牌方已对 SHEIN 投诉。2026 年鬼脸必须延改到看不出原脸再上。</p>
+      <div class="refs">
+        <figure><img src="ref/ghost-1.jpg" alt="小鬼绣花参考" /><figcaption>左胸小绣 · 需自绘</figcaption></figure>
+        <figure><img src="ref/ghost-2.jpg" alt="小鬼参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/ghost-3.jpg" alt="小鬼参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-bat">
+      <h3>蝙蝠 <small>满印 / 烫画</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>蝙蝠、黑白色、手绘</span>
+        <b>切分</b><span>满印 · 小 logo · 插画 · 趣味语录</span>
+        <b>品类</b><span>T恤、卫衣、外套、毛衣、衬衫</span>
+      </div>
+      <p class="note">注意侵权蝙蝠侠 Logo。蝙蝠剪影可以做，蝙蝠标不要碰。</p>
+      <div class="refs">
+        <figure><img src="ref/bat-1.jpg" alt="蝙蝠参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/bat-2.jpg" alt="蝙蝠参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/bat-3.jpg" alt="蝙蝠参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-blood">
+      <h3>泼血肌理 <small>做旧 / 定位</small></h3>
+      <div class="kv">
+        <b>切分</b><span>泼血效果 · 血+骷髅 · 血+数字球衣 · 小丑（避开知名脸）</span>
+        <b>开法</b><span>当工艺层，不要当整件 IP 脸。球衣数字自己编，不要用球星号码套。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/blood-1.jpg" alt="泼血参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/blood-2.jpg" alt="泼血参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/blood-3.jpg" alt="泼血参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-slogan">
+      <h3>标语 / 热销文案 <small>烫画 · 打样最快</small></h3>
+      <div class="kv">
+        <b>切分</b><span>Spooky · Halloween · 经典对白 · 电影梗 · 家庭装</span>
+        <b>开法</b><span>先测文字款。电影对白和角色名不要写。Trick or Treat、Spooky Season 可以。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/slogan-1.jpg" alt="标语参考" /><figcaption>形态示意 · 需自写</figcaption></figure>
+        <figure><img src="ref/slogan-2.jpg" alt="标语参考" /><figcaption>形态示意 · 需自写</figcaption></figure>
+        <figure><img src="ref/slogan-3.jpg" alt="标语参考" /><figcaption>形态示意 · 需自写</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-3d">
+      <h3>3D 图案 <small>满印</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>3D、仿真、镂空</span>
+        <b>品类</b><span>T恤、卫衣、外套</span>
+        <b>开法</b><span>先有胸前图数据，再开满印。侧缝对花必须打样。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/aop3d-1.jpg" alt="3D满印参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/aop3d-2.jpg" alt="3D满印参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+        <figure><img src="ref/aop3d-3.jpg" alt="3D满印参考" /><figcaption>形态示意 · 需重绘</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="theme" id="t-house">
+      <h3>Haunted House / 复古海报 <small>满印 / 烫画</small></h3>
+      <div class="kv">
+        <b>关键词</b><span>插画感、复古、海报</span>
+        <b>品类</b><span>T恤、卫衣</span>
+      </div>
+      <p class="note">影视海报只参考排版，注意侵权。自己画鬼屋、月亮、枯树，不要描电影海报。</p>
+      <div class="refs">
+        <figure><img src="ref/house-1.jpg" alt="鬼屋海报参考" /><figcaption>排版参考 · 勿描原海报</figcaption></figure>
+        <figure><img src="ref/house-2.jpg" alt="鬼屋海报参考" /><figcaption>排版参考 · 勿描原海报</figcaption></figure>
+        <figure><img src="ref/house-3.jpg" alt="鬼屋海报参考" /><figcaption>排版参考 · 勿描原海报</figcaption></figure>
+      </div>
+    </article>
+
+    <section class="sec" id="avoid">
+      <h2>避雷：容易侵权的图案元素</h2>
+      <p class="desc">PPT 点名这些是欧美万圣节热门角色。注意安全开发，切勿 1:1 复刻。</p>
+      <div class="ip-grid">
+        <span class="ip">惊声尖叫</span>
+        <span class="ip">毒液</span>
+        <span class="ip">蜘蛛侠</span>
+        <span class="ip">Joker / DC 小丑</span>
+        <span class="ip">小丑回魂</span>
+        <span class="ip">克罗心十字架</span>
+        <span class="ip">怪奇物语</span>
+        <span class="ip">星期三</span>
+        <span class="ip">魔法坏女巫</span>
+        <span class="ip">惩罚者</span>
+        <span class="ip">蝙蝠侠</span>
+        <span class="ip">迈克尔·麦尔斯</span>
+        <span class="ip">圣诞夜惊魂杰克</span>
+        <span class="ip">科学怪人</span>
+        <span class="ip">万圣节小镇</span>
+      </div>
+    </section>
+
+    <section class="sec" id="remix">
+      <h2>图案爆款延改</h2>
+      <p class="desc">PPT 给了两条公式，不要整图照搬。</p>
+      <div class="tips-grid">
+        <div class="tip"><strong>公式 A</strong>排版不变，图案主题改成死神 / 骷髅。</div>
+        <div class="tip"><strong>公式 B</strong>主体和排版不变，加万圣节氛围 / 树林 / 鬼屋，色调改一档。</div>
+      </div>
+      <div class="refs" style="margin-top:14px;">
+        <figure><img src="ref/remix-1.jpg" alt="延改案例" /><figcaption>延改对照 · 只学方法</figcaption></figure>
+        <figure><img src="ref/remix-2.jpg" alt="延改案例" /><figcaption>延改对照 · 只学方法</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="sec" id="pants">
+      <h2>万圣节 · 长裤图案</h2>
+      <p class="desc">卫裤 / 工装裤 / 牛仔裤 / 沙滩裤 / 睡裤。工艺以定位印和满印为主。题材和上衣共用，不要另起一套 IP。</p>
+      <div class="kv">
+        <b>骷髅定位</b><span>单边 / 双边 / 炫彩 / 黑白。插画、对比度强。</span>
+        <b>骷髅满印</b><span>卡通、玫瑰亡灵节、恐怖、迷彩。</span>
+        <b>骨架</b><span>腿骨、手骨。定位印 / 满印 / 烫画。</span>
+        <b>蜘蛛网</b><span>定位印、蜘蛛网+英文、满印。避开蜘蛛侠标。</span>
+        <b>南瓜</b><span>格纹拼贴、定位印、炫彩、循环满印。</span>
+        <b>小鬼</b><span>定位印分冷暖。避开惊声尖叫脸。</span>
+        <b>条纹</b><span>黑白条、撞色条。芭比/恰吉彩虹条、玩具总动员格纹有 IP 风险。</span>
+        <b>蝙蝠</b><span>定位印、循环印、AB 色。避开蝙蝠侠标。</span>
+      </div>
+      <div class="refs">
+        <figure><img src="ref/pants-skull-1.jpg" alt="长裤骷髅参考" /><figcaption>长裤定位印 · 需重绘</figcaption></figure>
+        <figure><img src="ref/pants-skull-2.jpg" alt="长裤骷髅参考" /><figcaption>长裤定位印 · 需重绘</figcaption></figure>
+        <figure><img src="ref/pants-skull-3.jpg" alt="长裤满印参考" /><figcaption>长裤满印 · 需重绘</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="sec" id="shops">
+      <h2>平台热销直达</h2>
+      <div class="grid">
+        <a class="card" href="https://www.temu.com/search_result.html?search_key=halloween%20t%20shirt%20men" target="_blank" rel="noopener">
+          <h4>Temu · 万圣节男 T</h4>
+          <p>看南瓜/卡通/骷髅谁在前排。</p>
+          <span class="go">查看 →</span>
+        </a>
+        <a class="card" href="https://us.shein.com/pdsearch/mens%20halloween%20graphic%20tee/?sort=7" target="_blank" rel="noopener">
+          <h4>SHEIN · Halloween Tee</h4>
+          <p>看哥特和做旧占比。</p>
+          <span class="go">查看 →</span>
+        </a>
+        <a class="card" href="https://www.amazon.com/s?k=halloween+shirts+for+men&s=exact-aware-popularity-rank" target="_blank" rel="noopener">
+          <h4>Amazon · 人气</h4>
+          <p>看差评：缩水、印裂、偏小。</p>
+          <span class="go">查看 →</span>
+        </a>
+        <a class="card" href="https://www.pinterest.com/search/pins/?q=halloween%20graphic%20tee%20men" target="_blank" rel="noopener">
+          <h4>Pinterest · 构图</h4>
+          <p>PPT 也写了：只看用色和排版。</p>
+          <span class="go">查看 →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2>跟款要点</h2>
+      <div class="tips-grid">
+        <div class="tip"><strong>节奏</strong>Google 趋势连续三年都是 7–8 月爬、10 月顶。8 月中上架，10 月第一周冲量。</div>
+        <div class="tip"><strong>先开</strong>南瓜大表情、小鬼左胸绣、标语。骷髅/死神长线。3D 满印等数据。</div>
+        <div class="tip"><strong>延改</strong>换主题或加氛围色，不要整图搬。惊声尖叫脸 2026 不要原样上。</div>
+        <div class="tip"><strong>市场</strong>中东/东南亚避开骷髅鬼魂。欧美可以，但仍要躲 IP。</div>
+        <div class="tip"><strong>免审</strong>印花走新奇 T，暗黑做旧走休闲 T。右侧黄条复制。</div>
+        <div class="tip"><strong>白 Tee</strong>克重华夫格酸洗不在这页。<a href="tee/" style="color:#fbbf24;">常规男标 T 恤</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="warn">图来自企划 PPT 的网络热款截图，仅供内部看题材。上架请自行绘图并避开 IP。</p>
+      <p>2026 男装万圣节图案企划 · 月上林 · 姊妹页 <a href="tee/" style="color:#fbbf24;">常规男标 T 恤</a></p>
+    </footer>
   </div>
+
+  <div class="path-panel" id="pathPanel">
+    <div class="path-panel-tab" id="pathTab">免审路径</div>
+    <div class="path-panel-content">
+      <div class="path-panel-title">免审路径</div>
+      <p class="path-note">万圣节印花优先新奇 T，不要挂男士时尚主路径。</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span>三条免审</span>
+        <button type="button" class="path-copy-btn" data-copy-paths="exempt">复制全部</button>
+      </div>
+      <div id="exempt" hidden>
+【新奇T】服装、鞋靴和珠宝饰品 > 新奇物品 > 新奇服装和产品 > 新奇服装 > 男士新奇服装 > 男士新奇T恤、衬衫、polo衫 > 男士新奇 T 恤
+【休闲T】运动与户外用品 > 运动户外服饰 > 男士运动户外服饰 > 男士运动休闲衬衫和 Polo 衫 > T 恤
+【运动T】运动与户外用品 > 健身、训练用品 > 健身服 > 男士 > 男士休闲运动衫、T恤 > 男士休闲运动T恤
+      </div>
+      <div class="path-item"><b>新奇T</b>　服装、鞋靴和珠宝饰品 &gt; 新奇物品 &gt; 新奇服装和产品 &gt; 新奇服装 &gt; 男士新奇服装 &gt; 男士新奇T恤、衬衫、polo衫 &gt; 男士新奇 T 恤</div>
+      <div class="path-item"><b>休闲T</b>　运动与户外用品 &gt; 运动户外服饰 &gt; 男士运动户外服饰 &gt; 男士运动休闲衬衫和 Polo 衫 &gt; T 恤</div>
+      <div class="path-item"><b>运动T</b>　运动与户外用品 &gt; 健身、训练用品 &gt; 健身服 &gt; 男士 &gt; 男士休闲运动衫、T恤 &gt; 男士休闲运动T恤</div>
+    </div>
+  </div>
+  <div class="toast" id="toast">已复制</div>
+  <script>
+    (function () {
+      var toast = document.getElementById("toast"), timer;
+      function show(msg) {
+        toast.textContent = msg; toast.classList.add("show");
+        clearTimeout(timer); timer = setTimeout(function () { toast.classList.remove("show"); }, 1600);
+      }
+      function writeClip(text, ok) {
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(ok); return; }
+        var tmp = document.createElement("textarea"); tmp.value = text; document.body.appendChild(tmp); tmp.select();
+        try { document.execCommand("copy"); ok(); } catch (e) {}
+        document.body.removeChild(tmp);
+      }
+      document.querySelectorAll("[data-copy-paths]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var el = document.getElementById(btn.getAttribute("data-copy-paths"));
+          if (!el) return;
+          writeClip(el.textContent.replace(/^\s+|\s+$/g, ""), function () { show("已复制类目路径"); });
+        });
+      });
+      document.querySelectorAll(".path-item").forEach(function (item) {
+        item.addEventListener("click", function () {
+          writeClip(item.textContent.replace(/\s+/g, " ").trim(), function () { show("已复制单条路径"); });
+        });
+      });
+      var tab = document.getElementById("pathTab"), panel = document.getElementById("pathPanel");
+      if (tab && panel) tab.addEventListener("click", function () { panel.classList.toggle("open"); });
+      var links = Array.prototype.slice.call(document.querySelectorAll(".jump a[href^='#']"));
+      window.addEventListener("scroll", function () {
+        var y = window.scrollY + 80, cur = "";
+        links.forEach(function (a) {
+          var el = document.getElementById((a.getAttribute("href") || "").slice(1));
+          if (el && el.offsetTop <= y) cur = a.getAttribute("href");
+        });
+        links.forEach(function (a) { a.classList.toggle("is-on", a.getAttribute("href") === cur); });
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
