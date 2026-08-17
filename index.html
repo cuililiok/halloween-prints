@@ -1,1421 +1,1209 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>万圣节T恤印花整理 - Temu / Shein / Amazon / 独立站</title>
-    <style>
-        :root {
-            --bg-dark: #0a0a0a;
-            --bg-card: #161616;
-            --bg-card-hover: #1e1e1e;
-            --text-primary: #f0f0f0;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666;
-            --accent-orange: #ff6b1a;
-            --accent-blood: #8b0000;
-            --accent-purple: #6a0dad;
-            --accent-green: #39ff14;
-            --accent-temu: #ff4500;
-            --accent-shein: #d9418e;
-            --accent-amazon: #ff9900;
-            --accent-indie: #6a0dad;
-            --border-dark: #2a2a2a;
-            --shadow-glow: 0 0 20px rgba(255, 107, 26, 0.15);
-            --sidebar-width: 220px;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background:
-                radial-gradient(ellipse at 20% 30%, rgba(106, 13, 173, 0.08) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 70%, rgba(139, 0, 0, 0.06) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 100%, rgba(255, 107, 26, 0.04) 0%, transparent 60%);
-            pointer-events: none;
-            z-index: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="万圣节男装T恤印花热销侦察台 · Temu / SHEIN / Amazon / 独立站 · 标码多版型开款" />
+  <title>万圣节男装T恤印花 · 侦察台 · Temu / SHEIN / Amazon / 独立站</title>
+  <style>
+    :root {
+      --bg: #0a0c10;
+      --bg2: #11151c;
+      --card: #161b24;
+      --card-hover: #1c2330;
+      --line: #2a3344;
+      --text: #eef2f7;
+      --muted: #97a0b3;
+      --accent: #f43f5e;
+      --teal: #2dd4bf;
+      --blue: #38bdf8;
+      --violet: #a78bfa;
+      --amber: #fbbf24;
+      --green: #4ade80;
+      --orange: #fb923c;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      background:
+        radial-gradient(1000px 520px at 0% -10%, #27151a 0%, transparent 55%),
+        radial-gradient(800px 480px at 100% 0%, #2a1830 0%, transparent 50%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1140px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 64px; }
 
-        /* ===== 左侧边栏 ===== */
-        .sidebar {
-            position: fixed;
-            top: 0; left: 0; bottom: 0;
-            width: var(--sidebar-width);
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-right: 1px solid var(--border-dark);
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            padding: 24px 0;
-            overflow-y: auto;
-            transition: opacity 0.3s ease;
-        }
-        .sidebar-spider-web {
-            position: absolute;
-            top: -5px; right: -5px;
-            width: 120px; height: 120px;
-            pointer-events: none; z-index: 0;
-            opacity: 0.7;
-            animation: webSway 8s ease-in-out infinite;
-            transform-origin: top right;
-        }
-        .sidebar-spider-web svg { width: 100%; height: 100%; }
-        @keyframes webSway {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(1.5deg); }
-        }
-        .sidebar-spider-silk {
-            position: absolute;
-            top: 100px; right: 40px;
-            width: 1px; height: 250px;
-            background: linear-gradient(to bottom, rgba(220,220,220,0.35), rgba(220,220,220,0.08));
-            pointer-events: none; z-index: 0;
-        }
-        .sidebar-spider {
-            position: absolute;
-            top: 95px; right: 18px;
-            width: 60px; height: 60px;
-            pointer-events: none; z-index: 1;
-            animation: spiderCrawlDown 6s ease-in-out infinite;
-        }
-        .sidebar-spider svg { width: 100%; height: 100%; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8)); }
-        @keyframes spiderCrawlDown {
-            0% { top: 95px; transform: rotate(0deg); }
-            15% { top: 110px; transform: rotate(3deg); }
-            30% { top: 140px; transform: rotate(-2deg); }
-            45% { top: 180px; transform: rotate(2deg); }
-            60% { top: 220px; transform: rotate(-1deg); }
-            75% { top: 180px; transform: rotate(2deg); }
-            90% { top: 130px; transform: rotate(-2deg); }
-            100% { top: 95px; transform: rotate(0deg); }
-        }
+    header.hero {
+      background: linear-gradient(135deg, #1a1210 0%, #1a1226 55%, #101820 100%);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 26px 22px 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .badge {
+      font-size: 12px; padding: 4px 10px; border-radius: 999px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--muted);
+    }
+    .badge.hot { border-color: rgba(244,63,94,.45); color: #fecdd3; background: rgba(244,63,94,.12); }
+    .badge.ok { border-color: rgba(45,212,191,.4); color: #99f6e4; background: rgba(45,212,191,.1); }
+    h1 { font-size: clamp(1.3rem, 3.4vw, 1.8rem); font-weight: 750; margin-bottom: 8px; letter-spacing: .01em; }
+    h1 .a { color: var(--violet); }
+    h1 .b { color: var(--orange); }
+    .sub { color: var(--muted); font-size: 14px; max-width: 820px; }
+    .meta { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: var(--muted); }
+    .meta strong { color: var(--text); font-weight: 600; }
 
-        .sidebar-brand {
-            font-size: 18px; font-weight: 900;
-            color: var(--accent-orange);
-            letter-spacing: 2px; text-transform: uppercase;
-            display: flex; align-items: center; gap: 8px;
-            padding: 0 24px 24px;
-            border-bottom: 1px solid var(--border-dark);
-            margin-bottom: 16px;
-        }
-        .sidebar-brand .icon { font-size: 22px; }
-        .sidebar-nav { list-style: none; padding: 0 12px; flex: 1; }
-        .sidebar-nav li { margin-bottom: 4px; }
-        .sidebar-nav > li > a {
-            display: flex; align-items: center; gap: 10px;
-            color: var(--text-secondary); text-decoration: none;
-            font-size: 13px; padding: 10px 12px;
-            border-radius: 8px; transition: all 0.3s;
-        }
-        .sidebar-nav > li > a:hover {
-            color: var(--accent-orange);
-            background: rgba(255, 107, 26, 0.1);
-            transform: translateX(4px);
-        }
+    .tracks {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 16px;
+    }
+    @media (max-width: 720px) { .tracks { grid-template-columns: 1fr; } }
+    .track-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px;
+    }
+    .track-card h3 { font-size: 15px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .track-card p { font-size: 13px; color: var(--muted); }
+    .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+    .dot.a { background: var(--violet); }
+    .dot.b { background: var(--orange); }
 
-        .nav-group { margin-bottom: 8px; }
-        .nav-group-title {
-            display: flex; align-items: center; gap: 10px;
-            color: var(--text-primary); font-size: 13px; font-weight: 700;
-            padding: 10px 12px; cursor: pointer;
-            border-radius: 8px; transition: all 0.3s;
-            user-select: none; letter-spacing: 1px;
-        }
-        .nav-group-title:hover { background: rgba(255, 107, 26, 0.08); }
-        .nav-group-title .nav-icon { font-size: 16px; width: 20px; text-align: center; }
-        .nav-group-title .arrow {
-            margin-left: auto; font-size: 10px;
-            transition: transform 0.3s; color: var(--text-muted);
-        }
-        .nav-group.open .nav-group-title .arrow { transform: rotate(90deg); }
-        .nav-group-items {
-            list-style: none; max-height: 0; overflow: hidden;
-            transition: max-height 0.4s ease; padding: 0; margin: 0;
-        }
-        .nav-group.open .nav-group-items { max-height: 600px; }
-        .nav-group-items li { margin: 2px 0; }
-        .nav-group-items a {
-            display: flex; align-items: center; gap: 10px;
-            color: var(--text-secondary); text-decoration: none;
-            font-size: 12px; padding: 8px 12px 8px 36px;
-            border-radius: 8px; transition: all 0.3s;
-        }
-        .nav-group-items a:hover {
-            color: var(--accent-orange);
-            background: rgba(255, 107, 26, 0.1);
-            transform: translateX(4px);
-        }
-        .nav-group-items .nav-icon { font-size: 14px; width: 18px; text-align: center; }
+    .price-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .price {
+      font-size: 12px; padding: 6px 10px; border-radius: 8px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.03);
+    }
+    .price b { color: var(--amber); }
+    .update-note { margin-top: 10px; font-size: 12px; color: var(--muted); }
 
-        /* ===== 主内容区 ===== */
-        .main-content { margin-left: var(--sidebar-width); position: relative; }
+    .jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 6px; }
+    .jump a {
+      font-size: 13px; padding: 8px 14px; border-radius: 999px;
+      background: var(--card); border: 1px solid var(--line); transition: .15s;
+    }
+    .jump a:hover { border-color: var(--accent); }
 
-        /* ===== 顶部版权声明 ===== */
-        .copyright-bar {
-            position: fixed;
-            top: 0; left: var(--sidebar-width); right: 0;
-            background: linear-gradient(90deg, rgba(139, 0, 0, 0.95), rgba(0, 0, 0, 0.98), rgba(139, 0, 0, 0.95));
-            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-            border-bottom: 2px solid rgba(255, 107, 26, 0.5);
-            padding: 12px 24px; text-align: center; z-index: 9999;
-            font-size: 14px; color: #ffcc00;
-            letter-spacing: 1.5px; font-weight: 600;
-            animation: copyrightPulse 3s ease-in-out infinite;
-        }
-        @keyframes copyrightPulse {
-            0%, 100% { box-shadow: 0 2px 12px rgba(139, 0, 0, 0.3); }
-            50% { box-shadow: 0 2px 20px rgba(255, 107, 26, 0.4); }
-        }
+    /* 印花矩阵 */
+    .fit-section {
+      margin: 18px 0 8px;
+      background: var(--bg2);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 16px 14px;
+      scroll-margin-top: 12px;
+    }
+    .fit-section h2 {
+      font-size: 1.1rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;
+    }
+    .fit-section > .desc { font-size: 13px; color: var(--muted); margin-bottom: 12px; max-width: 900px; }
+    .fit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 14px;
+    }
+    .fit {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      transition: .15s;
+      display: flex;
+      flex-direction: column;
+    }
+    .fit:hover { border-color: rgba(251,191,36,.45); background: var(--card-hover); }
+    .fit .rank {
+      font-size: 11px; font-weight: 700; color: var(--amber); margin-bottom: 8px; letter-spacing: .02em;
+    }
+    .prod-board {
+      display: grid; grid-template-columns: 132px 1fr; gap: 10px; margin-bottom: 10px;
+    }
+    .prod-shot {
+      background: #f4f4f6; border-radius: 10px; overflow: hidden;
+      aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;
+    }
+    .prod-shot img { width: 100%; height: 100%; object-fit: cover; }
+    .prod-spec { background: rgba(0,0,0,.25); border-radius: 10px; padding: 8px 10px; }
+    .prod-spec .spec-h {
+      font-size: 11px; font-weight: 700; color: var(--muted); margin-bottom: 4px;
+      border-left: 3px solid var(--blue); padding-left: 8px;
+    }
+    .prod-spec table { width: 100%; border-collapse: collapse; }
+    .prod-spec td { font-size: 11px; padding: 2px 0; border-bottom: 1px dashed rgba(255,255,255,.06); color: var(--muted); }
+    .prod-spec tr:last-child td { border-bottom: none; }
+    .prod-spec td:first-child { color: #94a3b8; width: 46%; }
+    .prod-spec td:last-child { text-align: right; color: #fbbf24; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .prod-spec .spec-f {
+      margin-top: 4px; font-size: 10px; color: var(--muted);
+    }
+    @media (max-width: 520px) {
+      .prod-board { grid-template-columns: 1fr; }
+      .prod-shot { max-height: 260px; aspect-ratio: 1 / 1; }
+    }
+    .fit h4 { font-size: 14px; margin-bottom: 4px; color: #f1f5f9; }
+    .fit p { font-size: 12px; color: #94a3b8; flex: 1; }
+    .fit .kw {
+      font-size: 11px; color: #7dd3fc; font-family: ui-monospace, Consolas, monospace; margin: 6px 0;
+    }
+    .prio {
+      align-self: flex-start; font-size: 11px; font-weight: 700;
+      padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line);
+    }
+    .prio.must { color: #fecdd3; border-color: rgba(244,63,94,.4); background: rgba(244,63,94,.1); }
+    .prio.rec { color: #99f6e4; border-color: rgba(45,212,191,.35); background: rgba(45,212,191,.1); }
+    .prio.test { color: #fde68a; border-color: rgba(251,191,36,.35); background: rgba(251,191,36,.08); }
 
-        /* ===== Hero ===== */
-        .hero {
-            min-height: auto;
-            display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            text-align: center; position: relative; z-index: 1;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 50%, #0a0a0a 100%);
-            padding: 80px 40px 40px;
-        }
-        .hero-bar {
-            background: #000;
-            padding: 40px 80px;
-            border-top: 3px solid var(--accent-orange);
-            border-bottom: 3px solid var(--accent-orange);
-            box-shadow: var(--shadow-glow);
-        }
-        .hero h1 {
-            font-size: clamp(36px, 6vw, 64px);
-            font-weight: 900; color: #fff;
-            letter-spacing:4px; line-height: 1.3;
-        }
-        .hero h1 span { color: var(--accent-orange); }
-        .hero-subtitle {
-            margin-top: 20px; font-size: 14px;
-            color: var(--text-secondary);
-            letter-spacing: 8px; text-transform: uppercase;
-        }
-        .hero-deco {
-            position: absolute; font-size: 120px;
-            opacity: 0.05; pointer-events: none;
-        }
-        .hero-deco.top-left { top: 8%; left: 5%; transform: rotate(-15deg); }
-        .hero-deco.bottom-right { bottom: 8%; right: 5%; transform: rotate(15deg); }
+    .size-chart-box {
+      margin-top: 16px;
+      background: #050505;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      overflow-x: auto;
+    }
+    .size-chart-box h3 { font-size: 14px; margin-bottom: 6px; }
+    .size-chart-box .chart-note { font-size: 12px; color: var(--muted); margin-bottom: 10px; max-width: 900px; }
+    .size-chart { width: 100%; border-collapse: collapse; min-width: 640px; }
+    .size-chart th, .size-chart td {
+      font-size: 12px; padding: 7px 10px; border: 1px solid rgba(255,255,255,.08); text-align: center;
+    }
+    .size-chart th { background: #141a24; color: var(--text); font-weight: 700; }
+    .size-chart td:first-child, .size-chart th:first-child { text-align: left; color: var(--muted); }
+    .size-chart tr:nth-child(even) td { background: #0a0a0a; }
+    .size-chart .hl { color: #fde68a; font-weight: 700; }
 
-        /* ===== 平台概览卡片 ===== */
-        .platform-overview {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px; max-width: 1200px; width: 100%;
-            margin: 40px auto 0; position: relative; z-index: 2;
-        }
-        .platform-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-dark);
-            border-radius: 12px; padding: 24px 20px;
-            text-align: center; text-decoration: none;
-            transition: all 0.4s; position: relative; overflow: hidden;
-        }
-        .platform-card::before {
-            content: ''; position: absolute;
-            top: 0; left: 0; right: 0; height: 3px;
-            opacity: 0; transition: opacity 0.3s;
-        }
-        .platform-card[data-platform="temu"]::before { background: var(--accent-temu); }
-        .platform-card[data-platform="shein"]::before { background: var(--accent-shein); }
-        .platform-card[data-platform="amazon"]::before { background: var(--accent-amazon); }
-        .platform-card[data-platform="indie"]::before { background: var(--accent-indie); }
-        .platform-card[data-platform="temu"]:hover { border-color: var(--accent-temu); box-shadow: 0 8px 24px rgba(0,0,0,0.4), 0 0 20px rgba(255,69,0,0.15); }
-        .platform-card[data-platform="shein"]:hover { border-color: var(--accent-shein); box-shadow: 0 8px 24px rgba(0,0,0,0.4), 0 0 20px rgba(217,65,142,0.15); }
-        .platform-card[data-platform="amazon"]:hover { border-color: var(--accent-amazon); box-shadow: 0 8px 24px rgba(0,0,0,0.4), 0 0 20px rgba(255,153,0,0.15); }
-        .platform-card[data-platform="indie"]:hover { border-color: var(--accent-indie); box-shadow: 0 8px 24px rgba(0,0,0,0.4), 0 0 20px rgba(106,13,173,0.15); }
-        .platform-card:hover::before { opacity: 1; }
-        .platform-card:hover { transform: translateY(-4px); }
-        .platform-card .pf-icon { font-size: 36px; margin-bottom: 12px; }
-        .platform-card .pf-name { font-size: 18px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px; }
-        .platform-card .pf-count { font-size: 13px; color: var(--text-muted); }
-        .platform-card .pf-desc { font-size: 12px; color: var(--text-secondary); margin-top: 8px; opacity: 0.7; }
+    .region { margin-top: 28px; scroll-margin-top: 14px; }
+    .region-head {
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 4px;
+    }
+    .region-head h2 { font-size: 1.25rem; }
+    .region-head .kw { font-size: 12px; color: var(--muted); }
+    .region-head code { color: var(--amber); font-family: ui-monospace, Consolas, monospace; font-size: 11px; }
+    .lane { margin: 16px 0 8px; }
+    .lane-title {
+      font-size: 14px; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px; letter-spacing: .02em;
+    }
+    .tag.print { background: rgba(167,139,250,.15); color: #ddd6fe; border: 1px solid rgba(167,139,250,.35); }
+    .tag.custom { background: rgba(45,212,191,.12); color: #99f6e4; border: 1px solid rgba(45,212,191,.35); }
+    .tag.style { background: rgba(251,191,36,.12); color: #fde68a; border: 1px solid rgba(251,191,36,.3); }
+    .tag.base { background: rgba(56,189,248,.12); color: #bae6fd; border: 1px solid rgba(56,189,248,.3); }
+    .tag.fit { background: rgba(251,146,60,.12); color: #fed7aa; border: 1px solid rgba(251,146,60,.35); }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 14px; display: flex; flex-direction: column; gap: 6px; transition: .15s; position: relative; overflow: hidden;
+    }
+    .card:hover { border-color: var(--accent); background: var(--card-hover); transform: translateY(-2px); }
+    .card .icon { font-size: 20px; line-height: 1; }
+    .card h4 { font-size: 14px; font-weight: 700; }
+    .card p { font-size: 12px; color: var(--muted); flex: 1; }
+    .card .foot {
+      display: flex; align-items: center; justify-content: space-between; margin-top: 4px;
+    }
+    .card .go { color: var(--accent); font-weight: 700; font-size: 12px; }
+    .sort-pill {
+      font-size: 10px; color: var(--muted); border: 1px solid var(--line);
+      padding: 2px 8px; border-radius: 999px; background: rgba(0,0,0,.2);
+    }
+    /* 图片卡 */
+    .pcard {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      overflow: hidden; display: flex; flex-direction: column; transition: .15s;
+    }
+    .pcard:hover { border-color: var(--amber); transform: translateY(-2px); }
+    .pcard .pimg { aspect-ratio: 1/1; overflow: hidden; background: #0d0d0d; position: relative; }
+    .pcard .pimg img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .pcard:hover .pimg img { transform: scale(1.06); }
+    .pcard .pbadge {
+      position: absolute; top: 8px; left: 8px; font-size: 10px; font-weight: 800;
+      padding: 2px 8px; border-radius: 6px; letter-spacing: .05em; text-transform: uppercase;
+    }
+    .pbadge.temu { background: rgba(255,69,0,.9); color: #fff; }
+    .pbadge.shein { background: rgba(217,65,142,.9); color: #fff; }
+    .pbadge.amazon { background: rgba(255,153,0,.9); color: #000; }
+    .pbadge.indie { background: rgba(106,13,173,.9); color: #fff; }
+    .pcard .pbody { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 3px; flex: 1; }
+    .pcard h4 { font-size: 13px; font-weight: 700; }
+    .pcard p { font-size: 11px; color: var(--muted); flex: 1; }
+    .pcard .ptags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .pcard .ptag {
+      font-size: 9px; padding: 1px 6px; border-radius: 4px; color: var(--muted);
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+    }
+    .pcard .pfoot { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--line); }
+    .pcard .pprice { font-size: 12px; font-weight: 700; color: var(--amber); }
+    .pcard .psize { font-size: 10px; color: var(--muted); }
 
-        /* ===== 主题区块 ===== */
-        .theme-section {
-            position: relative; z-index: 2;
-            width: 100%; max-width: 1400px;
-            margin: 0 auto 20px;
-        }
-        .theme-section.platform-section { margin-top: 60px; }
-        .theme-header { text-align: center; margin-bottom: 24px; position: relative; }
-        .theme-header .theme-icon-row {
-            font-size: 28px; letter-spacing: 16px;
-            margin-bottom: 12px; opacity: 0.6;
-        }
-        .theme-header h2 {
-            font-size: clamp(28px, 4vw, 42px);
-            font-weight: 900; letter-spacing: 6px;
-            line-height: 1.3; position: relative; display: inline-block;
-        }
-        .theme-header .theme-subtitle {
-            font-size: 13px; letter-spacing: 4px;
-            text-transform: uppercase; margin-top: 10px; opacity: 0.5;
-        }
-        .theme-divider {
-            display: flex; align-items: center; justify-content: center;
-            gap: 16px; margin: 10px auto 16px; opacity: 0.3;
-        }
-        .theme-divider .line { width: 60px; height: 1px; background: var(--text-muted); }
+    .tips {
+      margin-top: 28px; background: var(--bg2); border: 1px solid var(--line);
+      border-radius: 16px; padding: 16px;
+    }
+    .tips h2 { font-size: 1.05rem; margin-bottom: 10px; }
+    .tips-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px;
+    }
+    .tip {
+      background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+    }
+    .tip strong { color: var(--text); display: block; margin-bottom: 4px; font-size: 13px; }
+    .tip p { font-size: 12px; color: var(--muted); }
+    .copy-bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+    .copy-bar button {
+      font-size: 12px; padding: 6px 12px; border-radius: 8px; cursor: pointer;
+      background: var(--card); color: var(--text); border: 1px solid var(--line); transition: .15s;
+    }
+    .copy-bar button:hover { border-color: var(--teal); }
+    .toast {
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(80px);
+      background: var(--teal); color: #04211d; font-size: 13px; font-weight: 700;
+      padding: 8px 18px; border-radius: 999px; transition: transform .25s; z-index: 99;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
 
-        /* 平台主题色 */
-        .platform-temu h2 { background: linear-gradient(135deg, #ff4500 0%, #ff7f50 50%, #ff4500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .platform-shein h2 { background: linear-gradient(135deg, #d9418e 0%, #ff69b4 50%, #d9418e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .platform-amazon h2 { background: linear-gradient(135deg, #ff9900 0%, #ffb732 50%, #ff9900 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .platform-indie h2 { background: linear-gradient(135deg, #6a0dad 0%, #b366ff 50%, #6a0dad 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-
-        .platform-bg { border-radius: 16px; padding: 30px 24px; border: 1px solid var(--border-dark); }
-        .platform-temu .platform-bg { background: radial-gradient(ellipse at center, rgba(255, 69, 0, 0.06) 0%, transparent 70%); border-color: rgba(255, 69, 0, 0.1); }
-        .platform-shein .platform-bg { background: radial-gradient(ellipse at center, rgba(217, 65, 142, 0.06) 0%, transparent 70%); border-color: rgba(217, 65, 142, 0.12); }
-        .platform-amazon .platform-bg { background: radial-gradient(ellipse at center, rgba(255, 153, 0, 0.06) 0%, transparent 70%); border-color: rgba(255, 153, 0, 0.1); }
-        .platform-indie .platform-bg { background: radial-gradient(ellipse at center, rgba(106, 13, 173, 0.06) 0%, transparent 70%); border-color: rgba(106, 13, 173, 0.12); }
-
-        /* ===== 印花分类标签 ===== */
-        .theme-tag {
-            display: inline-flex; align-items: center; gap: 6px;
-            font-size: 12px; font-weight: 700;
-            padding: 4px 14px; border-radius: 16px;
-            margin-bottom: 16px; letter-spacing: 1px;
-        }
-        .tag-skull { background: rgba(139,0,0,0.15); color: #ff6b6b; border: 1px solid rgba(139,0,0,0.3); }
-        .tag-pumpkin { background: rgba(255,107,26,0.15); color: #ff8c42; border: 1px solid rgba(255,107,26,0.3); }
-        .tag-reaper { background: rgba(100,100,100,0.15); color: #ccc; border: 1px solid rgba(100,100,100,0.3); }
-        .tag-gothic { background: rgba(106,13,173,0.15); color: #b366ff; border: 1px solid rgba(106,13,173,0.3); }
-        .tag-abstract { background: rgba(57,255,20,0.1); color: #39ff14; border: 1px solid rgba(57,255,20,0.2); }
-        .tag-cartoon { background: rgba(255,215,0,0.12); color: #ffd700; border: 1px solid rgba(255,215,0,0.25); }
-        .tag-typography { background: rgba(70,130,180,0.15); color: #87ceeb; border: 1px solid rgba(70,130,180,0.3); }
-        .tag-vintage { background: rgba(210,180,140,0.12); color: #d2b48c; border: 1px solid rgba(210,180,140,0.25); }
-
-        /* ===== 产品卡片网格 ===== */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px; margin-bottom: 24px;
-        }
-        .product-card {
-            background: var(--bg-card);
-            border-radius: 12px; overflow: hidden;
-            border: 1px solid var(--border-dark);
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            display: flex; flex-direction: column;
-            position: relative;
-        }
-        .product-card:hover {
-            border-color: var(--accent-orange);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.4), var(--shadow-glow);
-            transform: translateY(-4px);
-        }
-        .product-card .card-img {
-            width: 100%; aspect-ratio: 1;
-            overflow: hidden; position: relative;
-            background: #0d0d0d;
-        }
-        .product-card .card-img img {
-            width: 100%; height: 100%;
-            object-fit: cover; transition: transform 0.5s;
-        }
-        .product-card:hover .card-img img { transform: scale(1.08); }
-        .product-card .card-platform-badge {
-            position: absolute; top: 8px; left: 8px;
-            font-size: 10px; font-weight: 700;
-            padding: 3px 8px; border-radius: 4px;
-            letter-spacing: 1px; text-transform: uppercase;
-        }
-        .badge-temu { background: rgba(255,69,0,0.85); color: #fff; }
-        .badge-shein { background: rgba(217,65,142,0.85); color: #fff; }
-        .badge-amazon { background: rgba(255,153,0,0.85); color: #000; }
-        .badge-indie { background: rgba(106,13,173,0.85); color: #fff; }
-
-        .product-card .card-body {
-            padding: 12px 14px 14px;
-            display: flex; flex-direction: column; gap: 4px;
-            flex: 1;
-        }
-        .product-card .card-title {
-            font-size: 14px; font-weight: 700;
-            color: var(--text-primary); line-height: 1.3;
-        }
-        .product-card .card-desc {
-            font-size: 11px; color: var(--text-secondary);
-            opacity: 0.7; line-height: 1.4;
-        }
-        .product-card .card-tags {
-            display: flex; flex-wrap: wrap; gap: 4px;
-            margin-top: 6px;
-        }
-        .product-card .card-tag {
-            font-size: 10px; padding: 2px 6px;
-            border-radius: 4px; color: var(--text-muted);
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-        .product-card .card-footer {
-            display: flex; justify-content: space-between;
-            align-items: center; margin-top: 8px;
-            padding-top: 8px; border-top: 1px solid var(--border-dark);
-        }
-        .product-card .card-price {
-            font-size: 13px; font-weight: 700;
-            color: var(--accent-orange);
-        }
-        .product-card .card-link {
-            font-size: 11px; color: var(--text-muted);
-            text-decoration: none; transition: color 0.3s;
-        }
-        .product-card .card-link:hover { color: var(--accent-orange); }
-
-        /* 印花分类标题行 */
-        .category-row {
-            display: flex; align-items: center; gap: 12px;
-            margin: 20px 0 12px; flex-wrap: wrap;
-        }
-        .category-row .cat-title {
-            font-size: 15px; font-weight: 700;
-            color: var(--text-primary); letter-spacing: 1px;
-        }
-        .category-row .cat-line {
-            flex: 1; height: 1px;
-            background: linear-gradient(90deg, var(--border-dark), transparent);
-        }
-
-        /* ===== 页脚 ===== */
-        .footer {
-            text-align: center; padding: 40px 24px 60px;
-            color: var(--text-muted); font-size: 12px;
-            border-top: 1px solid var(--border-dark);
-            margin-top: 40px;
-        }
-        .footer a { color: var(--accent-orange); text-decoration: none; }
-
-        /* ===== 响应式 ===== */
-        @media (max-width: 1200px) {
-            .product-grid { grid-template-columns: repeat(3, 1fr); }
-            .platform-overview { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .sidebar { width: 60px; }
-            .sidebar-brand span:not(.icon) { display: none; }
-            .nav-group-title span:not(.nav-icon) { display: none; }
-            .nav-group-title .arrow { display: none; }
-            .nav-group-items { display: none; }
-            .main-content { margin-left: 60px; }
-            .copyright-bar { left: 60px; font-size: 11px; padding: 8px 12px; }
-            .product-grid { grid-template-columns: repeat(2, 1fr); }
-            .platform-overview { grid-template-columns: 1fr; }
-            .hero-bar { padding: 30px 30px; }
-        }
-        @media (max-width: 480px) {
-            .product-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+    footer {
+      margin-top: 32px; text-align: center; font-size: 12px; color: var(--muted);
+      border-top: 1px solid var(--line); padding-top: 18px;
+    }
+    footer .warn { color: #fca5a5; margin-bottom: 6px; }
+  </style>
 </head>
 <body>
-    <!-- ===== 左侧边栏 ===== -->
-    <nav class="sidebar">
-        <div class="sidebar-spider-web">
-            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0" y1="0" x2="120" y2="120" stroke="rgba(200,200,200,0.2)" stroke-width="0.6"/>
-                <line x1="120" y1="0" x2="0" y2="120" stroke="rgba(200,200,200,0.15)" stroke-width="0.6"/>
-                <line x1="60" y1="0" x2="60" y2="120" stroke="rgba(200,200,200,0.12)" stroke-width="0.5"/>
-                <line x1="0" y1="0" x2="120" y2="0" stroke="rgba(200,200,200,0.1)" stroke-width="0.4"/>
-                <line x1="0" y1="0" x2="0" y2="120" stroke="rgba(200,200,200,0.1)" stroke-width="0.4"/>
-                <path d="M 18,0 Q 25,12 0,25" fill="none" stroke="rgba(200,200,200,0.16)" stroke-width="0.5"/>
-                <path d="M 38,0 Q 45,25 0,45" fill="none" stroke="rgba(200,200,200,0.16)" stroke-width="0.5"/>
-                <path d="M 58,0 Q 62,40 0,62" fill="none" stroke="rgba(200,200,200,0.14)" stroke-width="0.5"/>
-                <path d="M 80,0 Q 82,55 0,80" fill="none" stroke="rgba(200,200,200,0.12)" stroke-width="0.5"/>
-                <path d="M 100,0 Q 100,70 0,100" fill="none" stroke="rgba(200,200,200,0.1)" stroke-width="0.5"/>
-            </svg>
-        </div>
-        <div class="sidebar-spider-silk"></div>
-        <div class="sidebar-spider">
-            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <radialGradient id="bodyGrad" cx="50%" cy="40%">
-                        <stop offset="0%" stop-color="#3a2a1a"/>
-                        <stop offset="50%" stop-color="#1a0f05"/>
-                        <stop offset="100%" stop-color="#0a0500"/>
-                    </radialGradient>
-                    <radialGradient id="headGrad" cx="50%" cy="40%">
-                        <stop offset="0%" stop-color="#2a1a0a"/>
-                        <stop offset="100%" stop-color="#0a0500"/>
-                    </radialGradient>
-                </defs>
-                <path d="M 20,28 Q 12,22 5,16" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M 20,30 Q 10,30 2,28" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M 20,33 Q 10,36 3,42" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M 21,35 Q 14,42 8,50" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M 40,28 Q 48,22 55,16" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M 40,30 Q 50,30 58,28" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M 40,33 Q 50,36 57,42" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M 39,35 Q 46,42 52,50" fill="none" stroke="#1a0f05" stroke-width="1.8" stroke-linecap="round"/>
-                <ellipse cx="30" cy="34" rx="11" ry="14" fill="url(#bodyGrad)"/>
-                <ellipse cx="27" cy="29" rx="4" ry="6" fill="#3a2a1a" opacity="0.4"/>
-                <circle cx="30" cy="19" r="6.5" fill="url(#headGrad)"/>
-                <circle cx="26.5" cy="17" r="1.3" fill="#cc1100"/>
-                <circle cx="33.5" cy="17" r="1.3" fill="#cc1100"/>
-                <circle cx="27.5" cy="20" r="0.8" fill="#dd3300"/>
-                <circle cx="32.5" cy="20" r="0.8" fill="#dd3300"/>
-            </svg>
-        </div>
-        <div class="sidebar-brand">
-            <span class="icon">🎃</span>
-            <span>万圣节印花篇</span>
-        </div>
-        <ul class="sidebar-nav">
-            <li><a href="#hero"><span>首页</span></a></li>
+  <div class="wrap">
+    <header class="hero">
+      <div class="badge-row">
+        <span class="badge hot">🎃 万圣节印花侦察台</span>
+        <span class="badge ok">标码男装</span>
+        <span class="badge">T恤 / Graphic Tee</span>
+        <span class="badge">Temu · SHEIN · Amazon · 独立站</span>
+        <span class="badge hot">✅ v1 · 印花矩阵 + 尺码表</span>
+      </div>
+      <h1>万圣节男装T恤印花 · <span class="a">常规元素</span> / <span class="b">时尚元素</span></h1>
+      <p class="sub">
+        侦察台模式：平台分区 + 关键词 + 热销直达。核心<strong style="color:#eef2f7">印花矩阵</strong>配<strong style="color:#fbbf24">产品实拍图 + 标码尺码区间</strong>（骷髅 / 南瓜 / 哥特 / 死神 / 3D满印等主题），方便测款与跟款。一点卡片跳转 Amazon / SHEIN / Temu 平台热销搜索。
+      </p>
+      <div class="meta">
+        <span>品类：<strong>标码男装T恤（Graphic Tee）</strong></span>
+        <span>方向：<strong>① 常规万圣节元素</strong> · <strong>② 时尚暗黑元素</strong></span>
+        <span>重点：<strong>印花主题矩阵</strong></span>
+        <span>排序：<strong>热销 / 人气</strong></span>
+      </div>
 
-            <li class="nav-group open">
-                <div class="nav-group-title" onclick="toggleGroup(this)">
-                    <span class="nav-icon">🛒</span>
-                    <span>平台分类</span>
-                    <span class="arrow">▶</span>
-                </div>
-                <ul class="nav-group-items">
-                    <li><a href="#temu"><span>Temu</span></a></li>
-                    <li><a href="#shein"><span>Shein</span></a></li>
-                    <li><a href="#amazon"><span>Amazon</span></a></li>
-                    <li><a href="#indie"><span>独立站</span></a></li>
-                </ul>
-            </li>
+      <div class="tracks">
+        <div class="track-card">
+          <h3><span class="dot a"></span> 方向 A · 常规万圣节元素</h3>
+          <p>南瓜灯 / 幽灵 / 骷髅 / 蝙蛛 / 巫女 / 黑猫。Trick or Treat 文案款走量最稳；卡通Q版覆盖家庭客群，写实骷髅覆盖街头客群。</p>
+        </div>
+        <div class="track-card">
+          <h3><span class="dot b"></span> 方向 B · 时尚暗黑元素</h3>
+          <p>哥特字体 / 死神 / 荆棘玫瑰 / 电影恶搞 / 3D满印。季节外也能卖（全年暗黑穿搭），客单更高；注意IP侵权与电影形象授权。</p>
+        </div>
+      </div>
 
-            <li class="nav-group open">
-                <div class="nav-group-title" onclick="toggleGroup(this)">
-                    <span class="nav-icon">🎨</span>
-                    <span>印花主题</span>
-                    <span class="arrow">▶</span>
-                </div>
-                <ul class="nav-group-items">
-                    <li><a href="#temu"><span>骷髅印花</span></a></li>
-                    <li><a href="#temu"><span>南瓜印花</span></a></li>
-                    <li><a href="#shein"><span>哥特文字</span></a></li>
-                    <li><a href="#amazon"><span>死神暗黑</span></a></li>
-                    <li><a href="#indie"><span>抽象艺术</span></a></li>
-                    <li><a href="#indie"><span>复古街头</span></a></li>
-                </ul>
-            </li>
+      <div class="price-row">
+        <span class="price">Temu 常规印花 <b>$4–9</b></span>
+        <span class="price">SHEIN 快时尚 <b>$8–16</b></span>
+        <span class="price">Amazon 品牌 <b>$12–27</b></span>
+        <span class="price">独立站 3D满印 <b>$15–40</b></span>
+      </div>
+      <p class="update-note">榜单内容点链接即看平台实时热销；关键词/印花说明需改时，更新 HTML 后在 Netlify 原站点 Deploys 覆盖上传，链接可不变。</p>
+    </header>
 
-            <li class="nav-group">
-                <div class="nav-group-title" onclick="toggleGroup(this)">
-                    <span class="nav-icon">📊</span>
-                    <span>尺码参考</span>
-                    <span class="arrow">▶</span>
-                </div>
-                <ul class="nav-group-items">
-                    <li><a href="#footer"><span>S-3XL 标码</span></a></li>
-                    <li><a href="#footer"><span>面料说明</span></a></li>
-                </ul>
-            </li>
-        </ul>
+    <nav class="jump" aria-label="快速跳转">
+      <a href="#prints">🎃 印花主题矩阵</a>
+      <a href="#size">📏 标码尺码表</a>
+      <a href="#temu">🛍️ Temu</a>
+      <a href="#shein">🌸 SHEIN</a>
+      <a href="#amazon">📦 Amazon</a>
+      <a href="#indie">🔮 独立站</a>
+      <a href="#tips">📋 选品与跟款</a>
     </nav>
 
-    <div class="main-content">
-        <!-- 顶部版权声明 -->
-        <div class="copyright-bar">
-            ⚠ 本页面内容仅供设计参考，各平台产品版权归原作者所有，未经授权不得用于商业用途。
+    <!-- ========== 印花矩阵 ========== -->
+    <section class="fit-section" id="prints">
+      <h2>🎃 重点印花主题矩阵（产品实拍 + 标码区间）</h2>
+      <p class="desc">
+        每张卡左侧为<strong style="color:#eef2f7">平台在售实拍图</strong>，右侧为<strong style="color:#fbbf24">标码尺码区间与价格带</strong>。
+        建议常规元素 + 时尚元素各开 2–3 个主力主题；南瓜/骷髅为万圣节流量入口必开，哥特/死神为长线暗黑款。
+        图片仅供设计参考，上架前请确认版权与授权。
+      </p>
+      <div class="fit-grid">
+
+        <!-- 01 南瓜 -->
+        <div class="fit">
+          <div class="rank">主题 01 · 流量入口必开</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_2ebe948d.jpg" alt="南瓜头印花T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">南瓜头 · Temu</div>
+              <table>
+                <tr><td>价格带</td><td>$5–9</td></tr>
+                <tr><td>尺码</td><td>S–3XL</td></tr>
+                <tr><td>面料</td><td>纯棉</td></tr>
+                <tr><td>工艺</td><td>数码印花</td></tr>
+                <tr><td>版型</td><td>常规圆领</td></tr>
+              </table>
+              <div class="spec-f">Trick or Treat 满印款转化最高</div>
+            </div>
+          </div>
+          <h4>南瓜头 / Jack-O'-Lantern</h4>
+          <p>万圣节最强识别符号，橙黑配色自带节日氛围；卡通款家庭客群，写实款街头客群。</p>
+          <div class="kw">halloween pumpkin t-shirt men · jack o lantern tee</div>
+          <span class="prio must">必开 · 节日流量</span>
         </div>
 
-        <!-- ===== Hero ===== -->
-        <section class="hero" id="hero">
-            <div class="hero-deco top-left">👻</div>
-            <div class="hero-deco bottom-right">🦇</div>
-            <div class="hero-bar">
-                <h1>万圣节 <span>T恤印花</span> 整理</h1>
-                <div class="hero-subtitle">Temu · Shein · Amazon · Independent Sites</div>
+        <!-- 02 骷髅 -->
+        <div class="fit">
+          <div class="rank">主题 02 · 主力必开</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_9f8ec2f3.jpg" alt="3D骷髅头印花T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">3D骷髅 · Temu</div>
+              <table>
+                <tr><td>价格带</td><td>$6–9</td></tr>
+                <tr><td>尺码</td><td>L–3XL</td></tr>
+                <tr><td>面料</td><td>棉混纺</td></tr>
+                <tr><td>工艺</td><td>3D数码</td></tr>
+                <tr><td>版型</td><td>宽松落肩</td></tr>
+              </table>
+              <div class="spec-f">街头+万圣节双场景通吃</div>
             </div>
-
-            <!-- 平台概览 -->
-            <div class="platform-overview">
-                <a href="#temu" class="platform-card" data-platform="temu">
-                    <div class="pf-icon">🟠</div>
-                    <div class="pf-name">Temu</div>
-                    <div class="pf-count">11 款印花</div>
-                    <div class="pf-desc">低价走量·南瓜/卡通为主</div>
-                </a>
-                <a href="#shein" class="platform-card" data-platform="shein">
-                    <div class="pf-icon">🌸</div>
-                    <div class="pf-name">Shein</div>
-                    <div class="pf-count">11 款印花</div>
-                    <div class="pf-desc">快时尚·Y2K/哥特/花卉</div>
-                </a>
-                <a href="#amazon" class="platform-card" data-platform="amazon">
-                    <div class="pf-icon">📦</div>
-                    <div class="pf-name">Amazon</div>
-                    <div class="pf-count">10 款印花</div>
-                    <div class="pf-desc">品类丰富·哥特金属/文字</div>
-                </a>
-                <a href="#indie" class="platform-card" data-platform="indie">
-                    <div class="pf-icon">🔮</div>
-                    <div class="pf-name">独立站</div>
-                    <div class="pf-count">12 款印花</div>
-                    <div class="pf-desc">设计师品牌·3D/暗黑/复古</div>
-                </a>
-            </div>
-        </section>
-
-        <div class="theme-divider"><div class="line"></div><div class="line"></div></div>
-
-        <!-- ===== Temu 平台 ===== -->
-        <div class="theme-section platform-section platform-temu" id="temu">
-            <div class="platform-bg">
-                <div class="theme-header">
-                    <div class="theme-icon-row">🎃👻🦇</div>
-                    <h2>Temu</h2>
-                    <div class="theme-subtitle">低价走量 · 卡通/南瓜/骷髅系</div>
-                </div>
-
-                <!-- 南瓜系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-pumpkin">🎃 南瓜系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_2ebe948d.jpg" alt="南瓜头印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">万圣节南瓜头印花圆领T恤</div>
-                            <div class="card-desc">经典南瓜灯造型，橙黑配色，圆领休闲款</div>
-                            <div class="card-tags"><span class="card-tag">圆领</span><span class="card-tag">纯棉</span><span class="card-tag">数码印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$5.99~$8.99</span>
-                                <span class="card-link">M-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_cca03925.jpg" alt="南瓜头万圣节T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">大脚南瓜头不给糖就捣蛋印花T恤</div>
-                            <div class="card-desc">Trick or Treat主题，卡通南瓜头大图满印</div>
-                            <div class="card-tags"><span class="card-tag">满印</span><span class="card-tag">卡通风</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$4.99~$7.49</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_f78a7b57.jpg" alt="南瓜灯T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">南瓜灯(Jack-O-Lantern)定制印花T恤</div>
-                            <div class="card-desc">纯棉短袖，南瓜灯发光效果印花，儿童/成人同款</div>
-                            <div class="card-tags"><span class="card-tag">纯棉</span><span class="card-tag">夜光印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$6.29~$9.99</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_dcbe5116.jpg" alt="南瓜图案T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">秋季南瓜图案印花圆领短袖</div>
-                            <div class="card-desc">速卖通/亚马逊同源款，简洁南瓜图案胸前印花</div>
-                            <div class="card-tags"><span class="card-tag">胸前印花</span><span class="card-tag">圆领</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$3.99~$6.99</span>
-                                <span class="card-link">M-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 卡通系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-cartoon">👻 卡通系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_b65d4a16.jpg" alt="万圣节卡通印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">万圣节卡通印花短袖T恤</div>
-                            <div class="card-desc">幽灵/蝙蝠/南瓜组合卡通图案，男女同款</div>
-                            <div class="card-tags"><span class="card-tag">男女同款</span><span class="card-tag">卡通</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$4.49~$7.99</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_fec6127e.jpg" alt="万圣节卡通印花T恤2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">万圣节卡通印花男女T恤</div>
-                            <div class="card-desc">可爱幽灵+南瓜组合，Q版风格印花</div>
-                            <div class="card-tags"><span class="card-tag">Q版</span><span class="card-tag">圆领</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$4.99~$8.49</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 骷髅系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-skull">💀 骷髅系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_302c11b6.jpg" alt="蒙面骷髅头印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">欧美风立体鼻环蒙面骷髅头印花T恤</div>
-                            <div class="card-desc">弹力修身汗衫款，蒙面骷髅头满版印花</div>
-                            <div class="card-tags"><span class="card-tag">修身</span><span class="card-tag">立体印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$5.49~$8.99</span>
-                                <span class="card-link">M-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_9f8ec2f3.jpg" alt="3D骷髅头印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">万圣节3D骷髅头印花宽松短袖</div>
-                            <div class="card-desc">街头宽松版型，3D数码印花骷髅头</div>
-                            <div class="card-tags"><span class="card-tag">宽松</span><span class="card-tag">3D印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$5.99~$9.49</span>
-                                <span class="card-link">L-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_63028119.jpg" alt="骷髅头潮牌T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">骷髅头街头限定潮牌印花T恤</div>
-                            <div class="card-desc">纯棉圆领短袖，联名印花骷髅头图案</div>
-                            <div class="card-tags"><span class="card-tag">纯棉</span><span class="card-tag">潮牌风</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$6.49~$10.99</span>
-                                <span class="card-link">M-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-temu">Temu</span>
-                            <img src="search/images_33878ec9.jpg" alt="南瓜头印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">欧美万圣节南瓜头印花休闲T恤</div>
-                            <div class="card-desc">外贸休闲潮流款，南瓜头+骷髅组合印花</div>
-                            <div class="card-tags"><span class="card-tag">外贸款</span><span class="card-tag">圆领</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$5.29~$8.79</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <h4>骷髅头 / Skull</h4>
+          <p>全年暗黑穿搭主力元素，万圣节期间搜索量翻数倍；蒙面/鼻环/裂纹变体丰富。</p>
+          <div class="kw">skull graphic tee men · 3d skull t-shirt</div>
+          <span class="prio must">必开 · 全年长线</span>
         </div>
 
-        <div class="theme-divider"><div class="line"></div><div class="line"></div></div>
-
-        <!-- ===== Shein 平台 ===== -->
-        <div class="theme-section platform-section platform-shein" id="shein">
-            <div class="platform-bg">
-                <div class="theme-header">
-                    <div class="theme-icon-row">🌸🦇💀</div>
-                    <h2>Shein</h2>
-                    <div class="theme-subtitle">快时尚 · Y2K/哥特/花卉系</div>
-                </div>
-
-                <!-- Y2K/美式复古系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-vintage">📺 Y2K / 美式复古</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_9175e278.jpg" alt="Shein Medium Graphic Tee">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Shein Medium Graphic Tee</div>
-                            <div class="card-desc">Shein自营品牌，万圣节主题印花T恤</div>
-                            <div class="card-tags"><span class="card-tag">Shein自营</span><span class="card-tag">圆领</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$7.99~$12.99</span>
-                                <span class="card-link">S-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_b761692b.jpg" alt="Shein Medium Graphic Tee 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Shein Medium Graphic Tee - Halloween</div>
-                            <div class="card-desc">万圣节特别版印花T恤，胸前印花设计</div>
-                            <div class="card-tags"><span class="card-tag">胸前印花</span><span class="card-tag">纯棉混纺</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$8.49~$13.99</span>
-                                <span class="card-link">S-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_217b0e6a.jpg" alt="Y2K Aesthetic Graphic Tshirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Y2K 2000s Aesthetic Graphic T-Shirt</div>
-                            <div class="card-desc">Y2K千禧风，复古做旧印花，宽松落肩版型</div>
-                            <div class="card-tags"><span class="card-tag">Y2K</span><span class="card-tag">落肩</span><span class="card-tag">做旧</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$9.99~$15.99</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_3649cba3.jpg" alt="Y2K Graphic Tshirt 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Y2K 2000s Aesthetic Graphic Tee</div>
-                            <div class="card-desc">另一配色款，暗黑系Y2K印花，适合万圣节穿搭</div>
-                            <div class="card-tags"><span class="card-tag">Y2K</span><span class="card-tag">暗黑</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$10.49~$16.49</span>
-                                <span class="card-link">M-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 哥特/骷髅系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-gothic">🔮 哥特/骷髅系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_0ee1b34c.jpg" alt="Men Skull Gothic Graphic Tee">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Skull Gothic Graphic Tee</div>
-                            <div class="card-desc">哥特骷髅头印花，黑白高对比度设计</div>
-                            <div class="card-tags"><span class="card-tag">哥特</span><span class="card-tag">黑白</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$8.99~$14.99</span>
-                                <span class="card-link">S-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_d457d274.jpg" alt="Men Skull Gothic Graphic Tee 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Skull Gothic Graphic Tee - Black</div>
-                            <div class="card-desc">纯黑底色骷髅头印花，暗黑哥特风</div>
-                            <div class="card-tags"><span class="card-tag">暗黑</span><span class="card-tag">纯黑</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$9.49~$15.49</span>
-                                <span class="card-link">M-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_c1dcf81d.jpg" alt="Goth Metal Death Skull T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Goth Metal Death Skull Men's T-Shirt</div>
-                            <div class="card-desc">印度设计师印花T恤，金属死亡风骷髅头</div>
-                            <div class="card-tags"><span class="card-tag">金属风</span><span class="card-tag">设计师印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$10.99~$17.99</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_52fcfe7d.jpg" alt="Goth Metal Death Skull T-Shirt 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Goth Metal Death Skull Printed Tee</div>
-                            <div class="card-desc">另一配色，骷髅头+哥特文字组合印花</div>
-                            <div class="card-tags"><span class="card-tag">哥特文字</span><span class="card-tag">金属</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$11.49~$18.49</span>
-                                <span class="card-link">M-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 花卉/动植物系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-abstract">🌿 花卉/动植物系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_7f3f69eb.jpg" alt="Men Floral Botanical Graphic T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Floral Botanical Graphic T-Shirt</div>
-                            <div class="card-desc">植物花卉印花T恤，万圣节暗黑花卉风格</div>
-                            <div class="card-tags"><span class="card-tag">花卉</span><span class="card-tag">植物</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$8.99~$14.49</span>
-                                <span class="card-link">S-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_00f6f21e.jpg" alt="Floral Botanical Graphic Tee 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Floral Botanical Graphic Tee</div>
-                            <div class="card-desc">另一配色，暗黑系植物印花</div>
-                            <div class="card-tags"><span class="card-tag">花卉</span><span class="card-tag">暗黑</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$9.49~$15.49</span>
-                                <span class="card-link">M-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-shein">Shein</span>
-                            <img src="search/images_89fb5ed1.jpg" alt="Floral Botanical Graphic Tee 3">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Floral Botanical Graphic T-Shirt</div>
-                            <div class="card-desc">第三款配色，荆棘玫瑰印花风格</div>
-                            <div class="card-tags"><span class="card-tag">荆棘玫瑰</span><span class="card-tag">哥特</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$9.99~$16.49</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- 03 哥特 -->
+        <div class="fit">
+          <div class="rank">主题 03 · 时尚线必开</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_0ee1b34c.jpg" alt="哥特骷髅印花T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">哥特骷髅 · SHEIN</div>
+              <table>
+                <tr><td>价格带</td><td>$9–15</td></tr>
+                <tr><td>尺码</td><td>S–XL</td></tr>
+                <tr><td>面料</td><td>棉混纺</td></tr>
+                <tr><td>工艺</td><td>胶印/水浆</td></tr>
+                <tr><td>版型</td><td>常规/落肩</td></tr>
+              </table>
+              <div class="spec-f">黑白高反差设计最吃香</div>
             </div>
+          </div>
+          <h4>哥特字体 / Gothic</h4>
+          <p>死亡金属荆棘体、乱码哥特字、融化字体；文字作为纯视觉符号，语言门槛低、全球通吃。</p>
+          <div class="kw">gothic graphic tee men · dark lettering tshirt</div>
+          <span class="prio rec">推荐 · 高客单</span>
         </div>
 
-        <div class="theme-divider"><div class="line"></div><div class="line"></div></div>
-
-        <!-- ===== Amazon 平台 ===== -->
-        <div class="theme-section platform-section platform-amazon" id="amazon">
-            <div class="platform-bg">
-                <div class="theme-header">
-                    <div class="theme-icon-row">📦💀🦇</div>
-                    <h2>Amazon</h2>
-                    <div class="theme-subtitle">品类丰富 · 哥特金属/文字印花系</div>
-                </div>
-
-                <!-- 哥特/骷髅系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-skull">💀 哥特/骷髅系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_a3acf5b1.jpg" alt="Men Skull Gothic Graphic Tee">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Skull Gothic Graphic Tee</div>
-                            <div class="card-desc">经典哥特骷髅头印花T恤，高质感胶印工艺</div>
-                            <div class="card-tags"><span class="card-tag">胶印</span><span class="card-tag">哥特</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$12.99~$19.99</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_d5b8d408.jpg" alt="Men Skull Gothic Graphic Tee 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Skull Gothic Graphic Tee - Alt</div>
-                            <div class="card-desc">不同品牌款，骷髅头+荆棘组合印花</div>
-                            <div class="card-tags"><span class="card-tag">荆棘</span><span class="card-tag">骷髅</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$13.99~$21.99</span>
-                                <span class="card-link">M-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_6302f240.jpg" alt="Men Skull Gothic Graphic Tee 3">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Skull Gothic Graphic Tee - Black</div>
-                            <div class="card-desc">纯黑底款，骷髅头胸前大图印花</div>
-                            <div class="card-tags"><span class="card-tag">纯黑</span><span class="card-tag">胸前大图</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$14.49~$22.49</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_1f163f60.jpg" alt="Goth Metal Death Skull T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Goth Metal Death Skull Men's T-Shirt</div>
-                            <div class="card-desc">印度设计师品牌印花，金属死亡风骷髅</div>
-                            <div class="card-tags"><span class="card-tag">金属</span><span class="card-tag">设计师</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$15.99~$24.99</span>
-                                <span class="card-link">M-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 文字/标语系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-typography">📝 文字/标语系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_11820943.jpg" alt="Men Typography Printed T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Typography Inspirational Quote Printed Tee</div>
-                            <div class="card-desc">文字标语印花T恤，万圣节主题标语</div>
-                            <div class="card-tags"><span class="card-tag">文字印花</span><span class="card-tag">标语</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$11.99~$18.99</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_015a1b9b.jpg" alt="Amazon T-Shirt Art Design">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Halloween Art Design Printed T-Shirt</div>
-                            <div class="card-desc">万圣节艺术印花设计，图案+文字组合</div>
-                            <div class="card-tags"><span class="card-tag">艺术印花</span><span class="card-tag">组合</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$13.49~$20.99</span>
-                                <span class="card-link">M-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 高端/品牌系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-vintage">⭐ 高端/品牌系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_7f59757a.jpg" alt="Men Premium Graphic T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men's Premium Graphic T-Shirt</div>
-                            <div class="card-desc">高端印花T恤，夜光熊图案(Glow in the Dark)</div>
-                            <div class="card-tags"><span class="card-tag">夜光印花</span><span class="card-tag">高端</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$16.99~$26.99</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_2b255558.jpg" alt="Men Premium Graphic T-Shirt 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men's Premium Graphic T-Shirt - Alt</div>
-                            <div class="card-desc">另一配色，夜光印花款</div>
-                            <div class="card-tags"><span class="card-tag">夜光</span><span class="card-tag">Premium</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$17.49~$27.99</span>
-                                <span class="card-link">M-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_e6fde3c0.jpg" alt="Happy Shopping Shack T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Happy Shopping Shack Graphic Tee</div>
-                            <div class="card-desc">小众品牌万圣节印花T恤，衣裤帽系列</div>
-                            <div class="card-tags"><span class="card-tag">小众品牌</span><span class="card-tag">印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$14.99~$23.99</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-amazon">Amazon</span>
-                            <img src="search/images_48a7f859.jpg" alt="Nike Solo Swoosh T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Nike Solo Swoosh Printed Logo Tee</div>
-                            <div class="card-desc">Nike纯色印花Logo T恤，黑色圆领短袖</div>
-                            <div class="card-tags"><span class="card-tag">品牌Logo</span><span class="card-tag">圆领</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$19.99~$29.99</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- 04 死神 -->
+        <div class="fit">
+          <div class="rank">主题 04 · 时尚线必开</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_b5b4471c.jpg" alt="死神骷髅印花T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">死神 · 独立站</div>
+              <table>
+                <tr><td>价格带</td><td>$14–23</td></tr>
+                <tr><td>尺码</td><td>M–2XL</td></tr>
+                <tr><td>面料</td><td>纯棉</td></tr>
+                <tr><td>工艺</td><td>数码印花</td></tr>
+                <tr><td>版型</td><td>常规圆领</td></tr>
+              </table>
+              <div class="spec-f">死神镰刀+玫瑰花组合最热</div>
             </div>
+          </div>
+          <h4>死神 / Reaper</h4>
+          <p>镰刀、斗篷、玫瑰花组合；暗黑系核心意象，万圣节与全年金属/摇滚客群通吃。</p>
+          <div class="kw">grim reaper tshirt men · death print tee</div>
+          <span class="prio rec">推荐 · 长线</span>
         </div>
 
-        <div class="theme-divider"><div class="line"></div><div class="line"></div></div>
-
-        <!-- ===== 独立站 ===== -->
-        <div class="theme-section platform-section platform-indie" id="indie">
-            <div class="platform-bg">
-                <div class="theme-header">
-                    <div class="theme-icon-row">🔮💀🎨</div>
-                    <h2>独立站</h2>
-                    <div class="theme-subtitle">设计师品牌 · 3D/暗黑/复古街头系</div>
-                </div>
-
-                <!-- 3D/满印系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-skull">🖥 3D/满印系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_fd6f98eb.jpg" alt="3D立体印花骨头T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">3D立体印花骨头万圣节骷髅系列T恤</div>
-                            <div class="card-desc">厂家直销，3D数码全身印花骷髅骨头系列</div>
-                            <div class="card-tags"><span class="card-tag">3D印花</span><span class="card-tag">全身印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$14.99~$24.99</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_7550ad5e.jpg" alt="死亡骷髅3D数码印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">死亡骷髅3D数码印花圆领套头T恤</div>
-                            <div class="card-desc">另类潮流男装，全身印花骷髅图案</div>
-                            <div class="card-tags"><span class="card-tag">全身印花</span><span class="card-tag">另类</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$16.99~$26.99</span>
-                                <span class="card-link">M-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_ee2c300e.jpg" alt="3D骷髅头印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">万圣节3D骷髅头印花宽松短袖</div>
-                            <div class="card-desc">街头宽松版型，3D数码印花骷髅头大图</div>
-                            <div class="card-tags"><span class="card-tag">宽松</span><span class="card-tag">3D</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$15.49~$25.49</span>
-                                <span class="card-link">L-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 暗黑/死神系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-reaper">☠ 暗黑/死神系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_b5b4471c.jpg" alt="死神骷髅印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">创意死神骷髅印花T恤</div>
-                            <div class="card-desc">时尚休闲圆领，棉质男装短袖，死神镰刀图案</div>
-                            <div class="card-tags"><span class="card-tag">死神</span><span class="card-tag">棉质</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$13.99~$22.99</span>
-                                <span class="card-link">M-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_1864ef6b.jpg" alt="骷髅头万圣节T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">骷髅头万圣节数码印花修身短袖</div>
-                            <div class="card-desc">欧美男士修身款，数码印花骷髅头满版</div>
-                            <div class="card-tags"><span class="card-tag">修身</span><span class="card-tag">数码印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$14.49~$23.49</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_031681f4.jpg" alt="骷髅头万圣节T恤 2">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">跨境骷髅头万圣节数码印花T恤</div>
-                            <div class="card-desc">欧美男士修身短袖，跨境货源款</div>
-                            <div class="card-tags"><span class="card-tag">跨境货源</span><span class="card-tag">修身</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$15.99~$25.99</span>
-                                <span class="card-link">M-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images.jpg" alt="蒙面骷髅头印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">欧美风立体鼻环蒙面骷髅头印花T恤</div>
-                            <div class="card-desc">弹力修身汗衫款，蒙面骷髅头满版印花</div>
-                            <div class="card-tags"><span class="card-tag">弹力</span><span class="card-tag">立体印花</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$12.99~$21.99</span>
-                                <span class="card-link">M-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 品牌/潮牌系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-vintage">🏷 品牌/潮牌系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_fa4490bf.jpg" alt="Alexander McQueen Skull T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Alexander McQueen Skull Logo T-Shirt</div>
-                            <div class="card-desc">设计师品牌骷髅Logo印花T恤，高端面料</div>
-                            <div class="card-tags"><span class="card-tag">设计师品牌</span><span class="card-tag">高端</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$199~$349</span>
-                                <span class="card-link">S-XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_1147bdde.jpg" alt="骷髅头潮牌联名印花T恤">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">骷髅头街头限定潮牌联名印花T恤</div>
-                            <div class="card-desc">纯棉圆领短袖，MMJ联名印花骷髅头</div>
-                            <div class="card-tags"><span class="card-tag">联名</span><span class="card-tag">纯棉</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$24.99~$39.99</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 复古街头系 -->
-                <div class="category-row">
-                    <span class="theme-tag tag-vintage">📼 复古街头系</span>
-                    <span class="cat-line"></span>
-                </div>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_f24ee5a2.jpg" alt="Vintage 90s Hip Hop Graphic T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Vintage 90s Hip Hop Rap Star Graphic Tee</div>
-                            <div class="card-desc">90年代复古嘻哈风Oversized棉T恤</div>
-                            <div class="card-tags"><span class="card-tag">90s复古</span><span class="card-tag">Oversized</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$18.99~$29.99</span>
-                                <span class="card-link">S-3XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_f864fbd8.jpg" alt="Men Abstract Art Graphic T-Shirt">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Abstract Art Graphic T-Shirt</div>
-                            <div class="card-desc">抽象艺术印花T恤，万圣节暗黑抽象风格</div>
-                            <div class="card-tags"><span class="card-tag">抽象</span><span class="card-tag">艺术</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$16.99~$27.99</span>
-                                <span class="card-link">M-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-img">
-                            <span class="card-platform-badge badge-indie">独立站</span>
-                            <img src="search/images_86188ae6.jpg" alt="Men Skull Gothic Graphic Tee">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">Men Skull Gothic Graphic Tee</div>
-                            <div class="card-desc">哥特骷髅头印花T恤，独立站设计师款</div>
-                            <div class="card-tags"><span class="card-tag">哥特</span><span class="card-tag">设计师</span></div>
-                            <div class="card-footer">
-                                <span class="card-price">$19.99~$32.99</span>
-                                <span class="card-link">S-2XL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- 05 3D满印 -->
+        <div class="fit">
+          <div class="rank">主题 05 · 高客单</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_fd6f98eb.jpg" alt="3D立体印花骨头T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">3D满印 · 独立站</div>
+              <table>
+                <tr><td>价格带</td><td>$15–27</td></tr>
+                <tr><td>尺码</td><td>S–3XL</td></tr>
+                <tr><td>面料</td><td>涤棉/纯棉</td></tr>
+                <tr><td>工艺</td><td>3D全身热转印</td></tr>
+                <tr><td>版型</td><td>宽松/Oversize</td></tr>
+              </table>
+              <div class="spec-f">宽版落肩最吃满印效果</div>
             </div>
+          </div>
+          <h4>3D全身满印 / All-Over Print</h4>
+          <p>视觉跨缝拼接、满版蜘蛛网/骨骼；差异化最强、客单最高，注意侧缝对花工艺。</p>
+          <div class="kw">3d print tshirt men all over sublimation</div>
+          <span class="prio rec">推荐 · 高溢价</span>
         </div>
 
-        <!-- ===== 页脚 ===== -->
-        <footer class="footer" id="footer">
-            <p>🎃 万圣节T恤印花整理 | Temu · Shein · Amazon · 独立站</p>
-            <p style="margin-top:8px;">本页面内容仅供设计参考，版权归原作者所有 | 尺码均为标码 S-3XL | 面料以纯棉/棉混纺为主</p>
-        </footer>
-    </div>
+        <!-- 06 卡通 -->
+        <div class="fit">
+          <div class="rank">主题 06 · 走量款</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_b65d4a16.jpg" alt="万圣节卡通印花T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">卡通组合 · Temu</div>
+              <table>
+                <tr><td>价格带</td><td>$4–8</td></tr>
+                <tr><td>尺码</td><td>S–3XL</td></tr>
+                <tr><td>面料</td><td>棉混纺</td></tr>
+                <tr><td>工艺</td><td>数码印花</td></tr>
+                <tr><td>版型</td><td>常规圆领</td></tr>
+              </table>
+              <div class="spec-f">男女同款家庭装可做套装</div>
+            </div>
+          </div>
+          <h4>卡通组合 / Cute Ghost</h4>
+          <p>Q版幽灵+南瓜+蝙蝠组合；家庭亲子装、情侣装场景，万圣节派对刚需走量款。</p>
+          <div class="kw">halloween cartoon tshirt · cute ghost tee family</div>
+          <span class="prio test">测款 · 走量</span>
+        </div>
 
-    <script>
-        function toggleGroup(el) {
-            el.parentElement.classList.toggle('open');
+        <!-- 07 Y2K -->
+        <div class="fit">
+          <div class="rank">主题 07 · 时尚测款</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_217b0e6a.jpg" alt="Y2K印花T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">Y2K复古 · SHEIN</div>
+              <table>
+                <tr><td>价格带</td><td>$10–16</td></tr>
+                <tr><td>尺码</td><td>S–2XL</td></tr>
+                <tr><td>面料</td><td>棉混纺</td></tr>
+                <tr><td>工艺</td><td>做旧水浆</td></tr>
+                <tr><td>版型</td><td>落肩宽版</td></tr>
+              </table>
+              <div class="spec-f">做旧洗水+Y2K辣妹审美</div>
+            </div>
+          </div>
+          <h4>Y2K / 美式复古做旧</h4>
+          <p>复古做旧印花+落肩宽版，海外高街辣妹/辣弟审美；万圣节做旧血迹款是流量变体。</p>
+          <div class="kw">y2k graphic tee men · washed vintage halloween tee</div>
+          <span class="prio test">测款 · 潮流</span>
+        </div>
+
+        <!-- 08 文字标语 -->
+        <div class="fit">
+          <div class="rank">主题 08 · 低成本测款</div>
+          <div class="prod-board">
+            <div class="prod-shot"><img src="search/images_11820943.jpg" alt="文字印花T恤"></div>
+            <div class="prod-spec">
+              <div class="spec-h">文字标语 · Amazon</div>
+              <table>
+                <tr><td>价格带</td><td>$12–19</td></tr>
+                <tr><td>尺码</td><td>S–2XL</td></tr>
+                <tr><td>面料</td><td>纯棉</td></tr>
+                <tr><td>工艺</td><td>丝网印</td></tr>
+                <tr><td>版型</td><td>常规圆领</td></tr>
+              </table>
+              <div class="spec-f">纯文字款打样成本最低</div>
+            </div>
+          </div>
+          <h4>文字标语 / Typography</h4>
+          <p>Happy Halloween / Spooky Season 等标语；无复杂图案，打样快、侵权风险低，适合快速测款。</p>
+          <div class="kw">halloween slogan tshirt men · spooky season tee</div>
+          <span class="prio test">测款 · 低成本</span>
+        </div>
+      </div>
+
+      <!-- 尺码表 -->
+      <div class="size-chart-box" id="size">
+        <h3>📏 男装标码T恤成衣尺寸参考表（开款用 · 单位 cm）</h3>
+        <p class="chart-note">
+          下表为<strong style="color:#eef2f7">常规合身圆领T恤</strong>基码；落肩/Oversize 胸围与肩宽按「宽松加量」上浮。
+          最终以样衣 + 洗后尺寸为准。美码对照：S≈36–38 / M≈38–40 / L≈40–42 / XL≈42–44 / XXL≈44–46。
+        </p>
+        <table class="size-chart">
+          <thead>
+            <tr>
+              <th>部位</th>
+              <th>S</th>
+              <th>M</th>
+              <th>L</th>
+              <th>XL</th>
+              <th>XXL</th>
+              <th>宽松加量（Oversize）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>胸围 Chest</td>
+              <td>96</td>
+              <td>102</td>
+              <td>108</td>
+              <td>114</td>
+              <td class="hl">120</td>
+              <td class="hl">+6～12</td>
+            </tr>
+            <tr>
+              <td>衣长 Length</td>
+              <td>66</td>
+              <td>68</td>
+              <td>70</td>
+              <td>72</td>
+              <td>74</td>
+              <td>+0～2（Boxy −4～6）</td>
+            </tr>
+            <tr>
+              <td>肩宽 Shoulder</td>
+              <td>43</td>
+              <td>45</td>
+              <td>47</td>
+              <td>49</td>
+              <td>51</td>
+              <td class="hl">落肩再 +5～10</td>
+            </tr>
+            <tr>
+              <td>袖长 Sleeve</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>随落肩并入肩袖长</td>
+            </tr>
+            <tr>
+              <td>建议身高 Height</td>
+              <td>160–165</td>
+              <td>165–170</td>
+              <td>170–175</td>
+              <td>175–180</td>
+              <td>180–185</td>
+              <td>详情页务必附图示</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="copy-bar" style="margin-top:12px">
+        <button type="button" data-copy="halloween t shirt men">复制：万圣节T恤</button>
+        <button type="button" data-copy="halloween graphic tee men">复制：印花T恤</button>
+        <button type="button" data-copy="skull print tshirt men">复制：骷髅印花</button>
+        <button type="button" data-copy="pumpkin halloween tee">复制：南瓜款</button>
+        <button type="button" data-copy="gothic graphic tee men">复制：哥特风</button>
+        <button type="button" data-copy="3d print tshirt men all over">复制：3D满印</button>
+      </div>
+    </section>
+
+    <!-- ========== Temu ========== -->
+    <section class="region" id="temu">
+      <div class="region-head">
+        <h2>🛍️ Temu · 万圣节男装T恤印花</h2>
+        <div class="kw">核心词：
+          <code>halloween t shirt men</code> /
+          <code>halloween graphic tee</code>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title">走量主题 · <span class="tag print">南瓜/卡通</span> <span class="tag base">骷髅</span> <span class="tag fit">$4–9 低价带</span></div>
+        <div class="grid">
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_2ebe948d.jpg" alt="南瓜头印花T恤"></div>
+            <div class="pbody">
+              <h4>万圣节南瓜头印花圆领T恤</h4>
+              <p>经典南瓜灯造型，橙黑配色，圆领休闲款</p>
+              <div class="ptags"><span class="ptag">圆领</span><span class="ptag">纯棉</span><span class="ptag">数码印花</span></div>
+              <div class="pfoot"><span class="pprice">$5.99~$8.99</span><span class="psize">M-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_cca03925.jpg" alt="不给糖就捣蛋印花T恤"></div>
+            <div class="pbody">
+              <h4>大脚南瓜头 Trick or Treat 印花T恤</h4>
+              <p>卡通南瓜头大图满印，节日氛围拉满</p>
+              <div class="ptags"><span class="ptag">满印</span><span class="ptag">卡通风</span></div>
+              <div class="pfoot"><span class="pprice">$4.99~$7.49</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_f78a7b57.jpg" alt="南瓜灯夜光T恤"></div>
+            <div class="pbody">
+              <h4>南瓜灯夜光定制印花T恤</h4>
+              <p>夜光印花效果，儿童/成人同款，派对吸睛</p>
+              <div class="ptags"><span class="ptag">夜光印花</span><span class="ptag">亲子款</span></div>
+              <div class="pfoot"><span class="pprice">$6.29~$9.99</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_dcbe5116.jpg" alt="南瓜图案T恤"></div>
+            <div class="pbody">
+              <h4>秋季南瓜图案印花圆领短袖</h4>
+              <p>简洁胸前印花，秋季日常+节日两穿</p>
+              <div class="ptags"><span class="ptag">胸前印花</span><span class="ptag">圆领</span></div>
+              <div class="pfoot"><span class="pprice">$3.99~$6.99</span><span class="psize">M-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_b65d4a16.jpg" alt="万圣节卡通印花T恤"></div>
+            <div class="pbody">
+              <h4>万圣节卡通印花短袖T恤</h4>
+              <p>幽灵/蝙蝠/南瓜组合卡通图案，男女同款</p>
+              <div class="ptags"><span class="ptag">男女同款</span><span class="ptag">卡通</span></div>
+              <div class="pfoot"><span class="pprice">$4.49~$7.99</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_fec6127e.jpg" alt="Q版万圣节T恤"></div>
+            <div class="pbody">
+              <h4>万圣节Q版卡通印花男女T恤</h4>
+              <p>可爱幽灵+南瓜组合，Q版风格</p>
+              <div class="ptags"><span class="ptag">Q版</span><span class="ptag">圆领</span></div>
+              <div class="pfoot"><span class="pprice">$4.99~$8.49</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_302c11b6.jpg" alt="蒙面骷髅头T恤"></div>
+            <div class="pbody">
+              <h4>欧美风立体鼻环蒙面骷髅头印花T恤</h4>
+              <p>弹力修身汗衫款，蒙面骷髅满版印花</p>
+              <div class="ptags"><span class="ptag">修身</span><span class="ptag">立体印花</span></div>
+              <div class="pfoot"><span class="pprice">$5.49~$8.99</span><span class="psize">M-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_9f8ec2f3.jpg" alt="3D骷髅头T恤"></div>
+            <div class="pbody">
+              <h4>万圣节3D骷髅头印花宽松短袖</h4>
+              <p>街头宽松版型，3D数码印花骷髅头</p>
+              <div class="ptags"><span class="ptag">宽松</span><span class="ptag">3D印花</span></div>
+              <div class="pfoot"><span class="pprice">$5.99~$9.49</span><span class="psize">L-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_63028119.jpg" alt="骷髅头潮牌T恤"></div>
+            <div class="pbody">
+              <h4>骷髅头街头限定潮牌印花T恤</h4>
+              <p>纯棉圆领短袖，联名感印花</p>
+              <div class="ptags"><span class="ptag">纯棉</span><span class="ptag">潮牌风</span></div>
+              <div class="pfoot"><span class="pprice">$6.49~$10.99</span><span class="psize">M-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge temu">Temu</span><img src="search/images_33878ec9.jpg" alt="南瓜头休闲T恤"></div>
+            <div class="pbody">
+              <h4>欧美万圣节南瓜头印花休闲T恤</h4>
+              <p>外贸休闲潮流款，南瓜+骷髅组合</p>
+              <div class="ptags"><span class="ptag">外贸款</span><span class="ptag">圆领</span></div>
+              <div class="pfoot"><span class="pprice">$5.29~$8.79</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px">
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.temu.com/search_result.html?search_key=halloween%20t%20shirt%20men">
+            <div class="icon">🛍️</div>
+            <h4>Temu · 万圣节男T 搜索</h4>
+            <p>低价带对照，看南瓜/卡通/骷髅哪类在前排。</p>
+            <div class="foot"><span class="sort-pill">综合热销</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.temu.com/search_result.html?search_key=halloween%20graphic%20tee%20men">
+            <div class="icon">🎃</div>
+            <h4>Temu · 印花T恤 搜索</h4>
+            <p>Graphic Tee 细分词，看印花主题分布。</p>
+            <div class="foot"><span class="sort-pill">综合热销</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.temu.com/search_result.html?search_key=skull%20t%20shirt%20men">
+            <div class="icon">💀</div>
+            <h4>Temu · 骷髅T恤 搜索</h4>
+            <p>骷髅细分词，验证低价带 skull 需求。</p>
+            <div class="foot"><span class="sort-pill">综合热销</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SHEIN ========== -->
+    <section class="region" id="shein">
+      <div class="region-head">
+        <h2>🌸 SHEIN · 万圣节男装T恤印花</h2>
+        <div class="kw">核心词：
+          <code>mens graphic tee halloween</code> /
+          <code>gothic tee men</code>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title">时尚主题 · <span class="tag style">Y2K/复古</span> <span class="tag print">哥特/骷髅</span> <span class="tag base">花卉/植物</span></div>
+        <div class="grid">
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_9175e278.jpg" alt="Shein Graphic Tee"></div>
+            <div class="pbody">
+              <h4>Shein Medium Graphic Tee</h4>
+              <p>自营品牌万圣节主题印花T恤</p>
+              <div class="ptags"><span class="ptag">自营</span><span class="ptag">圆领</span></div>
+              <div class="pfoot"><span class="pprice">$7.99~$12.99</span><span class="psize">S-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_b761692b.jpg" alt="Shein Halloween Tee"></div>
+            <div class="pbody">
+              <h4>Shein Medium Graphic Tee · Halloween</h4>
+              <p>万圣节特别版，胸前印花设计</p>
+              <div class="ptags"><span class="ptag">胸前印花</span><span class="ptag">棉混纺</span></div>
+              <div class="pfoot"><span class="pprice">$8.49~$13.99</span><span class="psize">S-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_217b0e6a.jpg" alt="Y2K印花T恤"></div>
+            <div class="pbody">
+              <h4>Men Y2K 2000s Aesthetic Graphic Tee</h4>
+              <p>千禧复古做旧印花，宽松落肩版型</p>
+              <div class="ptags"><span class="ptag">Y2K</span><span class="ptag">落肩</span><span class="ptag">做旧</span></div>
+              <div class="pfoot"><span class="pprice">$9.99~$15.99</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_3649cba3.jpg" alt="Y2K印花T恤2"></div>
+            <div class="pbody">
+              <h4>Men Y2K Aesthetic Graphic Tee · Alt</h4>
+              <p>暗黑系Y2K印花配色款</p>
+              <div class="ptags"><span class="ptag">Y2K</span><span class="ptag">暗黑</span></div>
+              <div class="pfoot"><span class="pprice">$10.49~$16.49</span><span class="psize">M-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_0ee1b34c.jpg" alt="哥特骷髅T恤"></div>
+            <div class="pbody">
+              <h4>Men Skull Gothic Graphic Tee</h4>
+              <p>哥特骷髅头印花，黑白高对比</p>
+              <div class="ptags"><span class="ptag">哥特</span><span class="ptag">黑白</span></div>
+              <div class="pfoot"><span class="pprice">$8.99~$14.99</span><span class="psize">S-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_d457d274.jpg" alt="哥特骷髅T恤2"></div>
+            <div class="pbody">
+              <h4>Men Skull Gothic Graphic Tee · Black</h4>
+              <p>纯黑底色骷髅头印花，暗黑哥特</p>
+              <div class="ptags"><span class="ptag">暗黑</span><span class="ptag">纯黑</span></div>
+              <div class="pfoot"><span class="pprice">$9.49~$15.49</span><span class="psize">M-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_c1dcf81d.jpg" alt="金属死亡骷髅T恤"></div>
+            <div class="pbody">
+              <h4>Goth Metal Death Skull T-Shirt</h4>
+              <p>印度设计师印花，金属死亡风</p>
+              <div class="ptags"><span class="ptag">金属风</span><span class="ptag">设计师</span></div>
+              <div class="pfoot"><span class="pprice">$10.99~$17.99</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_52fcfe7d.jpg" alt="金属骷髅T恤2"></div>
+            <div class="pbody">
+              <h4>Goth Metal Death Skull Printed Tee</h4>
+              <p>骷髅头+哥特文字组合印花</p>
+              <div class="ptags"><span class="ptag">哥特文字</span><span class="ptag">金属</span></div>
+              <div class="pfoot"><span class="pprice">$11.49~$18.49</span><span class="psize">M-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_7f3f69eb.jpg" alt="植物花卉T恤"></div>
+            <div class="pbody">
+              <h4>Men Floral Botanical Graphic T-Shirt</h4>
+              <p>暗黑花卉植物印花风格</p>
+              <div class="ptags"><span class="ptag">花卉</span><span class="ptag">植物</span></div>
+              <div class="pfoot"><span class="pprice">$8.99~$14.49</span><span class="psize">S-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_00f6f21e.jpg" alt="植物印花T恤2"></div>
+            <div class="pbody">
+              <h4>Men Floral Botanical Graphic Tee · Alt</h4>
+              <p>暗黑系植物印花配色款</p>
+              <div class="ptags"><span class="ptag">花卉</span><span class="ptag">暗黑</span></div>
+              <div class="pfoot"><span class="pprice">$9.49~$15.49</span><span class="psize">M-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge shein">Shein</span><img src="search/images_89fb5ed1.jpg" alt="荆棘玫瑰T恤"></div>
+            <div class="pbody">
+              <h4>Men Floral Botanical Graphic Tee · 3rd</h4>
+              <p>荆棘玫瑰印花，哥特花卉风</p>
+              <div class="ptags"><span class="ptag">荆棘玫瑰</span><span class="ptag">哥特</span></div>
+              <div class="pfoot"><span class="pprice">$9.99~$16.49</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px">
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://us.shein.com/pdsearch/mens%20halloween%20graphic%20tee/?sort=7">
+            <div class="icon">🌸</div>
+            <h4>SHEIN US · 万圣节印花T恤</h4>
+            <p>Best Selling 排序，看哪类主题在前排。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://us.shein.com/pdsearch/mens%20gothic%20t%20shirt/?sort=7">
+            <div class="icon">🖤</div>
+            <h4>SHEIN US · 哥特T恤</h4>
+            <p>哥特细分词，验证长线暗黑需求。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://us.shein.com/pdsearch/mens%20graphic%20tee/?sort=7">
+            <div class="icon">👕</div>
+            <h4>SHEIN US · Graphic Tee</h4>
+            <p>大盘词，看印花风格整体趋势。</p>
+            <div class="foot"><span class="sort-pill">Best Selling</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Amazon ========== -->
+    <section class="region" id="amazon">
+      <div class="region-head">
+        <h2>📦 Amazon · 万圣节男装T恤印花</h2>
+        <div class="kw">核心词：
+          <code>halloween shirts for men</code> /
+          <code>skull graphic tee men</code>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title">品质主题 · <span class="tag print">哥特/骷髅</span> <span class="tag style">文字标语</span> <span class="tag base">夜光/高端</span></div>
+        <div class="grid">
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_a3acf5b1.jpg" alt="哥特骷髅T恤"></div>
+            <div class="pbody">
+              <h4>Men Skull Gothic Graphic Tee</h4>
+              <p>经典哥特骷髅头印花，高质感胶印</p>
+              <div class="ptags"><span class="ptag">胶印</span><span class="ptag">哥特</span></div>
+              <div class="pfoot"><span class="pprice">$12.99~$19.99</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_d5b8d408.jpg" alt="哥特骷髅T恤2"></div>
+            <div class="pbody">
+              <h4>Men Skull Gothic Graphic Tee · Alt</h4>
+              <p>骷髅头+荆棘组合印花</p>
+              <div class="ptags"><span class="ptag">荆棘</span><span class="ptag">骷髅</span></div>
+              <div class="pfoot"><span class="pprice">$13.99~$21.99</span><span class="psize">M-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_6302f240.jpg" alt="哥特骷髅T恤3"></div>
+            <div class="pbody">
+              <h4>Men Skull Gothic Graphic Tee · Black</h4>
+              <p>纯黑底款，胸前大图印花</p>
+              <div class="ptags"><span class="ptag">纯黑</span><span class="ptag">大图</span></div>
+              <div class="pfoot"><span class="pprice">$14.49~$22.49</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_1f163f60.jpg" alt="金属死亡骷髅T恤"></div>
+            <div class="pbody">
+              <h4>Goth Metal Death Skull Men's Tee</h4>
+              <p>印度设计师品牌，金属死亡风</p>
+              <div class="ptags"><span class="ptag">金属</span><span class="ptag">设计师</span></div>
+              <div class="pfoot"><span class="pprice">$15.99~$24.99</span><span class="psize">M-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_11820943.jpg" alt="文字标语T恤"></div>
+            <div class="pbody">
+              <h4>Typography Quote Printed Tee</h4>
+              <p>文字标语印花，万圣节主题标语</p>
+              <div class="ptags"><span class="ptag">文字印花</span><span class="ptag">标语</span></div>
+              <div class="pfoot"><span class="pprice">$11.99~$18.99</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_015a1b9b.jpg" alt="艺术印花T恤"></div>
+            <div class="pbody">
+              <h4>Halloween Art Design Printed Tee</h4>
+              <p>艺术印花设计，图案+文字组合</p>
+              <div class="ptags"><span class="ptag">艺术印花</span><span class="ptag">组合</span></div>
+              <div class="pfoot"><span class="pprice">$13.49~$20.99</span><span class="psize">M-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_7f59757a.jpg" alt="夜光印花T恤"></div>
+            <div class="pbody">
+              <h4>Men's Premium Graphic Tee · Glow</h4>
+              <p>夜光印花（Glow in the Dark）高端款</p>
+              <div class="ptags"><span class="ptag">夜光印花</span><span class="ptag">高端</span></div>
+              <div class="pfoot"><span class="pprice">$16.99~$26.99</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_2b255558.jpg" alt="夜光印花T恤2"></div>
+            <div class="pbody">
+              <h4>Men's Premium Graphic Tee · Glow Alt</h4>
+              <p>夜光印花另一配色</p>
+              <div class="ptags"><span class="ptag">夜光</span><span class="ptag">Premium</span></div>
+              <div class="pfoot"><span class="pprice">$17.49~$27.99</span><span class="psize">M-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_e6fde3c0.jpg" alt="小众品牌T恤"></div>
+            <div class="pbody">
+              <h4>Happy Shopping Shack Graphic Tee</h4>
+              <p>小众品牌万圣节印花T恤</p>
+              <div class="ptags"><span class="ptag">小众品牌</span><span class="ptag">印花</span></div>
+              <div class="pfoot"><span class="pprice">$14.99~$23.99</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge amazon">Amazon</span><img src="search/images_48a7f859.jpg" alt="品牌Logo T恤"></div>
+            <div class="pbody">
+              <h4>Nike Solo Swoosh Printed Logo Tee</h4>
+              <p>品牌Logo印花对照参考（黑色圆领）</p>
+              <div class="ptags"><span class="ptag">品牌Logo</span><span class="ptag">圆领</span></div>
+              <div class="pfoot"><span class="pprice">$19.99~$29.99</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px">
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/s?k=halloween+shirts+for+men&s=exact-aware-popularity-rank">
+            <div class="icon">📦</div>
+            <h4>Amazon · 万圣节男T 人气</h4>
+            <p>验证真实需求与评价关注点（缩水、尺码、印花耐洗）。</p>
+            <div class="foot"><span class="sort-pill">Popularity Rank</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/s?k=skull+graphic+tee+men&s=exact-aware-popularity-rank">
+            <div class="icon">💀</div>
+            <h4>Amazon · 骷髅印花 人气</h4>
+            <p>骷髅细分词，看长线暗黑款评价量。</p>
+            <div class="foot"><span class="sort-pill">Popularity Rank</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/s?k=halloween+graphic+tee+men+3d+print&s=exact-aware-popularity-rank">
+            <div class="icon">🖨️</div>
+            <h4>Amazon · 3D印花 人气</h4>
+            <p>3D满印细分，验证高客单需求。</p>
+            <div class="foot"><span class="sort-pill">Popularity Rank</span><span class="go">查看热销款 →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 独立站 ========== -->
+    <section class="region" id="indie">
+      <div class="region-head">
+        <h2>🔮 独立站 · 万圣节男装T恤印花</h2>
+        <div class="kw">核心词：
+          <code>halloween streetwear tee</code> /
+          <code>dark aesthetic tshirt</code>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="lane-title">设计师主题 · <span class="tag print">3D/满印</span> <span class="tag custom">死神/暗黑</span> <span class="tag style">潮牌/复古</span></div>
+        <div class="grid">
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_fd6f98eb.jpg" alt="3D骨头T恤"></div>
+            <div class="pbody">
+              <h4>3D立体印花骨头万圣节骷髅T恤</h4>
+              <p>3D数码全身印花骷髅骨头系列</p>
+              <div class="ptags"><span class="ptag">3D印花</span><span class="ptag">全身印花</span></div>
+              <div class="pfoot"><span class="pprice">$14.99~$24.99</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_7550ad5e.jpg" alt="死亡骷髅满印T恤"></div>
+            <div class="pbody">
+              <h4>死亡骷髅3D数码印花套头T恤</h4>
+              <p>另类潮流男装，全身印花</p>
+              <div class="ptags"><span class="ptag">全身印花</span><span class="ptag">另类</span></div>
+              <div class="pfoot"><span class="pprice">$16.99~$26.99</span><span class="psize">M-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_ee2c300e.jpg" alt="3D骷髅T恤"></div>
+            <div class="pbody">
+              <h4>万圣节3D骷髅头印花宽松短袖</h4>
+              <p>街头宽松版，3D大图印花</p>
+              <div class="ptags"><span class="ptag">宽松</span><span class="ptag">3D</span></div>
+              <div class="pfoot"><span class="pprice">$15.49~$25.49</span><span class="psize">L-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_b5b4471c.jpg" alt="死神印花T恤"></div>
+            <div class="pbody">
+              <h4>创意死神骷髅印花T恤</h4>
+              <p>死神镰刀图案，棉质圆领短袖</p>
+              <div class="ptags"><span class="ptag">死神</span><span class="ptag">棉质</span></div>
+              <div class="pfoot"><span class="pprice">$13.99~$22.99</span><span class="psize">M-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_1864ef6b.jpg" alt="骷髅头修身T恤"></div>
+            <div class="pbody">
+              <h4>骷髅头万圣节数码印花修身短袖</h4>
+              <p>欧美男士修身款，数码满版</p>
+              <div class="ptags"><span class="ptag">修身</span><span class="ptag">数码印花</span></div>
+              <div class="pfoot"><span class="pprice">$14.49~$23.49</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_031681f4.jpg" alt="骷髅头T恤2"></div>
+            <div class="pbody">
+              <h4>跨境骷髅头万圣节数码印花T恤</h4>
+              <p>欧美修身短袖，跨境货源款</p>
+              <div class="ptags"><span class="ptag">跨境货源</span><span class="ptag">修身</span></div>
+              <div class="pfoot"><span class="pprice">$15.99~$25.99</span><span class="psize">M-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images.jpg" alt="蒙面骷髅T恤"></div>
+            <div class="pbody">
+              <h4>立体鼻环蒙面骷髅头印花T恤</h4>
+              <p>弹力修身汗衫款，满版印花</p>
+              <div class="ptags"><span class="ptag">弹力</span><span class="ptag">立体印花</span></div>
+              <div class="pfoot"><span class="pprice">$12.99~$21.99</span><span class="psize">M-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_fa4490bf.jpg" alt="McQueen骷髅T恤"></div>
+            <div class="pbody">
+              <h4>Alexander McQueen Skull Logo Tee</h4>
+              <p>设计师品牌骷髅Logo，高端面料对照</p>
+              <div class="ptags"><span class="ptag">设计师品牌</span><span class="ptag">高端</span></div>
+              <div class="pfoot"><span class="pprice">$199~$349</span><span class="psize">S-XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_1147bdde.jpg" alt="潮牌联名T恤"></div>
+            <div class="pbody">
+              <h4>骷髅头街头限定潮牌联名T恤</h4>
+              <p>纯棉圆领，联名感印花</p>
+              <div class="ptags"><span class="ptag">联名</span><span class="ptag">纯棉</span></div>
+              <div class="pfoot"><span class="pprice">$24.99~$39.99</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_f24ee5a2.jpg" alt="90s复古T恤"></div>
+            <div class="pbody">
+              <h4>Vintage 90s Hip Hop Graphic Tee</h4>
+              <p>90年代复古嘻哈 Oversized 棉T</p>
+              <div class="ptags"><span class="ptag">90s复古</span><span class="ptag">Oversized</span></div>
+              <div class="pfoot"><span class="pprice">$18.99~$29.99</span><span class="psize">S-3XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_f864fbd8.jpg" alt="抽象艺术T恤"></div>
+            <div class="pbody">
+              <h4>Men Abstract Art Graphic T-Shirt</h4>
+              <p>抽象艺术印花，暗黑抽象风格</p>
+              <div class="ptags"><span class="ptag">抽象</span><span class="ptag">艺术</span></div>
+              <div class="pfoot"><span class="pprice">$16.99~$27.99</span><span class="psize">M-2XL</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="pimg"><span class="pbadge indie">独立站</span><img src="search/images_86188ae6.jpg" alt="哥特骷髅T恤"></div>
+            <div class="pbody">
+              <h4>Men Skull Gothic Graphic Tee</h4>
+              <p>哥特骷髅头，独立站设计师款</p>
+              <div class="ptags"><span class="ptag">哥特</span><span class="ptag">设计师</span></div>
+              <div class="pfoot"><span class="pprice">$19.99~$32.99</span><span class="psize">S-2XL</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px">
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.etsy.com/search?q=halloween%20t%20shirt%20men">
+            <div class="icon">🧵</div>
+            <h4>Etsy · 万圣节男T</h4>
+            <p>设计师/定制款风向标，看原创印花趋势。</p>
+            <div class="foot"><span class="sort-pill">Bestseller</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.aliexpress.com/wholesale?SearchText=halloween+t+shirt+men+3d&g=y&SortType=total_tranpro_desc">
+            <div class="icon">🌐</div>
+            <h4>AliExpress · 3D满印 货源</h4>
+            <p>货源端销量，看工厂印花工艺与克重。</p>
+            <div class="foot"><span class="sort-pill">Total Orders</span><span class="go">查看热销款 →</span></div>
+          </a>
+          <a class="card" target="_blank" rel="noopener noreferrer" href="https://www.pinterest.com/search/pins/?q=halloween%20graphic%20tee%20men">
+            <div class="icon">📌</div>
+            <h4>Pinterest · 印花灵感</h4>
+            <p>视觉灵感池，跟款前先看流行方向。</p>
+            <div class="foot"><span class="sort-pill">视觉趋势</span><span class="go">查看灵感 →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tips ========== -->
+    <section class="tips" id="tips">
+      <h2>📋 选品 · 印花开款 · 可跟款要点</h2>
+      <div class="tips-grid">
+        <div class="tip">
+          <strong>🎃 节奏：8月中上架，9月冲量</strong>
+          <p>万圣节前置 8–10 周；Prime Day 后上架，10 月第一周是流量峰值，10/20 后清仓。</p>
+        </div>
+        <div class="tip">
+          <strong>💀 主题：南瓜骷髅必开</strong>
+          <p>南瓜=节日流量入口，骷髅=全年长线；两者合计覆盖 60%+ 万圣节搜索量。</p>
+        </div>
+        <div class="tip">
+          <strong>💰 分层定价</strong>
+          <p>Temu $4–9 走量 / Amazon $12–27 品质带 / 独立站 3D满印 $15–40 高溢价，同印花多平台分层铺。</p>
+        </div>
+        <div class="tip">
+          <strong>⚖️ 版权红线</strong>
+          <p>电影角色（Jason/Freddy/Pennywise）、品牌 Logo（McQueen/Nike）仅做风格参考，上架需原创化或授权。</p>
+        </div>
+        <div class="tip">
+          <strong>📏 尺码标注</strong>
+          <p>标码 S–3XL；欧美客群偏大偏宽松，详情页务必附平铺实测图+身高体重参考表。</p>
+        </div>
+        <div class="tip">
+          <strong>🖨️ 工艺匹配</strong>
+          <p>满印选 3D 热转印，胸前单图选丝网/胶印，做旧选水浆；深色底注意白墨打底成本。</p>
+        </div>
+        <div class="tip">
+          <strong>🖼️ 主图套路</strong>
+          <p>白底主图 + 模特场景图 + 印花细节特写 + 夜光/满印效果对比图，四件套转化最佳。</p>
+        </div>
+        <div class="tip">
+          <strong>🔄 跟款策略</strong>
+          <p>先测文字款（成本低），数据好再上图案款，爆款再开发 3D 满印高客单版本。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="warn">⚠️ 本页面产品图仅供选品与设计参考，版权归原作者所有；电影/品牌元素请勿直接商用。</p>
+      <p>🎃 万圣节男装T恤印花侦察台 · Temu / SHEIN / Amazon / 独立站 · 数据更新于 2026-08</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">已复制 ✓</div>
+
+  <script>
+    // 复制关键词
+    const toast = document.getElementById('toast');
+    document.querySelectorAll('.copy-bar button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.dataset.copy;
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(text).then(showToast);
+        } else {
+          const ta = document.createElement('textarea');
+          ta.value = text; document.body.appendChild(ta);
+          ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+          showToast();
         }
-
-        // 平台卡片点击平滑滚动
-        document.querySelectorAll('.platform-card').forEach(card => {
-            card.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = this.getAttribute('href');
-                const el = document.querySelector(target);
-                if (el) {
-                    el.scrollIntoView({ behavior: 'smooth', offset: 80 });
-                }
-            });
-        });
-
-        // 侧边栏导航平滑滚动
-        document.querySelectorAll('.sidebar-nav a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href.startsWith('#') && href.length > 1) {
-                    e.preventDefault();
-                    const el = document.querySelector(href);
-                    if (el) {
-                        el.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }
-            });
-        });
-
-        // 产品卡片悬停发光效果
-        document.querySelectorAll('.product-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.borderColor = 'var(--accent-orange)';
-            });
-            card.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'var(--border-dark)';
-            });
-        });
-    </script>
+      });
+    });
+    function showToast() {
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1500);
+    }
+  </script>
 </body>
 </html>
