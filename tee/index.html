@@ -333,8 +333,16 @@ h1 .a, h1 .b { color: inherit; font-style: italic; }
 
 .region { margin-top: 8px; margin-bottom: 48px; scroll-margin-top: 64px; }
 .region-head {
-  display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
-  gap: 10px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--ink);
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 10px 20px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--ink);
+}
+.region-title {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; min-width: 0;
+}
+.region-title h2 { margin-bottom: 0; }
+.card-hint {
+  font-size: 13px; color: var(--gold); font-weight: 500; line-height: 1.4;
+  max-width: 28em;
 }
 .region-head .kw {
   font-size: 12px; color: var(--muted); background: none;
@@ -1066,7 +1074,10 @@ footer .warn { color: #9f1239; margin-bottom: 6px; }
     <!-- ========== US ========== -->
     <section class="region" id="us">
       <div class="region-head">
-        <h2>美区 · 标码男装 T 恤</h2>
+        <div class="region-title">
+          <h2>美区 · 标码男装 T 恤</h2>
+          <p class="card-hint">以下小卡片均可以点开前往对应网站</p>
+        </div>
         <div class="kw">核心词：<code>mens t-shirt</code> / <code>heavyweight tee</code> / <code>acid wash t-shirt</code></div>
       </div>
 
@@ -1344,7 +1355,10 @@ footer .warn { color: #9f1239; margin-bottom: 6px; }
     <!-- ========== EU ========== -->
     <section class="region" id="eu">
       <div class="region-head">
-        <h2>欧区 / UK · 标码男装 T 恤</h2>
+        <div class="region-title">
+          <h2>欧区 / UK · 标码男装 T 恤</h2>
+          <p class="card-hint">以下小卡片均可以点开前往对应网站</p>
+        </div>
         <div class="kw">核心词：<code>mens t-shirt</code> / <code>heavyweight t-shirt</code> / <code>washed tee</code></div>
       </div>
 
